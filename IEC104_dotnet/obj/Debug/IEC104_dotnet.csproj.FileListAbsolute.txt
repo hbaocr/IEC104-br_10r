@@ -1,0 +1,44 @@
+F:\IEC104_DOTNET_PRJ\IEC104_dotnet\IEC104_dotnet\bin\Debug\IEC104_dotnet.exe.config
+F:\IEC104_DOTNET_PRJ\IEC104_dotnet\IEC104_dotnet\bin\Debug\IEC104_dotnet.exe
+F:\IEC104_DOTNET_PRJ\IEC104_dotnet\IEC104_dotnet\bin\Debug\IEC104_dotnet.pdb
+F:\IEC104_DOTNET_PRJ\IEC104_dotnet\IEC104_dotnet\obj\Debug\IEC104_dotnet.Form1.resources
+F:\IEC104_DOTNET_PRJ\IEC104_dotnet\IEC104_dotnet\obj\Debug\IEC104_dotnet.Properties.Resources.resources
+F:\IEC104_DOTNET_PRJ\IEC104_dotnet\IEC104_dotnet\obj\Debug\IEC104_dotnet.csproj.GenerateResource.Cache
+F:\IEC104_DOTNET_PRJ\IEC104_dotnet\IEC104_dotnet\obj\Debug\IEC104_dotnet.exe
+F:\IEC104_DOTNET_PRJ\IEC104_dotnet\IEC104_dotnet\obj\Debug\IEC104_dotnet.pdb
+F:\IEC104_DOTNET_PRJ\IEC104_dotnet\IEC104_dotnet\obj\Debug\IEC104_dotnet.csprojResolveAssemblyReference.cache
+E:\PROJECT ANH NHAN\IEC60870_5_104_dotnet\IEC104_Dotnet\IEC104_dotnet\obj\Debug\IEC104_dotnet.Form1.resources
+E:\PROJECT ANH NHAN\IEC60870_5_104_dotnet\IEC104_Dotnet\IEC104_dotnet\obj\Debug\IEC104_dotnet.Properties.Resources.resources
+E:\PROJECT ANH NHAN\IEC60870_5_104_dotnet\IEC104_Dotnet\IEC104_dotnet\obj\Debug\IEC104_dotnet.csproj.GenerateResource.Cache
+E:\PROJECT ANH NHAN\IEC60870_5_104_dotnet\IEC104_Dotnet\IEC104_dotnet\bin\Debug\IEC104_dotnet.exe.config
+E:\PROJECT ANH NHAN\IEC60870_5_104_dotnet\IEC104_Dotnet\IEC104_dotnet\bin\Debug\IEC104_dotnet.exe
+E:\PROJECT ANH NHAN\IEC60870_5_104_dotnet\IEC104_Dotnet\IEC104_dotnet\bin\Debug\IEC104_dotnet.pdb
+E:\PROJECT ANH NHAN\IEC60870_5_104_dotnet\IEC104_Dotnet\IEC104_dotnet\obj\Debug\IEC104_dotnet.exe
+E:\PROJECT ANH NHAN\IEC60870_5_104_dotnet\IEC104_Dotnet\IEC104_dotnet\obj\Debug\IEC104_dotnet.pdb
+E:\PROJECT ANH NHAN\IEC60870_5_104_dotnet\VinhPhuc092017_NOJA\IEC104_Dotnet\IEC104_dotnet\bin\Debug\IEC104_dotnet.exe.config
+E:\PROJECT ANH NHAN\IEC60870_5_104_dotnet\VinhPhuc092017_NOJA\IEC104_Dotnet\IEC104_dotnet\obj\Debug\IEC104_dotnet.exe
+E:\PROJECT ANH NHAN\IEC60870_5_104_dotnet\VinhPhuc092017_NOJA\IEC104_Dotnet\IEC104_dotnet\obj\Debug\IEC104_dotnet.pdb
+E:\PROJECT ANH NHAN\IEC60870_5_104_dotnet\VinhPhuc092017_NOJA\IEC104_Dotnet\IEC104_dotnet\bin\Debug\IEC104_dotnet.exe
+E:\PROJECT ANH NHAN\IEC60870_5_104_dotnet\VinhPhuc092017_NOJA\IEC104_Dotnet\IEC104_dotnet\bin\Debug\IEC104_dotnet.pdb
+E:\PROJECT ANH NHAN\IEC60870_5_104_dotnet\VinhPhuc092017_NOJA\IEC104_Dotnet\IEC104_dotnet\obj\Debug\IEC104_dotnet.csprojResolveAssemblyReference.cache
+E:\PROJECT ANH NHAN\IEC60870_5_104_dotnet\VinhPhuc092017_NOJA\IEC104_Dotnet\IEC104_dotnet\obj\Debug\IEC104_dotnet.Form1.resources
+E:\PROJECT ANH NHAN\IEC60870_5_104_dotnet\VinhPhuc092017_NOJA\IEC104_Dotnet\IEC104_dotnet\obj\Debug\IEC104_dotnet.Properties.Resources.resources
+E:\PROJECT ANH NHAN\IEC60870_5_104_dotnet\VinhPhuc092017_NOJA\IEC104_Dotnet\IEC104_dotnet\obj\Debug\IEC104_dotnet.csproj.GenerateResource.Cache
+E:\PROJECT ANH NHAN\IEC60870_5_104_dotnet\104VP_05_10\IEC104_Dotnet\IEC104_dotnet\bin\Debug\IEC104_dotnet.exe.config
+E:\PROJECT ANH NHAN\IEC60870_5_104_dotnet\104VP_05_10\IEC104_Dotnet\IEC104_dotnet\obj\Debug\IEC104_dotnet.exe
+E:\PROJECT ANH NHAN\IEC60870_5_104_dotnet\104VP_05_10\IEC104_Dotnet\IEC104_dotnet\obj\Debug\IEC104_dotnet.pdb
+E:\PROJECT ANH NHAN\IEC60870_5_104_dotnet\104VP_05_10\IEC104_Dotnet\IEC104_dotnet\bin\Debug\IEC104_dotnet.exe
+E:\PROJECT ANH NHAN\IEC60870_5_104_dotnet\104VP_05_10\IEC104_Dotnet\IEC104_dotnet\bin\Debug\IEC104_dotnet.pdb
+E:\PROJECT ANH NHAN\IEC60870_5_104_dotnet\104VP_05_10\IEC104_Dotnet\IEC104_dotnet\obj\Debug\IEC104_dotnet.csprojResolveAssemblyReference.cache
+E:\PROJECT ANH NHAN\IEC60870_5_104_dotnet\104VP_05_10\IEC104_Dotnet\IEC104_dotnet\obj\Debug\IEC104_dotnet.Form1.resources
+E:\PROJECT ANH NHAN\IEC60870_5_104_dotnet\104VP_05_10\IEC104_Dotnet\IEC104_dotnet\obj\Debug\IEC104_dotnet.Properties.Resources.resources
+E:\PROJECT ANH NHAN\IEC60870_5_104_dotnet\104VP_05_10\IEC104_Dotnet\IEC104_dotnet\obj\Debug\IEC104_dotnet.csproj.GenerateResource.Cache
+D:\IEC104_VP_testNOJA_fixed_refuse_connection_07_10\IEC104_dotnet\bin\Debug\IEC104_dotnet.exe.config
+D:\IEC104_VP_testNOJA_fixed_refuse_connection_07_10\IEC104_dotnet\obj\Debug\IEC104_dotnet.exe
+D:\IEC104_VP_testNOJA_fixed_refuse_connection_07_10\IEC104_dotnet\obj\Debug\IEC104_dotnet.pdb
+D:\IEC104_VP_testNOJA_fixed_refuse_connection_07_10\IEC104_dotnet\bin\Debug\IEC104_dotnet.exe
+D:\IEC104_VP_testNOJA_fixed_refuse_connection_07_10\IEC104_dotnet\bin\Debug\IEC104_dotnet.pdb
+D:\IEC104_VP_testNOJA_fixed_refuse_connection_07_10\IEC104_dotnet\obj\Debug\IEC104_dotnet.csprojResolveAssemblyReference.cache
+D:\IEC104_VP_testNOJA_fixed_refuse_connection_07_10\IEC104_dotnet\obj\Debug\IEC104_dotnet.Form1.resources
+D:\IEC104_VP_testNOJA_fixed_refuse_connection_07_10\IEC104_dotnet\obj\Debug\IEC104_dotnet.Properties.Resources.resources
+D:\IEC104_VP_testNOJA_fixed_refuse_connection_07_10\IEC104_dotnet\obj\Debug\IEC104_dotnet.csproj.GenerateResource.Cache
