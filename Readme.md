@@ -16,7 +16,7 @@
 
 
 
-![image info](Img/image.png)
+![image info](Img/Image.png)
 
 * Container `DoubleCMD` and  `SingleCMD` chi send tung cmd mot.
 * Container `S/E DoubleCMD` and  `S/E SingleCMD`  send 1 cap cmd: cmd `select` first then cmd `execute`
