@@ -25,3 +25,11 @@ D:\fromgit\IEC104_dotnet\obj\Release\IEC104_dotnet.csprojResolveAssemblyReferenc
 D:\fromgit\IEC104_dotnet\obj\Release\IEC104_dotnet.Form1.resources
 D:\fromgit\IEC104_dotnet\obj\Release\IEC104_dotnet.Properties.Resources.resources
 D:\fromgit\IEC104_dotnet\obj\Release\IEC104_dotnet.csproj.GenerateResource.Cache
+C:\Users\Administrator\Downloads\IEC104-br_10r-main\IEC104-br_10r-main\IEC104_dotnet\bin\Release\IEC104_dotnet.exe.config
+C:\Users\Administrator\Downloads\IEC104-br_10r-main\IEC104-br_10r-main\IEC104_dotnet\obj\Release\IEC104_dotnet.exe
+C:\Users\Administrator\Downloads\IEC104-br_10r-main\IEC104-br_10r-main\IEC104_dotnet\obj\Release\IEC104_dotnet.pdb
+C:\Users\Administrator\Downloads\IEC104-br_10r-main\IEC104-br_10r-main\IEC104_dotnet\bin\Release\IEC104_dotnet.exe
+C:\Users\Administrator\Downloads\IEC104-br_10r-main\IEC104-br_10r-main\IEC104_dotnet\bin\Release\IEC104_dotnet.pdb
+C:\Users\Administrator\Downloads\IEC104-br_10r-main\IEC104-br_10r-main\IEC104_dotnet\obj\Release\IEC104_dotnet.Form1.resources
+C:\Users\Administrator\Downloads\IEC104-br_10r-main\IEC104-br_10r-main\IEC104_dotnet\obj\Release\IEC104_dotnet.Properties.Resources.resources
+C:\Users\Administrator\Downloads\IEC104-br_10r-main\IEC104-br_10r-main\IEC104_dotnet\obj\Release\IEC104_dotnet.csproj.GenerateResource.Cache
