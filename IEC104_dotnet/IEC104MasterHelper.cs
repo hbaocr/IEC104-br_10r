@@ -171,6 +171,12 @@ namespace IEC104_dotnet
         private int sequenceLength = 0; //number of IOA in recv buff
         private IEC104_ASDU_Para.COT_Id causeOfTransmission;
 
+        //Counter interrogation command C_CI_NA_1
+        private bool isEnableSendCICmd = false;
+
+        // read IOA cmd
+        private bool isEnableSendReadIOACmd = false;
+        private int readcmdIOA = 0;
 
         //Single CMD test
          private bool isEnableSendSingleCmdTest = false;
@@ -413,6 +419,55 @@ namespace IEC104_dotnet
         }
 
         /*=====================Request interrogation========================== */
+        //102: C_RD_NA_1
+        public int sendReadIOACommand(int ioa)
+        {
+            byte[] buff = new byte[300];
+            // this cmd only accept COT = REQUEST (page 280 Practical modem scada protocol DNP3)
+            IEC104_ASDU_Para.CauseOfTransmission cot = new IEC104_ASDU_Para.CauseOfTransmission(remoteSetting, false, false, IEC104_ASDU_Para.COT_Id.REQUEST, 0);
+
+            IEC104_ASDU_Para.C_RD_NA_1_ReadIOACmd IOcmd = new IEC104_ASDU_Para.C_RD_NA_1_ReadIOACmd(remoteSetting, ioa);
+            var asdu = new IEC104_ASDU(remoteSetting, IEC104_ASDU_Para.IOA_TypeID.C_RD_NA_1, cot, remoteCommonAddress, (IEC104_ASDU_Para.InformationObjBase)IOcmd);
+
+            int master_tx_num = receiveSeqNum % (32768);
+            int master_rx_num = (sendSeqNum + 1) % (32768);
+            var apdu = new IEC104_APDU(remoteSetting, master_tx_num, master_rx_num, IEC104_APDU.ApciType.I_FORMAT, asdu);
+            int len = apdu.byte_encode(buff);
+            string s = MyUltil.byteArrayToHexString(buff, len);
+            onCommunicationLog(this, true, "Send C_RD_NA_1 readIOA("+ioa +") cmd : " + s);
+            apciType_req = IEC104_ASDU_Para.ApciType.I_FORMAT;
+            tout_gi = remoteSetting.gi_retry_time;
+            return tcpSendBuff(buff, len);
+        }
+
+
+
+        public int sendGeneralCounterInterrogation()
+        {
+            IEC104_ASDU_Para.QCC_QualifierOfCounterInterrogationElement.FRZ_code frz = IEC104_ASDU_Para.QCC_QualifierOfCounterInterrogationElement.FRZ_code.Read_Without_Freeze_Or_Reset;
+            IEC104_ASDU_Para.QCC_QualifierOfCounterInterrogationElement.RQT_code rqt = IEC104_ASDU_Para.QCC_QualifierOfCounterInterrogationElement.RQT_code.GLOBAL_COUNTER_INTERROGATION;
+            byte[] buff = new byte[300];
+            int ioa = 0;// only accept IOA=0 page 268 practical modem scada protocol dnp3
+            IEC104_ASDU_Para.CauseOfTransmission cot = new IEC104_ASDU_Para.CauseOfTransmission(remoteSetting, false, false, IEC104_ASDU_Para.COT_Id.ACTIVATION, 0);
+            IEC104_ASDU_Para.QCC_QualifierOfCounterInterrogationElement qcc = new IEC104_ASDU_Para.QCC_QualifierOfCounterInterrogationElement(frz, rqt);
+
+            //hbaocr
+           // IEC104_ASDU_Para.C_IC_NA_1_InterrogationCMD IOcmd = new IEC104_ASDU_Para.C_IC_NA_1_InterrogationCMD(remoteSetting, ioa,
+           //     new IEC104_ASDU_Para.QOI_QualifierOfInterrogationElement((byte)IEC104_ASDU_Para.QOI_QualifierOfInterrogationElement.QOI_VALUE.GLOBAL_STATION_INTERROGATION));
+            IEC104_ASDU_Para.C_CI_NA_1_CounterInterrogationCMD IOcmd = new IEC104_ASDU_Para.C_CI_NA_1_CounterInterrogationCMD(remoteSetting, ioa, qcc);
+            var asdu = new IEC104_ASDU(remoteSetting, IEC104_ASDU_Para.IOA_TypeID.C_IC_NA_1, cot, remoteCommonAddress, (IEC104_ASDU_Para.InformationObjBase)IOcmd);
+
+            int master_tx_num = receiveSeqNum % (32768);
+            int master_rx_num = (sendSeqNum + 1) % (32768);
+            var apdu = new IEC104_APDU(remoteSetting, master_tx_num, master_rx_num, IEC104_APDU.ApciType.I_FORMAT, asdu);
+            int len = apdu.byte_encode(buff);
+            string s = MyUltil.byteArrayToHexString(buff, len);
+            onCommunicationLog(this, true, "Send counter Iterrogation frame : " + s);
+            apciType_req = IEC104_ASDU_Para.ApciType.I_FORMAT;
+            tout_gi = remoteSetting.gi_retry_time;
+            return tcpSendBuff(buff, len);
+        }
+
 
         public int sendInterrogation()
         {
@@ -520,8 +575,18 @@ namespace IEC104_dotnet
             return tcpSendBuff(buff, len);
         }
 
+        public int counterInterrogationCMD() {
+            isEnableSendCICmd = true;
+            
+           
+            return 1;
+        }
 
-
+        public int readIOA(int ioa) {
+            isEnableSendReadIOACmd = true;
+            readcmdIOA = ioa;
+            return 1;
+        }
         public int singleCMDTest(int ioa,bool is_exe ,int on_off, int timeout_sec = 2)
         {
             //doi voi NOJA : dia chi dong mo la ioa=2001
@@ -912,8 +977,18 @@ namespace IEC104_dotnet
 
                 if (ret > 0)
                 {
+                    if (isEnableSendCICmd) {
+                        onCommunicationLog(this, true, "Send Read C_CI_NA_1 cmd ");
+                        sendGeneralCounterInterrogation();
+                        isEnableSendCICmd = false;
+                    }
 
-
+                    if (isEnableSendReadIOACmd) {
+                        onCommunicationLog(this, true, "Send Read IOA cmd C_RD_NA_1 "+readcmdIOA);
+                        sendReadIOACommand(readcmdIOA);
+                        
+                        isEnableSendReadIOACmd = false;
+                    }
 
                     if (isEnableSendSingleCmdTest) {
                         if (isSingleCMDExe)

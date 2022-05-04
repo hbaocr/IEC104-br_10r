@@ -149,6 +149,18 @@ namespace IEC104_dotnet
             app2.singleCMDTest(ioa, true, val, 5);
         }
 
+        private void btnReadIOA_Click(object sender, EventArgs e)
+        {
+            int ioa = int.Parse(txtIOARead.Text);
+            app2.readIOA(ioa);
+
+        }
+
+        private void btnCI_Click(object sender, EventArgs e)
+        {
+            app2.counterInterrogationCMD();
+        }
+
        
    
     }

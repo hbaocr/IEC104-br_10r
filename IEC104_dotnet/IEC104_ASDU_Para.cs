@@ -702,7 +702,7 @@ namespace IEC104_dotnet
             public QCC_QualifierOfCounterInterrogationElement(byte value)
             {
                 QCC_val = value;
-                frz = (FRZ_code)((value >> 6) & 0xFC);
+                frz = (FRZ_code)((value >> 6) & 0x03);
                 rqt = (RQT_code)(value & 0x3F);
             }
             public QCC_QualifierOfCounterInterrogationElement(FRZ_code frz, RQT_code rqt)
@@ -1403,6 +1403,84 @@ namespace IEC104_dotnet
             public virtual int getBytesLen() { return -1; }
 
         }
+
+        public class C_RD_NA_1_ReadIOACmd : InformationObjBase
+        {
+
+            public C_RD_NA_1_ReadIOACmd(IEC104_Setting set, int ioa)
+                : base(set, ioa)
+            {
+             // do nothing
+            }
+            public override int getBytesLen()
+            {
+                return setting.ioa_size + 1;
+            }
+            public override int byte_encode(byte[] buff, int pos)
+            {
+                //int len = 0;
+                switch (setting.ioa_size)
+                {
+                    case 1:
+                        buff[pos++] = (byte)(ioa & 0xFF);
+                        break;
+                    case 2:
+                        buff[pos++] = (byte)(ioa & 0xFF);
+                        buff[pos++] = (byte)((ioa >> 8) & 0xFF);
+                        break;
+                    case 3:
+                        buff[pos++] = (byte)(ioa & 0xFF);
+                        buff[pos++] = (byte)((ioa >> 8) & 0xFF);
+                        buff[pos++] = (byte)((ioa >> 16) & 0xFF);
+                        break;
+                    default:
+                        break;
+                }
+                return (setting.ioa_size);
+            }
+        }
+
+        public class C_CI_NA_1_CounterInterrogationCMD : InformationObjBase
+        {
+            //QOI_QualifierOfInterrogationElement QOI;
+            QCC_QualifierOfCounterInterrogationElement QCC;
+            public C_CI_NA_1_CounterInterrogationCMD(IEC104_Setting set, int ioa, QCC_QualifierOfCounterInterrogationElement QCC)
+                : base(set, ioa)
+            {
+                this.QCC = QCC;
+            }
+            public override int getBytesLen()
+            {
+                return setting.ioa_size + 1;
+            }
+            public override int byte_encode(byte[] buff, int pos)
+            {
+                int len = 0;
+                switch (setting.ioa_size)
+                {
+                    case 1:
+                        buff[pos++] = (byte)(ioa & 0xFF);
+                        break;
+                    case 2:
+                        buff[pos++] = (byte)(ioa & 0xFF);
+                        buff[pos++] = (byte)((ioa >> 8) & 0xFF);
+                        break;
+                    case 3:
+                        buff[pos++] = (byte)(ioa & 0xFF);
+                        buff[pos++] = (byte)((ioa >> 8) & 0xFF);
+                        buff[pos++] = (byte)((ioa >> 16) & 0xFF);
+                        break;
+                    default:
+                        break;
+                }
+                //len = QOI.byte_encode(buff, pos);
+                len = QCC.byte_encode(buff, pos);
+                return (setting.ioa_size + len);
+            }
+        }
+
+
+
 
         public class C_IC_NA_1_InterrogationCMD : InformationObjBase
         {
