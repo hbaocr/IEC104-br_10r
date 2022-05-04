@@ -16,3 +16,12 @@ D:\IEC104_VP_testNOJA_fixed_refuse_connection_07_10\IEC104_dotnet\obj\Release\IE
 D:\IEC104_VP_testNOJA_fixed_refuse_connection_07_10\IEC104_dotnet\obj\Release\IEC104_dotnet.Form1.resources
 D:\IEC104_VP_testNOJA_fixed_refuse_connection_07_10\IEC104_dotnet\obj\Release\IEC104_dotnet.Properties.Resources.resources
 D:\IEC104_VP_testNOJA_fixed_refuse_connection_07_10\IEC104_dotnet\obj\Release\IEC104_dotnet.csproj.GenerateResource.Cache
+D:\fromgit\IEC104_dotnet\bin\Release\IEC104_dotnet.exe.config
+D:\fromgit\IEC104_dotnet\obj\Release\IEC104_dotnet.exe
+D:\fromgit\IEC104_dotnet\obj\Release\IEC104_dotnet.pdb
+D:\fromgit\IEC104_dotnet\bin\Release\IEC104_dotnet.exe
+D:\fromgit\IEC104_dotnet\bin\Release\IEC104_dotnet.pdb
+D:\fromgit\IEC104_dotnet\obj\Release\IEC104_dotnet.csprojResolveAssemblyReference.cache
+D:\fromgit\IEC104_dotnet\obj\Release\IEC104_dotnet.Form1.resources
+D:\fromgit\IEC104_dotnet\obj\Release\IEC104_dotnet.Properties.Resources.resources
+D:\fromgit\IEC104_dotnet\obj\Release\IEC104_dotnet.csproj.GenerateResource.Cache

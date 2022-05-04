@@ -42,3 +42,6 @@ D:\IEC104_VP_testNOJA_fixed_refuse_connection_07_10\IEC104_dotnet\obj\Debug\IEC1
 D:\IEC104_VP_testNOJA_fixed_refuse_connection_07_10\IEC104_dotnet\obj\Debug\IEC104_dotnet.Form1.resources
 D:\IEC104_VP_testNOJA_fixed_refuse_connection_07_10\IEC104_dotnet\obj\Debug\IEC104_dotnet.Properties.Resources.resources
 D:\IEC104_VP_testNOJA_fixed_refuse_connection_07_10\IEC104_dotnet\obj\Debug\IEC104_dotnet.csproj.GenerateResource.Cache
+D:\fromgit\IEC104_dotnet\bin\Debug\IEC104_dotnet.exe.config
+D:\fromgit\IEC104_dotnet\obj\Debug\IEC104_dotnet.exe
+D:\fromgit\IEC104_dotnet\obj\Debug\IEC104_dotnet.pdb

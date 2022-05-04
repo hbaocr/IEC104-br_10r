@@ -170,6 +170,9 @@ namespace IEC104_dotnet
         private bool IsSequenceOfElements = false;
         private int sequenceLength = 0; //number of IOA in recv buff
         private IEC104_ASDU_Para.COT_Id causeOfTransmission;
+        
+        //C_RP_NA_1 : reset process command
+        private bool isEnableSendResetProcessCMD = false;
 
         //Counter interrogation command C_CI_NA_1
         private bool isEnableSendCICmd = false;
@@ -469,6 +472,52 @@ namespace IEC104_dotnet
         }
 
 
+        /*9.1.1 Station initialization General procedure : page 287 Practical modem Scada protocol
+                Station initialization is required when a station is first powered up, or after a reset. Its purpose is to ensure the orderly commencement of monitoring and control operations. The procedure followed is basically to reset the link layer first, re-establish link commun- ications, and then commence application level services. When the initialization process of a controlled station is completed, it will send an end of initialization ASDU to the controlling station so that control and monitoring functions can begin. The procedure involves both application and link level functions.
+                Initialization of controlling station:
+                        • Link layer establishes links with controlled stations
+                        • Controlling station sends C_EI (end of initialization) ASDU to the active
+                        controlled stations to tell them that they may commence sending process
+                        information
+                        • Controlled stations may commence sending process data if available
+                        • Controlling station performs a general interrogation
+                        • Controlling station may perform clock synchronization
+                Initialization of controlled station:
+                        • Link layer establishes communication with controlling station
+                        • Once the application layer is ready, controlled station may send a M_EI (end
+                        of initialization) ASDU to the controlling station
+                        • The controlled station now responds to general interrogation or other
+                        commands from the controlling station
+               
+         * Controlling Station Functions
+                Reset remote station request
+         
+         
+         */
+        ////105: C_SC_NA_1 reset process command
+        public int sendResetProcessCMD()
+        {
+            byte[] buff = new byte[300];
+            int ioa = 0;
+            IEC104_ASDU_Para.CauseOfTransmission cot = new IEC104_ASDU_Para.CauseOfTransmission(remoteSetting, false, false, IEC104_ASDU_Para.COT_Id.ACTIVATION, 0);
+            IEC104_ASDU_Para.QRP_QualifierOfResetProcessElement qrp = new IEC104_ASDU_Para.QRP_QualifierOfResetProcessElement((byte)IEC104_ASDU_Para.QRP_QualifierOfResetProcessElement.QRP_VALUE.GENERAL_RESET_OF_PROCESS);
+            IEC104_ASDU_Para.C_RP_NA_1_ResetCMD IOcmd = new IEC104_ASDU_Para.C_RP_NA_1_ResetCMD(remoteSetting, ioa, qrp);
+           
+            var asdu = new IEC104_ASDU(remoteSetting, IEC104_ASDU_Para.IOA_TypeID.C_RP_NA_1, cot, remoteCommonAddress, (IEC104_ASDU_Para.InformationObjBase)IOcmd);
+
+            int master_tx_num = receiveSeqNum % (32768);
+            int master_rx_num = (sendSeqNum + 1) % (32768);
+            var apdu = new IEC104_APDU(remoteSetting, master_tx_num, master_rx_num, IEC104_APDU.ApciType.I_FORMAT, asdu);
+            int len = apdu.byte_encode(buff);
+            string s = MyUltil.byteArrayToHexString(buff, len);
+            onCommunicationLog(this, true, "Send Reset C_RP frame : " + s);
+            apciType_req = IEC104_ASDU_Para.ApciType.I_FORMAT;
+            tout_gi = remoteSetting.gi_retry_time;
+            return tcpSendBuff(buff, len);
+        }
+
+
+
         public int sendInterrogation()
         {
             byte[] buff = new byte[300];
@@ -577,8 +626,12 @@ namespace IEC104_dotnet
 
         public int counterInterrogationCMD() {
             isEnableSendCICmd = true;
-            
-           
+            return 1;
+        }
+
+        public int resetProcessCMD()
+        {
+            isEnableSendResetProcessCMD = true;
             return 1;
         }
 
@@ -977,6 +1030,12 @@ namespace IEC104_dotnet
 
                 if (ret > 0)
                 {
+                    if (isEnableSendResetProcessCMD) {
+                        onCommunicationLog(this, true, "Send Reset Process C_RP_NA_1 cmd ");
+                        sendResetProcessCMD();
+                        isEnableSendResetProcessCMD = false;
+                    }
+
                     if (isEnableSendCICmd) {
                         onCommunicationLog(this, true, "Send Read C_CI_NA_1 cmd ");
                         sendGeneralCounterInterrogation();
@@ -1736,7 +1795,7 @@ namespace IEC104_dotnet
                     break;
 
                 default:
-                    onCommunicationLog(this, false, "TYPE ID of IOA not support");
+                    onCommunicationLog(this, false, "-------> TYPE ID of IOA (" + ioa_type_id.ToString() + " ) not support");
                     //MyUltil.pushlog("Current IOA do not support ioa_tid yet : " + ioa_type_id);
                     break;
 

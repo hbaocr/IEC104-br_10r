@@ -644,6 +644,28 @@ namespace IEC104_dotnet
         }
 
         /*Qualifier information Elements*/
+
+        public class QRP_QualifierOfResetProcessElement
+        {
+            public enum QRP_VALUE
+            {
+                NOT_USE = 0,
+                GENERAL_RESET_OF_PROCESS = 1,
+                CLEAR_TIME_TAGGED_INFO_FROM_EVENT_BUFF = 2
+            };
+            public byte qrp = 0;
+            public QRP_QualifierOfResetProcessElement(byte qrp_)
+            {
+                qrp = qrp_;
+            }
+            public int byte_encode(byte[] buff, int pos)
+            {
+                buff[pos] = qrp;
+                return 1;
+            }
+        }
+    
+        
         public class QOI_QualifierOfInterrogationElement
         {
             public enum QOI_VALUE
@@ -678,6 +700,7 @@ namespace IEC104_dotnet
                 return 1;
             }
         }
+
         public class QCC_QualifierOfCounterInterrogationElement
         {
             public enum RQT_code
@@ -1480,7 +1503,47 @@ namespace IEC104_dotnet
         }
 
 
+        //========================
 
+        public class C_RP_NA_1_ResetCMD : InformationObjBase
+        {
+            QRP_QualifierOfResetProcessElement QRP;
+            public C_RP_NA_1_ResetCMD(IEC104_Setting set, int ioa, QRP_QualifierOfResetProcessElement QRP)
+                : base(set, ioa)
+            {
+                this.QRP = QRP;
+            }
+            public override int getBytesLen()
+            {
+                return setting.ioa_size + 1;
+            }
+            public override int byte_encode(byte[] buff, int pos)
+            {
+                int len = 0;
+                switch (setting.ioa_size)
+                {
+                    case 1:
+                        buff[pos++] = (byte)(ioa & 0xFF);
+                        break;
+                    case 2:
+                        buff[pos++] = (byte)(ioa & 0xFF);
+                        buff[pos++] = (byte)((ioa >> 8) & 0xFF);
+                        break;
+                    case 3:
+                        buff[pos++] = (byte)(ioa & 0xFF);
+                        buff[pos++] = (byte)((ioa >> 8) & 0xFF);
+                        buff[pos++] = (byte)((ioa >> 16) & 0xFF);
+                        break;
+                    default:
+                        break;
+                }
+                len = QRP.byte_encode(buff, pos);
+                return (setting.ioa_size + len);
+            }
+        }
+
+
+        //========================
 
         public class C_IC_NA_1_InterrogationCMD : InformationObjBase
         {

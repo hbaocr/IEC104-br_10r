@@ -161,6 +161,11 @@ namespace IEC104_dotnet
             app2.counterInterrogationCMD();
         }
 
+        private void btnResetProcess_Click(object sender, EventArgs e)
+        {
+            app2.resetProcessCMD();
+        }
+
        
    
     }

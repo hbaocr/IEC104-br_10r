@@ -69,12 +69,15 @@
             this.btnReadIOA = new System.Windows.Forms.Button();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.btnCI = new System.Windows.Forms.Button();
+            this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.btnResetProcess = new System.Windows.Forms.Button();
             this.DoubleCMD.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox5.SuspendLayout();
+            this.groupBox6.SuspendLayout();
             this.SuspendLayout();
             // 
             // txtReceive
@@ -422,7 +425,7 @@
             this.groupBox4.Controls.Add(this.btnReadIOA);
             this.groupBox4.Location = new System.Drawing.Point(751, 13);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(196, 41);
+            this.groupBox4.Size = new System.Drawing.Size(238, 41);
             this.groupBox4.TabIndex = 25;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "ReadCommand";
@@ -459,10 +462,10 @@
             this.groupBox5.Controls.Add(this.btnCI);
             this.groupBox5.Location = new System.Drawing.Point(751, 60);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(196, 41);
+            this.groupBox5.Size = new System.Drawing.Size(127, 41);
             this.groupBox5.TabIndex = 26;
             this.groupBox5.TabStop = false;
-            this.groupBox5.Text = "CounterInterrogationCMD";
+            this.groupBox5.Text = "CounterInterrogation";
             // 
             // btnCI
             // 
@@ -474,11 +477,32 @@
             this.btnCI.UseVisualStyleBackColor = true;
             this.btnCI.Click += new System.EventHandler(this.btnCI_Click);
             // 
+            // groupBox6
+            // 
+            this.groupBox6.Controls.Add(this.btnResetProcess);
+            this.groupBox6.Location = new System.Drawing.Point(894, 60);
+            this.groupBox6.Name = "groupBox6";
+            this.groupBox6.Size = new System.Drawing.Size(95, 41);
+            this.groupBox6.TabIndex = 27;
+            this.groupBox6.TabStop = false;
+            this.groupBox6.Text = "ResetProcess";
+            // 
+            // btnResetProcess
+            // 
+            this.btnResetProcess.Location = new System.Drawing.Point(6, 14);
+            this.btnResetProcess.Name = "btnResetProcess";
+            this.btnResetProcess.Size = new System.Drawing.Size(78, 22);
+            this.btnResetProcess.TabIndex = 22;
+            this.btnResetProcess.Text = "ResetProcess";
+            this.btnResetProcess.UseVisualStyleBackColor = true;
+            this.btnResetProcess.Click += new System.EventHandler(this.btnResetProcess_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1033, 619);
+            this.Controls.Add(this.groupBox6);
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
@@ -510,6 +534,7 @@
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
             this.groupBox5.ResumeLayout(false);
+            this.groupBox6.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -558,6 +583,8 @@
         private System.Windows.Forms.Button btnReadIOA;
         private System.Windows.Forms.GroupBox groupBox5;
         private System.Windows.Forms.Button btnCI;
+        private System.Windows.Forms.GroupBox groupBox6;
+        private System.Windows.Forms.Button btnResetProcess;
     }
 }
 
