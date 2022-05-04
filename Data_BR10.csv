@@ -1,0 +1,36 @@
+"IOA= 0100      TypeID= 01      COT= 0020      VALUE= 1      ",AC Power
+IOA= 0101      TypeID= 01      COT= 0020      VALUE= 0,System status
+IOA= 0105      TypeID= 01      COT= 0020      VALUE= 0,A phase fault
+IOA= 0106      TypeID= 01      COT= 0020      VALUE= 0,B phase fault
+IOA= 0107      TypeID= 01      COT= 0020      VALUE= 0,C phase fault
+IOA= 0108      TypeID= 01      COT= 0020      VALUE= 0,G fault
+IOA= 0109      TypeID= 01      COT= 0020      VALUE= 0,Alternative trip
+IOA= 0114      TypeID= 01      COT= 0020      VALUE= 0,Ground Protection
+IOA= 0115      TypeID= 01      COT= 0020      VALUE= 0,Auto reclosing
+IOA= 0116      TypeID= 01      COT= 0020      VALUE= 0,Hot line tag
+IOA= 0120      TypeID= 01      COT= 0020      VALUE= 0,Battery status
+IOA= 0121      TypeID= 01      COT= 0020      VALUE= 0,Charge status
+IOA= 0157      TypeID= 01      COT= 0020      VALUE= 1,Actiavtion status of setting group 1
+IOA= 0158      TypeID= 01      COT= 0020      VALUE= 0,Actiavtion status of setting group 2
+IOA= 0159      TypeID= 01      COT= 0020      VALUE= 0,Actiavtion status of setting group 3
+IOA= 0160      TypeID= 01      COT= 0020      VALUE= 0,Actiavtion status of setting group 4
+IOA= 0200      TypeID= 03      COT= 0020      VALUE= 1,"Open/Close (1=OPEN, 2 CLOSE)"
+IOA= 0201      TypeID= 03      COT= 0020      VALUE= 2,"Remote/Local ( 1=LOCAL, 2 REMOTE)"
+IOA= 0700      TypeID= 13      COT= 0001      VALUE= 0,IA
+IOA= 0701      TypeID= 13      COT= 0001      VALUE= 0,IB
+IOA= 0702      TypeID= 13      COT= 0001      VALUE= 0,IC
+IOA= 0703      TypeID= 13      COT= 0001      VALUE= 0,IN
+IOA= 0707      TypeID= 13      COT= 0020      VALUE= 0,Fault IA
+IOA= 0708      TypeID= 13      COT= 0020      VALUE= 0,Fault IB
+IOA= 0709      TypeID= 13      COT= 0020      VALUE= 0,Fault IC
+IOA= 0710      TypeID= 13      COT= 0020      VALUE= 0,Fault IN
+IOA= 0714      TypeID= 13      COT= 0001      VALUE= 0,VA
+IOA= 0720      TypeID= 13      COT= 0001      VALUE= 633,VAB
+IOA= 0721      TypeID= 13      COT= 0001      VALUE= 675,VBC
+IOA= 0722      TypeID= 13      COT= 0001      VALUE= 905,VCA
+IOA= 0742      TypeID= 13      COT= 0001      VALUE= 0,Three phase KVA
+IOA= 0746      TypeID= 13      COT= 0001      VALUE= 0,Three phase KW
+IOA= 0750      TypeID= 13      COT= 0001      VALUE= 0,Three phase KVAR
+IOA= 0777      TypeID= 13      COT= 0001      VALUE= 27.4,Charger voltage
+IOA= 0778      TypeID= 13      COT= 0001      VALUE= 27.3,Battery voltage
+IOA= 0780      TypeID= 13      COT= 0001      VALUE= 57.2,Internal Temperature
