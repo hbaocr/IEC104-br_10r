@@ -111,6 +111,12 @@ namespace IEC104_dotnet
                 }
             );
 
+            /*
+             * set backgrounf thread to let this thread be stop if main was stop.
+             * backgound thread is less priority then foreground thread.
+            */
+            workerThread.IsBackground = true;
+
             // start worker
             workerThread.Start();
             pauseWorkerThread();
