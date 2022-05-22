@@ -1,0 +1,579 @@
+22/05/22 23:12:36 : --->RX-v2 : 68 04 83 00 00 00
+22/05/22 23:12:37 : <---TX-v2 :Supervisory frame :  68 04 01 00 94 04
+22/05/22 23:12:45 : <---TX-v2 :Supervisory frame :  68 04 01 00 94 04
+22/05/22 23:12:45 : <---TX-v2 :Test activation Frame :  68 04 43 00 00 00
+22/05/22 23:12:46 : --->RX-v2 :New Incoming data,  Send_SEQ=585 ,  receive_SEQ=90
+22/05/22 23:12:46 : --->RX-v2 : 68 04 83 00 00 00
+22/05/22 23:12:54 : <---TX-v2 :Supervisory frame :  68 04 01 00 94 04
+22/05/22 23:12:56 : <---TX-v2 :Test activation Frame :  68 04 43 00 00 00
+22/05/22 23:12:57 : --->RX-v2 :New Incoming data,  Send_SEQ=585 ,  receive_SEQ=90
+22/05/22 23:12:57 : --->RX-v2 : 68 04 83 00 00 00
+22/05/22 23:13:02 : <---TX-v2 :Supervisory frame :  68 04 01 00 94 04
+22/05/22 23:13:06 : <---TX-v2 :Test activation Frame :  68 04 43 00 00 00
+22/05/22 23:13:07 : --->RX-v2 :New Incoming data,  Send_SEQ=585 ,  receive_SEQ=90
+22/05/22 23:13:07 : --->RX-v2 : 68 04 83 00 00 00
+22/05/22 23:13:10 : <---TX-v2 :Supervisory frame :  68 04 01 00 94 04
+22/05/22 23:13:17 : <---TX-v2 :Test activation Frame :  68 04 43 00 00 00
+22/05/22 23:13:18 : --->RX-v2 :New Incoming data,  Send_SEQ=585 ,  receive_SEQ=90
+22/05/22 23:13:18 : --->RX-v2 : 68 04 83 00 00 00
+22/05/22 23:13:19 : <---TX-v2 :Supervisory frame :  68 04 01 00 94 04
+22/05/22 23:13:22 : <---TX-v2 :Send Iterrogation frame :  68 0e b4 00 94 04 64 01 06 00 13 20 00 00 00 14
+22/05/22 23:13:27 : <---TX-v2 :Supervisory frame :  68 04 01 00 94 04
+22/05/22 23:13:27 : <---TX-v2 :Test activation Frame :  68 04 43 00 00 00
+22/05/22 23:13:28 : --->RX-v2 :New Incoming data,  Send_SEQ=585 ,  receive_SEQ=90
+22/05/22 23:13:28 : --->RX-v2 : 68 04 83 00 00 00
+22/05/22 23:13:36 : <---TX-v2 :Supervisory frame :  68 04 01 00 94 04
+22/05/22 23:13:38 : <---TX-v2 :Test activation Frame :  68 04 43 00 00 00
+22/05/22 23:13:39 : --->RX-v2 :New Incoming data,  Send_SEQ=585 ,  receive_SEQ=90
+22/05/22 23:13:39 : --->RX-v2 : 68 04 83 00 00 00
+22/05/22 23:13:44 : <---TX-v2 :Supervisory frame :  68 04 01 00 94 04
+22/05/22 23:13:48 : <---TX-v2 :Test activation Frame :  68 04 43 00 00 00
+22/05/22 23:13:49 : --->RX-v2 :New Incoming data,  Send_SEQ=585 ,  receive_SEQ=90
+22/05/22 23:13:49 : --->RX-v2 : 68 04 83 00 00 00
+22/05/22 23:13:52 : <---TX-v2 :Supervisory frame :  68 04 01 00 94 04
+22/05/22 23:13:58 : <---TX-v2 :Test activation Frame :  68 04 43 00 00 00
+22/05/22 23:14:00 : --->RX-v2 :New Incoming data,  Send_SEQ=585 ,  receive_SEQ=90
+22/05/22 23:14:00 : --->RX-v2 : 68 04 83 00 00 00
+22/05/22 23:14:01 : <---TX-v2 :Supervisory frame :  68 04 01 00 94 04
+22/05/22 23:14:09 : <---TX-v2 :Supervisory frame :  68 04 01 00 94 04
+22/05/22 23:14:09 : <---TX-v2 :Test activation Frame :  68 04 43 00 00 00
+22/05/22 23:14:09 : <---TX-v2 :Send Iterrogation frame :  68 0e b4 00 94 04 64 01 06 00 13 20 00 00 00 14
+22/05/22 23:14:10 : --->RX-v2 :New Incoming data,  Send_SEQ=585 ,  receive_SEQ=90
+22/05/22 23:14:10 : --->RX-v2 : 68 04 83 00 00 00
+22/05/22 23:14:17 : <---TX-v2 :Supervisory frame :  68 04 01 00 94 04
+22/05/22 23:14:20 : <---TX-v2 :Test activation Frame :  68 04 43 00 00 00
+22/05/22 23:14:21 : --->RX-v2 :New Incoming data,  Send_SEQ=585 ,  receive_SEQ=90
+22/05/22 23:14:21 : --->RX-v2 : 68 04 83 00 00 00
+22/05/22 23:14:26 : <---TX-v2 :Supervisory frame :  68 04 01 00 94 04
+22/05/22 23:14:30 : <---TX-v2 :Test activation Frame :  68 04 43 00 00 00
+22/05/22 23:14:31 : --->RX-v2 :New Incoming data,  Send_SEQ=585 ,  receive_SEQ=90
+22/05/22 23:14:31 : --->RX-v2 : 68 04 83 00 00 00
+22/05/22 23:14:34 : <---TX-v2 :Supervisory frame :  68 04 01 00 94 04
+22/05/22 23:14:40 : <---TX-v2 :Test activation Frame :  68 04 43 00 00 00
+22/05/22 23:14:42 : --->RX-v2 :New Incoming data,  Send_SEQ=585 ,  receive_SEQ=90
+22/05/22 23:14:42 : --->RX-v2 : 68 04 83 00 00 00
+22/05/22 23:14:43 : <---TX-v2 :Supervisory frame :  68 04 01 00 94 04
+22/05/22 23:14:51 : <---TX-v2 :Supervisory frame :  68 04 01 00 94 04
+22/05/22 23:14:51 : <---TX-v2 :Test activation Frame :  68 04 43 00 00 00
+22/05/22 23:14:52 : --->RX-v2 :New Incoming data,  Send_SEQ=585 ,  receive_SEQ=90
+22/05/22 23:14:52 : --->RX-v2 : 68 04 83 00 00 00
+22/05/22 23:14:56 : <---TX-v2 :Send Iterrogation frame :  68 0e b4 00 94 04 64 01 06 00 13 20 00 00 00 14
+22/05/22 23:14:59 : <---TX-v2 :Supervisory frame :  68 04 01 00 94 04
+22/05/22 23:15:01 : <---TX-v2 :Test activation Frame :  68 04 43 00 00 00
+22/05/22 23:15:03 : --->RX-v2 :New Incoming data,  Send_SEQ=585 ,  receive_SEQ=90
+22/05/22 23:15:03 : --->RX-v2 : 68 04 83 00 00 00
+22/05/22 23:15:08 : <---TX-v2 :Supervisory frame :  68 04 01 00 94 04
+22/05/22 23:15:12 : <---TX-v2 :Test activation Frame :  68 04 43 00 00 00
+22/05/22 23:15:13 : --->RX-v2 :New Incoming data,  Send_SEQ=585 ,  receive_SEQ=90
+22/05/22 23:15:13 : --->RX-v2 : 68 04 83 00 00 00
+22/05/22 23:15:16 : <---TX-v2 :Supervisory frame :  68 04 01 00 94 04
+22/05/22 23:15:22 : <---TX-v2 :Test activation Frame :  68 04 43 00 00 00
+22/05/22 23:15:24 : --->RX-v2 :New Incoming data,  Send_SEQ=585 ,  receive_SEQ=90
+22/05/22 23:15:24 : --->RX-v2 : 68 04 83 00 00 00
+22/05/22 23:15:25 : <---TX-v2 :Supervisory frame :  68 04 01 00 94 04
+22/05/22 23:15:33 : <---TX-v2 :Supervisory frame :  68 04 01 00 94 04
+22/05/22 23:15:34 : <---TX-v2 :Test activation Frame :  68 04 43 00 00 00
+22/05/22 23:15:35 : --->RX-v2 :New Incoming data,  Send_SEQ=585 ,  receive_SEQ=90
+22/05/22 23:15:35 : --->RX-v2 : 68 04 83 00 00 00
+22/05/22 23:15:42 : <---TX-v2 :Supervisory frame :  68 04 01 00 94 04
+22/05/22 23:15:44 : <---TX-v2 :Test activation Frame :  68 04 43 00 00 00
+22/05/22 23:15:44 : <---TX-v2 :Send Iterrogation frame :  68 0e b4 00 94 04 64 01 06 00 13 20 00 00 00 14
+22/05/22 23:15:45 : --->RX-v2 :New Incoming data,  Send_SEQ=585 ,  receive_SEQ=90
+22/05/22 23:15:45 : --->RX-v2 : 68 04 83 00 00 00
+22/05/22 23:15:50 : <---TX-v2 :Supervisory frame :  68 04 01 00 94 04
+22/05/22 23:15:54 : <---TX-v2 :Test activation Frame :  68 04 43 00 00 00
+22/05/22 23:15:56 : --->RX-v2 :New Incoming data,  Send_SEQ=585 ,  receive_SEQ=90
+22/05/22 23:15:56 : --->RX-v2 : 68 04 83 00 00 00
+22/05/22 23:15:59 : <---TX-v2 :Supervisory frame :  68 04 01 00 94 04
+22/05/22 23:16:06 : <---TX-v2 :Test activation Frame :  68 04 43 00 00 00
+22/05/22 23:16:07 : --->RX-v2 :New Incoming data,  Send_SEQ=585 ,  receive_SEQ=90
+22/05/22 23:16:07 : --->RX-v2 : 68 04 83 00 00 00
+22/05/22 23:16:08 : <---TX-v2 :Supervisory frame :  68 04 01 00 94 04
+22/05/22 23:16:16 : <---TX-v2 :Supervisory frame :  68 04 01 00 94 04
+22/05/22 23:16:16 : <---TX-v2 :Test activation Frame :  68 04 43 00 00 00
+22/05/22 23:16:17 : --->RX-v2 :New Incoming data,  Send_SEQ=585 ,  receive_SEQ=90
+22/05/22 23:16:17 : --->RX-v2 : 68 04 83 00 00 00
+22/05/22 23:16:25 : <---TX-v2 :Supervisory frame :  68 04 01 00 94 04
+22/05/22 23:16:27 : <---TX-v2 :Test activation Frame :  68 04 43 00 00 00
+22/05/22 23:16:28 : --->RX-v2 :New Incoming data,  Send_SEQ=585 ,  receive_SEQ=90
+22/05/22 23:16:28 : --->RX-v2 : 68 04 83 00 00 00
+22/05/22 23:16:32 : <---TX-v2 :Send Iterrogation frame :  68 0e b4 00 94 04 64 01 06 00 13 20 00 00 00 14
+22/05/22 23:16:33 : <---TX-v2 :Supervisory frame :  68 04 01 00 94 04
+22/05/22 23:16:34 : <---TX-v2 :Send Double CMD Exec
+22/05/22 23:16:34 : <---TX-v2 :Double CMD frame :  68 0e b4 00 94 04 2e 01 06 00 13 20 98 08 00 02
+22/05/22 23:16:37 : <---TX-v2 :Test activation Frame :  68 04 43 00 00 00
+22/05/22 23:16:38 : --->RX-v2 :New Incoming data,  Send_SEQ=585 ,  receive_SEQ=90
+22/05/22 23:16:38 : --->RX-v2 : 68 04 83 00 00 00
+22/05/22 23:16:41 : <---TX-v2 :Supervisory frame :  68 04 01 00 94 04
+22/05/22 23:16:47 : <---TX-v2 :Test activation Frame :  68 04 43 00 00 00
+22/05/22 23:16:48 : --->RX-v2 :New Incoming data,  Send_SEQ=585 ,  receive_SEQ=90
+22/05/22 23:16:48 : --->RX-v2 : 68 04 83 00 00 00
+22/05/22 23:16:49 : <---TX-v2 :Supervisory frame :  68 04 01 00 94 04
+22/05/22 23:16:57 : <---TX-v2 :Supervisory frame :  68 04 01 00 94 04
+22/05/22 23:16:57 : <---TX-v2 :Test activation Frame :  68 04 43 00 00 00
+22/05/22 23:16:58 : --->RX-v2 :New Incoming data,  Send_SEQ=585 ,  receive_SEQ=90
+22/05/22 23:16:58 : --->RX-v2 : 68 04 83 00 00 00
+22/05/22 23:17:00 : <---TX-v2 :Send Double CMD Exec
+22/05/22 23:17:00 : <---TX-v2 :Double CMD frame :  68 0e b4 00 94 04 2e 01 06 00 13 20 98 08 00 02
+22/05/22 23:17:05 : <---TX-v2 :Supervisory frame :  68 04 01 00 94 04
+22/05/22 23:17:07 : <---TX-v2 :Test activation Frame :  68 04 43 00 00 00
+22/05/22 23:17:08 : --->RX-v2 :New Incoming data,  Send_SEQ=585 ,  receive_SEQ=90
+22/05/22 23:17:08 : --->RX-v2 : 68 04 83 00 00 00
+22/05/22 23:17:13 : <---TX-v2 :Supervisory frame :  68 04 01 00 94 04
+22/05/22 23:17:17 : <---TX-v2 :Test activation Frame :  68 04 43 00 00 00
+22/05/22 23:17:17 : <---TX-v2 :Send Iterrogation frame :  68 0e b4 00 94 04 64 01 06 00 13 20 00 00 00 14
+22/05/22 23:17:18 : --->RX-v2 :New Incoming data,  Send_SEQ=585 ,  receive_SEQ=90
+22/05/22 23:17:18 : --->RX-v2 : 68 04 83 00 00 00
+22/05/22 23:17:19 : <---TX-v2 :Send Double CMD Exec
+22/05/22 23:17:19 : <---TX-v2 :Double CMD frame :  68 0e b4 00 94 04 2e 01 06 00 13 20 98 08 00 02
+22/05/22 23:17:21 : <---TX-v2 :Supervisory frame :  68 04 01 00 94 04
+22/05/22 23:17:28 : <---TX-v2 :Test activation Frame :  68 04 43 00 00 00
+22/05/22 23:17:29 : --->RX-v2 :New Incoming data,  Send_SEQ=585 ,  receive_SEQ=90
+22/05/22 23:17:29 : --->RX-v2 : 68 04 83 00 00 00
+22/05/22 23:17:30 : <---TX-v2 :Supervisory frame :  68 04 01 00 94 04
+22/05/22 23:17:38 : <---TX-v2 :Supervisory frame :  68 04 01 00 94 04
+22/05/22 23:17:38 : <---TX-v2 :Test activation Frame :  68 04 43 00 00 00
+22/05/22 23:17:39 : --->RX-v2 :New Incoming data,  Send_SEQ=585 ,  receive_SEQ=90
+22/05/22 23:17:39 : --->RX-v2 : 68 04 83 00 00 00
+22/05/22 23:17:39 : <---TX-v2 :Send Double CMD Exec
+22/05/22 23:17:39 : <---TX-v2 :Double CMD frame :  68 0e b4 00 94 04 2e 01 06 00 13 20 98 08 00 02
+22/05/22 23:17:46 : <---TX-v2 :Supervisory frame :  68 04 01 00 94 04
+22/05/22 23:17:48 : <---TX-v2 :Test activation Frame :  68 04 43 00 00 00
+22/05/22 23:17:49 : --->RX-v2 :New Incoming data,  Send_SEQ=585 ,  receive_SEQ=90
+22/05/22 23:17:49 : --->RX-v2 : 68 04 83 00 00 00
+22/05/22 23:17:54 : <---TX-v2 :Supervisory frame :  68 04 01 00 94 04
+22/05/22 23:17:58 : <---TX-v2 :Test activation Frame :  68 04 43 00 00 00
+22/05/22 23:17:59 : --->RX-v2 :New Incoming data,  Send_SEQ=585 ,  receive_SEQ=90
+22/05/22 23:17:59 : --->RX-v2 : 68 04 83 00 00 00
+22/05/22 23:18:02 : <---TX-v2 :Supervisory frame :  68 04 01 00 94 04
+22/05/22 23:18:03 : <---TX-v2 :Send Iterrogation frame :  68 0e b4 00 94 04 64 01 06 00 13 20 00 00 00 14
+22/05/22 23:18:08 : <---TX-v2 :Test activation Frame :  68 04 43 00 00 00
+22/05/22 23:18:09 : --->RX-v2 :New Incoming data,  Send_SEQ=585 ,  receive_SEQ=90
+22/05/22 23:18:09 : --->RX-v2 : 68 04 83 00 00 00
+22/05/22 23:18:10 : <---TX-v2 :Supervisory frame :  68 04 01 00 94 04
+22/05/22 23:18:18 : <---TX-v2 :Supervisory frame :  68 04 01 00 94 04
+22/05/22 23:18:18 : <---TX-v2 :Test activation Frame :  68 04 43 00 00 00
+22/05/22 23:18:19 : --->RX-v2 :New Incoming data,  Send_SEQ=585 ,  receive_SEQ=90
+22/05/22 23:18:19 : --->RX-v2 : 68 04 83 00 00 00
+22/05/22 23:18:26 : <---TX-v2 :Supervisory frame :  68 04 01 00 94 04
+22/05/22 23:18:28 : <---TX-v2 :Test activation Frame :  68 04 43 00 00 00
+22/05/22 23:18:30 : --->RX-v2 :New Incoming data,  Send_SEQ=585 ,  receive_SEQ=90
+22/05/22 23:18:30 : --->RX-v2 : 68 04 83 00 00 00
+22/05/22 23:18:35 : <---TX-v2 :Supervisory frame :  68 04 01 00 94 04
+22/05/22 23:18:39 : <---TX-v2 :Test activation Frame :  68 04 43 00 00 00
+22/05/22 23:18:40 : --->RX-v2 :New Incoming data,  Send_SEQ=585 ,  receive_SEQ=90
+22/05/22 23:18:40 : --->RX-v2 : 68 04 83 00 00 00
+22/05/22 23:18:43 : <---TX-v2 :Supervisory frame :  68 04 01 00 94 04
+22/05/22 23:18:49 : <---TX-v2 :Test activation Frame :  68 04 43 00 00 00
+22/05/22 23:18:49 : <---TX-v2 :Send Iterrogation frame :  68 0e b4 00 94 04 64 01 06 00 13 20 00 00 00 14
+22/05/22 23:18:50 : --->RX-v2 :New Incoming data,  Send_SEQ=585 ,  receive_SEQ=90
+22/05/22 23:18:50 : --->RX-v2 : 68 04 83 00 00 00
+22/05/22 23:18:51 : <---TX-v2 :Supervisory frame :  68 04 01 00 94 04
+22/05/22 23:18:59 : <---TX-v2 :Supervisory frame :  68 04 01 00 94 04
+22/05/22 23:18:59 : <---TX-v2 :Test activation Frame :  68 04 43 00 00 00
+22/05/22 23:19:00 : --->RX-v2 :New Incoming data,  Send_SEQ=585 ,  receive_SEQ=90
+22/05/22 23:19:00 : --->RX-v2 : 68 04 83 00 00 00
+22/05/22 23:19:07 : <---TX-v2 :Supervisory frame :  68 04 01 00 94 04
+22/05/22 23:19:09 : <---TX-v2 :Test activation Frame :  68 04 43 00 00 00
+22/05/22 23:19:10 : --->RX-v2 :New Incoming data,  Send_SEQ=585 ,  receive_SEQ=90
+22/05/22 23:19:10 : --->RX-v2 : 68 04 83 00 00 00
+22/05/22 23:19:15 : <---TX-v2 :Supervisory frame :  68 04 01 00 94 04
+22/05/22 23:19:19 : <---TX-v2 :Test activation Frame :  68 04 43 00 00 00
+22/05/22 23:19:20 : --->RX-v2 :New Incoming data,  Send_SEQ=585 ,  receive_SEQ=90
+22/05/22 23:19:20 : --->RX-v2 : 68 04 83 00 00 00
+22/05/22 23:19:23 : <---TX-v2 :Supervisory frame :  68 04 01 00 94 04
+22/05/22 23:19:29 : <---TX-v2 :Test activation Frame :  68 04 43 00 00 00
+22/05/22 23:19:30 : --->RX-v2 :New Incoming data,  Send_SEQ=585 ,  receive_SEQ=90
+22/05/22 23:19:30 : --->RX-v2 : 68 04 83 00 00 00
+22/05/22 23:19:31 : <---TX-v2 :Supervisory frame :  68 04 01 00 94 04
+22/05/22 23:19:35 : <---TX-v2 :Send Iterrogation frame :  68 0e b4 00 94 04 64 01 06 00 13 20 00 00 00 14
+22/05/22 23:19:40 : <---TX-v2 :Supervisory frame :  68 04 01 00 94 04
+22/05/22 23:19:40 : <---TX-v2 :Test activation Frame :  68 04 43 00 00 00
+22/05/22 23:19:41 : --->RX-v2 :New Incoming data,  Send_SEQ=585 ,  receive_SEQ=90
+22/05/22 23:19:41 : --->RX-v2 : 68 04 83 00 00 00
+22/05/22 23:19:48 : <---TX-v2 :Supervisory frame :  68 04 01 00 94 04
+22/05/22 23:19:50 : <---TX-v2 :Test activation Frame :  68 04 43 00 00 00
+22/05/22 23:19:51 : --->RX-v2 :New Incoming data,  Send_SEQ=585 ,  receive_SEQ=90
+22/05/22 23:19:51 : --->RX-v2 : 68 04 83 00 00 00
+22/05/22 23:19:56 : <---TX-v2 :Supervisory frame :  68 04 01 00 94 04
+22/05/22 23:20:00 : <---TX-v2 :Test activation Frame :  68 04 43 00 00 00
+22/05/22 23:20:01 : --->RX-v2 :New Incoming data,  Send_SEQ=585 ,  receive_SEQ=90
+22/05/22 23:20:01 : --->RX-v2 : 68 04 83 00 00 00
+22/05/22 23:20:04 : <---TX-v2 :Supervisory frame :  68 04 01 00 94 04
+22/05/22 23:20:10 : <---TX-v2 :Test activation Frame :  68 04 43 00 00 00
+22/05/22 23:20:11 : --->RX-v2 :New Incoming data,  Send_SEQ=585 ,  receive_SEQ=90
+22/05/22 23:20:11 : --->RX-v2 : 68 04 83 00 00 00
+22/05/22 23:20:12 : <---TX-v2 :Supervisory frame :  68 04 01 00 94 04
+22/05/22 23:20:15 : <---TX-v2 :Send Double CMD Exec
+22/05/22 23:20:15 : <---TX-v2 :Double CMD frame :  68 0e b4 00 94 04 2e 01 06 00 13 20 98 08 00 02
+22/05/22 23:20:20 : <---TX-v2 :Supervisory frame :  68 04 01 00 94 04
+22/05/22 23:20:20 : <---TX-v2 :Test activation Frame :  68 04 43 00 00 00
+22/05/22 23:20:20 : <---TX-v2 :Send Iterrogation frame :  68 0e b4 00 94 04 64 01 06 00 13 20 00 00 00 14
+22/05/22 23:20:21 : --->RX-v2 :New Incoming data,  Send_SEQ=585 ,  receive_SEQ=90
+22/05/22 23:20:21 : --->RX-v2 : 68 04 83 00 00 00
+22/05/22 23:20:28 : <---TX-v2 :Send Double CMD Exec
+22/05/22 23:20:28 : <---TX-v2 :Double CMD frame :  68 0e b4 00 94 04 2e 01 06 00 13 20 98 08 00 02
+22/05/22 23:20:28 : <---TX-v2 :Supervisory frame :  68 04 01 00 94 04
+22/05/22 23:20:30 : <---TX-v2 :Test activation Frame :  68 04 43 00 00 00
+22/05/22 23:20:31 : --->RX-v2 :New Incoming data,  Send_SEQ=585 ,  receive_SEQ=90
+22/05/22 23:20:31 : --->RX-v2 : 68 04 83 00 00 00
+22/05/22 23:20:36 : <---TX-v2 :Supervisory frame :  68 04 01 00 94 04
+22/05/22 23:20:41 : <---TX-v2 :Test activation Frame :  68 04 43 00 00 00
+22/05/22 23:20:42 : --->RX-v2 :New Incoming data,  Send_SEQ=585 ,  receive_SEQ=90
+22/05/22 23:20:42 : --->RX-v2 : 68 04 83 00 00 00
+22/05/22 23:20:45 : <---TX-v2 :Supervisory frame :  68 04 01 00 94 04
+22/05/22 23:20:51 : <---TX-v2 :Test activation Frame :  68 04 43 00 00 00
+22/05/22 23:20:52 : --->RX-v2 :New Incoming data,  Send_SEQ=585 ,  receive_SEQ=90
+22/05/22 23:20:52 : --->RX-v2 : 68 04 83 00 00 00
+22/05/22 23:20:53 : <---TX-v2 :Supervisory frame :  68 04 01 00 94 04
+22/05/22 23:21:01 : <---TX-v2 :Supervisory frame :  68 04 01 00 94 04
+22/05/22 23:21:01 : <---TX-v2 :Test activation Frame :  68 04 43 00 00 00
+22/05/22 23:21:02 : --->RX-v2 :New Incoming data,  Send_SEQ=585 ,  receive_SEQ=90
+22/05/22 23:21:02 : --->RX-v2 : 68 04 83 00 00 00
+22/05/22 23:21:06 : <---TX-v2 :Send Iterrogation frame :  68 0e b4 00 94 04 64 01 06 00 13 20 00 00 00 14
+22/05/22 23:21:09 : <---TX-v2 :Supervisory frame :  68 04 01 00 94 04
+22/05/22 23:21:11 : <---TX-v2 :Test activation Frame :  68 04 43 00 00 00
+22/05/22 23:21:12 : --->RX-v2 :New Incoming data,  Send_SEQ=585 ,  receive_SEQ=90
+22/05/22 23:21:12 : --->RX-v2 : 68 04 83 00 00 00
+22/05/22 23:21:17 : <---TX-v2 :Supervisory frame :  68 04 01 00 94 04
+22/05/22 23:21:21 : <---TX-v2 :Test activation Frame :  68 04 43 00 00 00
+22/05/22 23:21:22 : --->RX-v2 :New Incoming data,  Send_SEQ=585 ,  receive_SEQ=90
+22/05/22 23:21:22 : --->RX-v2 : 68 04 83 00 00 00
+22/05/22 23:21:25 : <---TX-v2 :Supervisory frame :  68 04 01 00 94 04
+22/05/22 23:21:31 : <---TX-v2 :Test activation Frame :  68 04 43 00 00 00
+22/05/22 23:21:32 : --->RX-v2 :New Incoming data,  Send_SEQ=585 ,  receive_SEQ=90
+22/05/22 23:21:32 : --->RX-v2 : 68 04 83 00 00 00
+22/05/22 23:21:33 : <---TX-v2 :Supervisory frame :  68 04 01 00 94 04
+22/05/22 23:21:41 : <---TX-v2 :Supervisory frame :  68 04 01 00 94 04
+22/05/22 23:21:41 : <---TX-v2 :Test activation Frame :  68 04 43 00 00 00
+22/05/22 23:21:42 : --->RX-v2 :New Incoming data,  Send_SEQ=585 ,  receive_SEQ=90
+22/05/22 23:21:42 : --->RX-v2 : 68 04 83 00 00 00
+22/05/22 23:21:49 : <---TX-v2 :Supervisory frame :  68 04 01 00 94 04
+22/05/22 23:21:51 : <---TX-v2 :Test activation Frame :  68 04 43 00 00 00
+22/05/22 23:21:51 : <---TX-v2 :Send Iterrogation frame :  68 0e b4 00 94 04 64 01 06 00 13 20 00 00 00 14
+22/05/22 23:21:52 : --->RX-v2 :New Incoming data,  Send_SEQ=585 ,  receive_SEQ=90
+22/05/22 23:21:52 : --->RX-v2 : 68 04 83 00 00 00
+22/05/22 23:21:57 : <---TX-v2 :Supervisory frame :  68 04 01 00 94 04
+22/05/22 23:22:01 : <---TX-v2 :Test activation Frame :  68 04 43 00 00 00
+22/05/22 23:22:02 : --->RX-v2 :New Incoming data,  Send_SEQ=585 ,  receive_SEQ=90
+22/05/22 23:22:02 : --->RX-v2 : 68 04 83 00 00 00
+22/05/22 23:22:05 : <---TX-v2 :Supervisory frame :  68 04 01 00 94 04
+22/05/22 23:22:12 : <---TX-v2 :Test activation Frame :  68 04 43 00 00 00
+22/05/22 23:22:13 : --->RX-v2 :New Incoming data,  Send_SEQ=585 ,  receive_SEQ=90
+22/05/22 23:22:13 : --->RX-v2 : 68 04 83 00 00 00
+22/05/22 23:22:14 : <---TX-v2 :Supervisory frame :  68 04 01 00 94 04
+22/05/22 23:22:22 : <---TX-v2 :Supervisory frame :  68 04 01 00 94 04
+22/05/22 23:22:22 : <---TX-v2 :Test activation Frame :  68 04 43 00 00 00
+22/05/22 23:22:23 : --->RX-v2 :New Incoming data,  Send_SEQ=585 ,  receive_SEQ=90
+22/05/22 23:22:23 : --->RX-v2 : 68 04 83 00 00 00
+22/05/22 23:22:30 : <---TX-v2 :Supervisory frame :  68 04 01 00 94 04
+22/05/22 23:22:32 : <---TX-v2 :Test activation Frame :  68 04 43 00 00 00
+22/05/22 23:22:33 : --->RX-v2 :New Incoming data,  Send_SEQ=585 ,  receive_SEQ=90
+22/05/22 23:22:33 : --->RX-v2 : 68 04 83 00 00 00
+22/05/22 23:22:37 : <---TX-v2 :Send Iterrogation frame :  68 0e b4 00 94 04 64 01 06 00 13 20 00 00 00 14
+22/05/22 23:22:38 : <---TX-v2 :Supervisory frame :  68 04 01 00 94 04
+22/05/22 23:22:42 : <---TX-v2 :Test activation Frame :  68 04 43 00 00 00
+22/05/22 23:22:43 : --->RX-v2 :New Incoming data,  Send_SEQ=585 ,  receive_SEQ=90
+22/05/22 23:22:43 : --->RX-v2 : 68 04 83 00 00 00
+22/05/22 23:22:46 : <---TX-v2 :Supervisory frame :  68 04 01 00 94 04
+22/05/22 23:22:52 : <---TX-v2 :Test activation Frame :  68 04 43 00 00 00
+22/05/22 23:22:53 : --->RX-v2 :New Incoming data,  Send_SEQ=585 ,  receive_SEQ=90
+22/05/22 23:22:53 : --->RX-v2 : 68 04 83 00 00 00
+22/05/22 23:22:54 : <---TX-v2 :Supervisory frame :  68 04 01 00 94 04
+22/05/22 23:23:02 : <---TX-v2 :Supervisory frame :  68 04 01 00 94 04
+22/05/22 23:23:02 : <---TX-v2 :Test activation Frame :  68 04 43 00 00 00
+22/05/22 23:23:03 : --->RX-v2 :New Incoming data,  Send_SEQ=585 ,  receive_SEQ=90
+22/05/22 23:23:03 : --->RX-v2 : 68 04 83 00 00 00
+22/05/22 23:23:10 : <---TX-v2 :Supervisory frame :  68 04 01 00 94 04
+22/05/22 23:23:12 : <---TX-v2 :Test activation Frame :  68 04 43 00 00 00
+22/05/22 23:23:13 : --->RX-v2 :New Incoming data,  Send_SEQ=585 ,  receive_SEQ=90
+22/05/22 23:23:13 : --->RX-v2 : 68 04 83 00 00 00
+22/05/22 23:23:18 : <---TX-v2 :Supervisory frame :  68 04 01 00 94 04
+22/05/22 23:23:22 : <---TX-v2 :Test activation Frame :  68 04 43 00 00 00
+22/05/22 23:23:22 : <---TX-v2 :Send Iterrogation frame :  68 0e b4 00 94 04 64 01 06 00 13 20 00 00 00 14
+22/05/22 23:23:23 : --->RX-v2 :reset_param 
+22/05/22 23:23:23 : --->RX-v2 :reset_param 
+22/05/22 23:23:23 : <---TX-v2 :Force To Disconnect TCP
+
+
+// Recloser hang here and need to reconnect to recover
+
+
+
+
+
+
+
+22/05/22 23:23:32 : --->RX-v2 :reset_param 
+22/05/22 23:23:32 : <---TX-v2 :StopAct Handshake Activation:  68 04 13 00 00 00
+22/05/22 23:23:32 : <---TX-v2 :Send Reset C_RP frame :  68 0e 00 00 02 00 69 01 06 00 13 20 00 00 00 01
+22/05/22 23:23:34 : <---TX-v2 :StartDT_Act handshake Activation :  68 04 07 00 00 00
+22/05/22 23:23:35 : --->RX-v2 :New Incoming data,  Send_SEQ=0 ,  receive_SEQ=0
+22/05/22 23:23:35 : --->RX-v2 : 68 04 23 00 00 00
+22/05/22 23:23:36 : --->RX-v2 : receive STARTDT_CON 
+22/05/22 23:23:36 : --->RX-v2 :New Incoming data,  Send_SEQ=0 ,  receive_SEQ=0
+22/05/22 23:23:36 : --->RX-v2 : 68 04 0b 00 00 00
+22/05/22 23:23:37 : --->RX-v2 :------>> IOA_T  M_ME_NC_1
+22/05/22 23:23:37 : --->RX-v2 :M_ME_NC_1_MeasuredShortFloatingPointValue
+22/05/22 23:23:37 : --->RX-v2 :New Incoming data,  Send_SEQ=0 ,  receive_SEQ=0
+22/05/22 23:23:37 : --->RX-v2 : 68 58 00 00 00 00 0d 8f 01 00 13 20 bc 02 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+22/05/22 23:23:38 : --->RX-v2 :------>> IOA_T  M_ME_NC_1
+22/05/22 23:23:38 : --->RX-v2 :M_ME_NC_1_MeasuredShortFloatingPointValue
+22/05/22 23:23:38 : --->RX-v2 :New Incoming data,  Send_SEQ=1 ,  receive_SEQ=0
+22/05/22 23:23:38 : --->RX-v2 : 68 58 02 00 00 00 0d 8f 01 00 13 20 bc 02 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+22/05/22 23:23:42 : <---TX-v2 :Supervisory frame :  68 04 01 00 04 00
+22/05/22 23:23:46 : --->RX-v2 :------>> IOA_T  M_ME_NC_1
+22/05/22 23:23:46 : --->RX-v2 :M_ME_NC_1_MeasuredShortFloatingPointValue
+22/05/22 23:23:46 : --->RX-v2 :New Incoming data,  Send_SEQ=2 ,  receive_SEQ=0
+22/05/22 23:23:46 : --->RX-v2 : 68 58 04 00 00 00 0d 8f 01 00 13 20 bc 02 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+22/05/22 23:23:50 : <---TX-v2 :Supervisory frame :  68 04 01 00 06 00
+22/05/22 23:23:50 : <---TX-v2 :Send Iterrogation frame :  68 0e 00 00 06 00 64 01 06 00 13 20 00 00 00 14
+22/05/22 23:23:51 : --->RX-v2 :------>> IOA_T  C_IC_NA_1
+22/05/22 23:23:51 : --->RX-v2 :New Incoming data,  Send_SEQ=3 ,  receive_SEQ=1
+22/05/22 23:23:51 : --->RX-v2 : 68 0e 06 00 02 00 64 01 07 00 13 20 00 00 00 14
+22/05/22 23:23:52 : --->RX-v2 :------>> IOA_T  M_SP_NA_1
+22/05/22 23:23:52 : --->RX-v2 :M_SP_NA_1 SinglePoint Recv
+22/05/22 23:23:52 : --->RX-v2 :New Incoming data,  Send_SEQ=4 ,  receive_SEQ=1
+22/05/22 23:23:52 : --->RX-v2 : 68 4a 08 00 02 00 01 10 14 00 13 20 64 00 00 01 65 00 00 00 66 00 00 00 67 00 00 00 68 00 00 01 69 00 00 00 6a 00 00 00 6b 00 00 00 6c 00 00 00 6d 00 00 00 72 00 00 00 73 00 00 00 74 00 00 00 75 00 00 00 77 00 00 00 78 00 00 00
+22/05/22 23:23:53 : --->RX-v2 :------>> IOA_T  M_DP_NA_1
+22/05/22 23:23:53 : --->RX-v2 :M_DP_NA_1 DoublePoint
+22/05/22 23:23:53 : --->RX-v2 :New Incoming data,  Send_SEQ=5 ,  receive_SEQ=1
+22/05/22 23:23:53 : --->RX-v2 : 68 0f 0a 00 02 00 03 82 14 00 13 20 c8 00 00 01 02
+22/05/22 23:23:54 : --->RX-v2 :------>> IOA_T  M_ME_NC_1
+22/05/22 23:23:54 : --->RX-v2 :M_ME_NC_1_MeasuredShortFloatingPointValue
+22/05/22 23:23:54 : --->RX-v2 :New Incoming data,  Send_SEQ=6 ,  receive_SEQ=1
+22/05/22 23:23:54 : --->RX-v2 : 68 58 0c 00 02 00 0d 8f 14 00 13 20 bc 02 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+22/05/22 23:23:56 : --->RX-v2 :------>> IOA_T  C_IC_NA_1
+22/05/22 23:23:56 : --->RX-v2 :Termination of Interrogation CMD
+22/05/22 23:23:56 : --->RX-v2 :New Incoming data,  Send_SEQ=7 ,  receive_SEQ=1
+22/05/22 23:23:56 : --->RX-v2 : 68 0e 0e 00 02 00 64 01 0a 00 13 20 00 00 00 14
+22/05/22 23:23:59 : <---TX-v2 :Supervisory frame :  68 04 01 00 10 00
+22/05/22 23:24:05 : <---TX-v2 :Test activation Frame :  68 04 43 00 00 00
+22/05/22 23:24:06 : --->RX-v2 :New Incoming data,  Send_SEQ=7 ,  receive_SEQ=1
+22/05/22 23:24:06 : --->RX-v2 : 68 04 83 00 00 00
+22/05/22 23:24:07 : <---TX-v2 :Supervisory frame :  68 04 01 00 10 00
+22/05/22 23:24:15 : <---TX-v2 :Supervisory frame :  68 04 01 00 10 00
+22/05/22 23:24:15 : <---TX-v2 :Test activation Frame :  68 04 43 00 00 00
+22/05/22 23:24:16 : --->RX-v2 :New Incoming data,  Send_SEQ=7 ,  receive_SEQ=1
+22/05/22 23:24:16 : --->RX-v2 : 68 04 83 00 00 00
+22/05/22 23:24:17 : --->RX-v2 :------>> IOA_T  M_ME_NC_1
+22/05/22 23:24:17 : --->RX-v2 :M_ME_NC_1_MeasuredShortFloatingPointValue
+22/05/22 23:24:17 : --->RX-v2 :New Incoming data,  Send_SEQ=8 ,  receive_SEQ=1
+22/05/22 23:24:17 : --->RX-v2 : 68 58 10 00 02 00 0d 8f 01 00 13 20 bc 02 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+22/05/22 23:24:23 : <---TX-v2 :Supervisory frame :  68 04 01 00 12 00
+22/05/22 23:24:25 : <---TX-v2 :Send Double CMD Exec
+22/05/22 23:24:25 : <---TX-v2 :Double CMD frame :  68 0e 02 00 12 00 2e 01 06 00 13 20 98 08 00 02
+22/05/22 23:24:26 : --->RX-v2 :------>> IOA_T  C_DC_NA_1
+22/05/22 23:24:26 : --->RX-v2 :Double CMD ACT confirmation 
+22/05/22 23:24:26 : --->RX-v2 :New Incoming data,  Send_SEQ=9 ,  receive_SEQ=2
+22/05/22 23:24:26 : --->RX-v2 : 68 0e 12 00 04 00 2e 01 07 00 13 20 98 08 00 02
+22/05/22 23:24:27 : --->RX-v2 :------>> IOA_T  C_DC_NA_1
+22/05/22 23:24:27 : --->RX-v2 :Double CMD ACT termination 
+22/05/22 23:24:27 : --->RX-v2 :New Incoming data,  Send_SEQ=10 ,  receive_SEQ=2
+22/05/22 23:24:27 : --->RX-v2 : 68 0e 14 00 04 00 2e 01 0a 00 13 20 98 08 00 02
+22/05/22 23:24:28 : --->RX-v2 :------>> IOA_T  M_DP_TB_1
+22/05/22 23:24:28 : --->RX-v2 :M_DP_TB_1 DoublePoint With Time56
+22/05/22 23:24:28 : --->RX-v2 :New Incoming data,  Send_SEQ=11 ,  receive_SEQ=2
+22/05/22 23:24:29 : --->RX-v2 : 68 15 16 00 04 00 1f 01 03 00 13 20 c8 00 00 02 35 0c 16 01 17 05 16
+22/05/22 23:24:32 : <---TX-v2 :Supervisory frame :  68 04 01 00 18 00
+22/05/22 23:24:37 : <---TX-v2 :Send Iterrogation frame :  68 0e 04 00 18 00 64 01 06 00 13 20 00 00 00 14
+22/05/22 23:24:38 : --->RX-v2 :------>> IOA_T  C_IC_NA_1
+22/05/22 23:24:38 : --->RX-v2 :New Incoming data,  Send_SEQ=12 ,  receive_SEQ=3
+22/05/22 23:24:38 : --->RX-v2 : 68 0e 18 00 06 00 64 01 07 00 13 20 00 00 00 14
+22/05/22 23:24:39 : --->RX-v2 :------>> IOA_T  M_SP_NA_1
+22/05/22 23:24:39 : --->RX-v2 :M_SP_NA_1 SinglePoint Recv
+22/05/22 23:24:39 : --->RX-v2 :New Incoming data,  Send_SEQ=13 ,  receive_SEQ=3
+22/05/22 23:24:39 : --->RX-v2 : 68 4a 1a 00 06 00 01 10 14 00 13 20 64 00 00 01 65 00 00 00 66 00 00 00 67 00 00 00 68 00 00 01 69 00 00 00 6a 00 00 00 6b 00 00 00 6c 00 00 00 6d 00 00 00 72 00 00 00 73 00 00 00 74 00 00 00 75 00 00 00 77 00 00 00 78 00 00 00
+22/05/22 23:24:40 : --->RX-v2 :------>> IOA_T  M_DP_NA_1
+22/05/22 23:24:40 : --->RX-v2 :M_DP_NA_1 DoublePoint
+22/05/22 23:24:40 : --->RX-v2 :New Incoming data,  Send_SEQ=14 ,  receive_SEQ=3
+22/05/22 23:24:40 : --->RX-v2 : 68 0f 1c 00 06 00 03 82 14 00 13 20 c8 00 00 02 02
+22/05/22 23:24:40 : <---TX-v2 :Supervisory frame :  68 04 01 00 1e 00
+22/05/22 23:24:41 : --->RX-v2 :------>> IOA_T  M_ME_NC_1
+22/05/22 23:24:41 : --->RX-v2 :M_ME_NC_1_MeasuredShortFloatingPointValue
+22/05/22 23:24:41 : --->RX-v2 :New Incoming data,  Send_SEQ=15 ,  receive_SEQ=3
+22/05/22 23:24:41 : --->RX-v2 : 68 58 1e 00 06 00 0d 8f 14 00 13 20 bc 02 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+22/05/22 23:24:42 : --->RX-v2 :------>> IOA_T  C_IC_NA_1
+22/05/22 23:24:42 : --->RX-v2 :Termination of Interrogation CMD
+22/05/22 23:24:42 : --->RX-v2 :New Incoming data,  Send_SEQ=16 ,  receive_SEQ=3
+22/05/22 23:24:42 : --->RX-v2 : 68 0e 20 00 06 00 64 01 0a 00 13 20 00 00 00 14
+22/05/22 23:24:46 : --->RX-v2 :------>> IOA_T  M_ME_NC_1
+22/05/22 23:24:46 : --->RX-v2 :M_ME_NC_1_MeasuredShortFloatingPointValue
+22/05/22 23:24:46 : --->RX-v2 :New Incoming data,  Send_SEQ=17 ,  receive_SEQ=3
+22/05/22 23:24:46 : --->RX-v2 : 68 58 22 00 06 00 0d 8f 01 00 13 20 bc 02 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+22/05/22 23:24:48 : <---TX-v2 :Supervisory frame :  68 04 01 00 24 00
+22/05/22 23:24:55 : <---TX-v2 :Test activation Frame :  68 04 43 00 00 00
+22/05/22 23:24:56 : --->RX-v2 :New Incoming data,  Send_SEQ=17 ,  receive_SEQ=3
+22/05/22 23:24:56 : --->RX-v2 : 68 04 83 00 00 00
+22/05/22 23:24:56 : <---TX-v2 :Supervisory frame :  68 04 01 00 24 00
+22/05/22 23:25:04 : <---TX-v2 :Supervisory frame :  68 04 01 00 24 00
+22/05/22 23:25:05 : <---TX-v2 :Test activation Frame :  68 04 43 00 00 00
+22/05/22 23:25:07 : --->RX-v2 :New Incoming data,  Send_SEQ=17 ,  receive_SEQ=3
+22/05/22 23:25:07 : --->RX-v2 : 68 04 83 00 00 00
+22/05/22 23:25:13 : <---TX-v2 :Supervisory frame :  68 04 01 00 24 00
+22/05/22 23:25:16 : --->RX-v2 :------>> IOA_T  M_ME_NC_1
+22/05/22 23:25:16 : --->RX-v2 :M_ME_NC_1_MeasuredShortFloatingPointValue
+22/05/22 23:25:16 : --->RX-v2 :New Incoming data,  Send_SEQ=18 ,  receive_SEQ=3
+22/05/22 23:25:16 : --->RX-v2 : 68 58 24 00 06 00 0d 8f 01 00 13 20 bc 02 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+22/05/22 23:25:21 : <---TX-v2 :Supervisory frame :  68 04 01 00 26 00
+22/05/22 23:25:23 : <---TX-v2 :Send Iterrogation frame :  68 0e 06 00 26 00 64 01 06 00 13 20 00 00 00 14
+22/05/22 23:25:24 : --->RX-v2 :------>> IOA_T  C_IC_NA_1
+22/05/22 23:25:24 : --->RX-v2 :New Incoming data,  Send_SEQ=19 ,  receive_SEQ=4
+22/05/22 23:25:24 : --->RX-v2 : 68 0e 26 00 08 00 64 01 07 00 13 20 00 00 00 14
+22/05/22 23:25:25 : --->RX-v2 :------>> IOA_T  M_SP_NA_1
+22/05/22 23:25:25 : --->RX-v2 :M_SP_NA_1 SinglePoint Recv
+22/05/22 23:25:25 : --->RX-v2 :New Incoming data,  Send_SEQ=20 ,  receive_SEQ=4
+22/05/22 23:25:25 : --->RX-v2 : 68 4a 28 00 08 00 01 10 14 00 13 20 64 00 00 01 65 00 00 00 66 00 00 00 67 00 00 00 68 00 00 01 69 00 00 00 6a 00 00 00 6b 00 00 00 6c 00 00 00 6d 00 00 00 72 00 00 00 73 00 00 00 74 00 00 00 75 00 00 00 77 00 00 00 78 00 00 00
+22/05/22 23:25:26 : --->RX-v2 :------>> IOA_T  M_DP_NA_1
+22/05/22 23:25:26 : --->RX-v2 :M_DP_NA_1 DoublePoint
+22/05/22 23:25:26 : --->RX-v2 :New Incoming data,  Send_SEQ=21 ,  receive_SEQ=4
+22/05/22 23:25:26 : --->RX-v2 : 68 0f 2a 00 08 00 03 82 14 00 13 20 c8 00 00 02 02
+22/05/22 23:25:27 : --->RX-v2 :------>> IOA_T  M_ME_NC_1
+22/05/22 23:25:27 : --->RX-v2 :M_ME_NC_1_MeasuredShortFloatingPointValue
+22/05/22 23:25:27 : --->RX-v2 :New Incoming data,  Send_SEQ=22 ,  receive_SEQ=4
+22/05/22 23:25:27 : --->RX-v2 : 68 58 2c 00 08 00 0d 8f 14 00 13 20 bc 02 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+22/05/22 23:25:28 : --->RX-v2 :------>> IOA_T  C_IC_NA_1
+22/05/22 23:25:28 : --->RX-v2 :Termination of Interrogation CMD
+22/05/22 23:25:28 : --->RX-v2 :New Incoming data,  Send_SEQ=23 ,  receive_SEQ=4
+22/05/22 23:25:28 : --->RX-v2 : 68 0e 2e 00 08 00 64 01 0a 00 13 20 00 00 00 14
+22/05/22 23:25:29 : <---TX-v2 :Supervisory frame :  68 04 01 00 30 00
+22/05/22 23:25:37 : <---TX-v2 :Supervisory frame :  68 04 01 00 30 00
+22/05/22 23:25:37 : <---TX-v2 :Test activation Frame :  68 04 43 00 00 00
+22/05/22 23:25:38 : --->RX-v2 :New Incoming data,  Send_SEQ=23 ,  receive_SEQ=4
+22/05/22 23:25:38 : --->RX-v2 : 68 04 83 00 00 00
+22/05/22 23:25:46 : <---TX-v2 :Supervisory frame :  68 04 01 00 30 00
+22/05/22 23:25:47 : --->RX-v2 :------>> IOA_T  M_ME_NC_1
+22/05/22 23:25:47 : --->RX-v2 :M_ME_NC_1_MeasuredShortFloatingPointValue
+22/05/22 23:25:47 : --->RX-v2 :New Incoming data,  Send_SEQ=24 ,  receive_SEQ=4
+22/05/22 23:25:47 : --->RX-v2 : 68 58 30 00 08 00 0d 8f 01 00 13 20 bc 02 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+22/05/22 23:25:54 : <---TX-v2 :Supervisory frame :  68 04 01 00 32 00
+22/05/22 23:25:56 : <---TX-v2 :Test activation Frame :  68 04 43 00 00 00
+22/05/22 23:25:57 : --->RX-v2 :New Incoming data,  Send_SEQ=24 ,  receive_SEQ=4
+22/05/22 23:25:57 : --->RX-v2 : 68 04 83 00 00 00
+22/05/22 23:26:02 : <---TX-v2 :Supervisory frame :  68 04 01 00 32 00
+22/05/22 23:26:06 : <---TX-v2 :Test activation Frame :  68 04 43 00 00 00
+22/05/22 23:26:07 : --->RX-v2 :New Incoming data,  Send_SEQ=24 ,  receive_SEQ=4
+22/05/22 23:26:07 : --->RX-v2 : 68 04 83 00 00 00
+22/05/22 23:26:09 : <---TX-v2 :Send Iterrogation frame :  68 0e 08 00 32 00 64 01 06 00 13 20 00 00 00 14
+22/05/22 23:26:10 : --->RX-v2 :------>> IOA_T  C_IC_NA_1
+22/05/22 23:26:10 : --->RX-v2 :New Incoming data,  Send_SEQ=25 ,  receive_SEQ=5
+22/05/22 23:26:10 : --->RX-v2 : 68 0e 32 00 0a 00 64 01 07 00 13 20 00 00 00 14
+22/05/22 23:26:10 : <---TX-v2 :Supervisory frame :  68 04 01 00 34 00
+22/05/22 23:26:11 : --->RX-v2 :------>> IOA_T  M_SP_NA_1
+22/05/22 23:26:11 : --->RX-v2 :M_SP_NA_1 SinglePoint Recv
+22/05/22 23:26:11 : --->RX-v2 :New Incoming data,  Send_SEQ=26 ,  receive_SEQ=5
+22/05/22 23:26:11 : --->RX-v2 : 68 4a 34 00 0a 00 01 10 14 00 13 20 64 00 00 01 65 00 00 00 66 00 00 00 67 00 00 00 68 00 00 01 69 00 00 00 6a 00 00 00 6b 00 00 00 6c 00 00 00 6d 00 00 00 72 00 00 00 73 00 00 00 74 00 00 00 75 00 00 00 77 00 00 00 78 00 00 00
+22/05/22 23:26:12 : --->RX-v2 :------>> IOA_T  M_DP_NA_1
+22/05/22 23:26:12 : --->RX-v2 :M_DP_NA_1 DoublePoint
+22/05/22 23:26:12 : --->RX-v2 :New Incoming data,  Send_SEQ=27 ,  receive_SEQ=5
+22/05/22 23:26:12 : --->RX-v2 : 68 0f 36 00 0a 00 03 82 14 00 13 20 c8 00 00 02 02
+22/05/22 23:26:13 : --->RX-v2 :------>> IOA_T  M_ME_NC_1
+22/05/22 23:26:13 : --->RX-v2 :M_ME_NC_1_MeasuredShortFloatingPointValue
+22/05/22 23:26:13 : --->RX-v2 :New Incoming data,  Send_SEQ=28 ,  receive_SEQ=5
+22/05/22 23:26:13 : --->RX-v2 : 68 58 38 00 0a 00 0d 8f 14 00 13 20 bc 02 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+22/05/22 23:26:14 : --->RX-v2 :------>> IOA_T  C_IC_NA_1
+22/05/22 23:26:14 : --->RX-v2 :Termination of Interrogation CMD
+22/05/22 23:26:14 : --->RX-v2 :New Incoming data,  Send_SEQ=29 ,  receive_SEQ=5
+22/05/22 23:26:14 : --->RX-v2 : 68 0e 3a 00 0a 00 64 01 0a 00 13 20 00 00 00 14
+22/05/22 23:26:17 : --->RX-v2 :------>> IOA_T  M_ME_NC_1
+22/05/22 23:26:17 : --->RX-v2 :M_ME_NC_1_MeasuredShortFloatingPointValue
+22/05/22 23:26:17 : --->RX-v2 :New Incoming data,  Send_SEQ=30 ,  receive_SEQ=5
+22/05/22 23:26:17 : --->RX-v2 : 68 58 3c 00 0a 00 0d 8f 01 00 13 20 bc 02 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+22/05/22 23:26:19 : <---TX-v2 :Supervisory frame :  68 04 01 00 3e 00
+22/05/22 23:26:26 : <---TX-v2 :Test activation Frame :  68 04 43 00 00 00
+22/05/22 23:26:27 : --->RX-v2 :New Incoming data,  Send_SEQ=30 ,  receive_SEQ=5
+22/05/22 23:26:27 : --->RX-v2 : 68 04 83 00 00 00
+22/05/22 23:26:27 : <---TX-v2 :Supervisory frame :  68 04 01 00 3e 00
+22/05/22 23:26:35 : <---TX-v2 :Supervisory frame :  68 04 01 00 3e 00
+22/05/22 23:26:36 : <---TX-v2 :Test activation Frame :  68 04 43 00 00 00
+22/05/22 23:26:37 : --->RX-v2 :New Incoming data,  Send_SEQ=30 ,  receive_SEQ=5
+22/05/22 23:26:37 : --->RX-v2 : 68 04 83 00 00 00
+22/05/22 23:26:43 : <---TX-v2 :Supervisory frame :  68 04 01 00 3e 00
+22/05/22 23:26:46 : --->RX-v2 :------>> IOA_T  M_ME_NC_1
+22/05/22 23:26:46 : --->RX-v2 :M_ME_NC_1_MeasuredShortFloatingPointValue
+22/05/22 23:26:46 : --->RX-v2 :New Incoming data,  Send_SEQ=31 ,  receive_SEQ=5
+22/05/22 23:26:46 : --->RX-v2 : 68 58 3e 00 0a 00 0d 8f 01 00 13 20 bc 02 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+22/05/22 23:26:51 : <---TX-v2 :Supervisory frame :  68 04 01 00 40 00
+22/05/22 23:26:55 : <---TX-v2 :Test activation Frame :  68 04 43 00 00 00
+22/05/22 23:26:55 : <---TX-v2 :Send Iterrogation frame :  68 0e 0a 00 40 00 64 01 06 00 13 20 00 00 00 14
+22/05/22 23:26:56 : --->RX-v2 :New Incoming data,  Send_SEQ=31 ,  receive_SEQ=5
+22/05/22 23:26:56 : --->RX-v2 : 68 04 83 00 00 00
+22/05/22 23:26:57 : --->RX-v2 :------>> IOA_T  C_IC_NA_1
+22/05/22 23:26:57 : --->RX-v2 :New Incoming data,  Send_SEQ=32 ,  receive_SEQ=6
+22/05/22 23:26:57 : --->RX-v2 : 68 0e 40 00 0c 00 64 01 07 00 13 20 00 00 00 14
+22/05/22 23:26:58 : --->RX-v2 :------>> IOA_T  M_SP_NA_1
+22/05/22 23:26:58 : --->RX-v2 :M_SP_NA_1 SinglePoint Recv
+22/05/22 23:26:58 : --->RX-v2 :New Incoming data,  Send_SEQ=33 ,  receive_SEQ=6
+22/05/22 23:26:58 : --->RX-v2 : 68 4a 42 00 0c 00 01 10 14 00 13 20 64 00 00 01 65 00 00 00 66 00 00 00 67 00 00 00 68 00 00 01 69 00 00 00 6a 00 00 00 6b 00 00 00 6c 00 00 00 6d 00 00 00 72 00 00 00 73 00 00 00 74 00 00 00 75 00 00 00 77 00 00 00 78 00 00 00
+22/05/22 23:26:59 : --->RX-v2 :------>> IOA_T  M_DP_NA_1
+22/05/22 23:26:59 : --->RX-v2 :M_DP_NA_1 DoublePoint
+22/05/22 23:26:59 : --->RX-v2 :New Incoming data,  Send_SEQ=34 ,  receive_SEQ=6
+22/05/22 23:26:59 : --->RX-v2 : 68 0f 44 00 0c 00 03 82 14 00 13 20 c8 00 00 02 02
+22/05/22 23:27:00 : <---TX-v2 :Supervisory frame :  68 04 01 00 46 00
+22/05/22 23:27:01 : --->RX-v2 :------>> IOA_T  M_ME_NC_1
+22/05/22 23:27:01 : --->RX-v2 :M_ME_NC_1_MeasuredShortFloatingPointValue
+22/05/22 23:27:01 : --->RX-v2 :New Incoming data,  Send_SEQ=35 ,  receive_SEQ=6
+22/05/22 23:27:01 : --->RX-v2 : 68 58 46 00 0c 00 0d 8f 14 00 13 20 bc 02 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+22/05/22 23:27:02 : --->RX-v2 :------>> IOA_T  C_IC_NA_1
+22/05/22 23:27:02 : --->RX-v2 :Termination of Interrogation CMD
+22/05/22 23:27:02 : --->RX-v2 :New Incoming data,  Send_SEQ=36 ,  receive_SEQ=6
+22/05/22 23:27:02 : --->RX-v2 : 68 0e 48 00 0c 00 64 01 0a 00 13 20 00 00 00 14
+22/05/22 23:27:08 : <---TX-v2 :Supervisory frame :  68 04 01 00 4a 00
+22/05/22 23:27:11 : <---TX-v2 :Test activation Frame :  68 04 43 00 00 00
+22/05/22 23:27:12 : --->RX-v2 :New Incoming data,  Send_SEQ=36 ,  receive_SEQ=6
+22/05/22 23:27:12 : --->RX-v2 : 68 04 83 00 00 00
+22/05/22 23:27:16 : <---TX-v2 :Supervisory frame :  68 04 01 00 4a 00
+22/05/22 23:27:17 : --->RX-v2 :------>> IOA_T  M_ME_NC_1
+22/05/22 23:27:17 : --->RX-v2 :M_ME_NC_1_MeasuredShortFloatingPointValue
+22/05/22 23:27:17 : --->RX-v2 :New Incoming data,  Send_SEQ=37 ,  receive_SEQ=6
+22/05/22 23:27:17 : --->RX-v2 : 68 58 4a 00 0c 00 0d 8f 01 00 13 20 bc 02 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+22/05/22 23:27:24 : <---TX-v2 :Supervisory frame :  68 04 01 00 4c 00
+22/05/22 23:27:26 : <---TX-v2 :Test activation Frame :  68 04 43 00 00 00
+22/05/22 23:27:27 : --->RX-v2 :New Incoming data,  Send_SEQ=37 ,  receive_SEQ=6
+22/05/22 23:27:27 : --->RX-v2 : 68 04 83 00 00 00
+22/05/22 23:27:32 : <---TX-v2 :Supervisory frame :  68 04 01 00 4c 00
+22/05/22 23:27:36 : <---TX-v2 :Test activation Frame :  68 04 43 00 00 00
+22/05/22 23:27:37 : --->RX-v2 :New Incoming data,  Send_SEQ=37 ,  receive_SEQ=6
+22/05/22 23:27:37 : --->RX-v2 : 68 04 83 00 00 00
+22/05/22 23:27:40 : <---TX-v2 :Supervisory frame :  68 04 01 00 4c 00
+22/05/22 23:27:41 : <---TX-v2 :Send Iterrogation frame :  68 0e 0c 00 4c 00 64 01 06 00 13 20 00 00 00 14
+22/05/22 23:27:42 : --->RX-v2 :------>> IOA_T  C_IC_NA_1
+22/05/22 23:27:42 : --->RX-v2 :New Incoming data,  Send_SEQ=38 ,  receive_SEQ=7
+22/05/22 23:27:42 : --->RX-v2 : 68 0e 4c 00 0e 00 64 01 07 00 13 20 00 00 00 14
+22/05/22 23:27:43 : --->RX-v2 :------>> IOA_T  M_SP_NA_1
+22/05/22 23:27:43 : --->RX-v2 :M_SP_NA_1 SinglePoint Recv
+22/05/22 23:27:43 : --->RX-v2 :New Incoming data,  Send_SEQ=39 ,  receive_SEQ=7
+22/05/22 23:27:44 : --->RX-v2 : 68 4a 4e 00 0e 00 01 10 14 00 13 20 64 00 00 01 65 00 00 00 66 00 00 00 67 00 00 00 68 00 00 01 69 00 00 00 6a 00 00 00 6b 00 00 00 6c 00 00 00 6d 00 00 00 72 00 00 00 73 00 00 00 74 00 00 00 75 00 00 00 77 00 00 00 78 00 00 00
+22/05/22 23:27:45 : --->RX-v2 :------>> IOA_T  M_DP_NA_1
+22/05/22 23:27:45 : --->RX-v2 :M_DP_NA_1 DoublePoint
+22/05/22 23:27:45 : --->RX-v2 :New Incoming data,  Send_SEQ=40 ,  receive_SEQ=7
+22/05/22 23:27:45 : --->RX-v2 : 68 0f 50 00 0e 00 03 82 14 00 13 20 c8 00 00 02 02
+22/05/22 23:27:46 : --->RX-v2 :------>> IOA_T  M_ME_NC_1
+22/05/22 23:27:46 : --->RX-v2 :M_ME_NC_1_MeasuredShortFloatingPointValue
+22/05/22 23:27:46 : --->RX-v2 :New Incoming data,  Send_SEQ=41 ,  receive_SEQ=7
+22/05/22 23:27:46 : --->RX-v2 : 68 58 52 00 0e 00 0d 8f 14 00 13 20 bc 02 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+22/05/22 23:27:47 : --->RX-v2 :------>> IOA_T  C_IC_NA_1
+22/05/22 23:27:47 : --->RX-v2 :Termination of Interrogation CMD
+22/05/22 23:27:47 : --->RX-v2 :New Incoming data,  Send_SEQ=42 ,  receive_SEQ=7
+22/05/22 23:27:47 : --->RX-v2 : 68 0e 54 00 0e 00 64 01 0a 00 13 20 00 00 00 14
+22/05/22 23:27:48 : --->RX-v2 :------>> IOA_T  M_ME_NC_1
+22/05/22 23:27:48 : --->RX-v2 :M_ME_NC_1_MeasuredShortFloatingPointValue
+22/05/22 23:27:48 : --->RX-v2 :New Incoming data,  Send_SEQ=43 ,  receive_SEQ=7
+22/05/22 23:27:48 : --->RX-v2 : 68 58 56 00 0e 00 0d 8f 01 00 13 20 bc 02 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+22/05/22 23:27:49 : <---TX-v2 :Supervisory frame :  68 04 01 00 58 00
+22/05/22 23:27:57 : <---TX-v2 :Supervisory frame :  68 04 01 00 58 00
+22/05/22 23:27:57 : <---TX-v2 :Test activation Frame :  68 04 43 00 00 00
+22/05/22 23:27:58 : --->RX-v2 :New Incoming data,  Send_SEQ=43 ,  receive_SEQ=7
+22/05/22 23:27:58 : --->RX-v2 : 68 04 83 00 00 00
+22/05/22 23:28:05 : <---TX-v2 :Supervisory frame :  68 04 01 00 58 00
+22/05/22 23:28:07 : <---TX-v2 :Test activation Frame :  68 04 43 00 00 00
+22/05/22 23:28:08 : --->RX-v2 :New Incoming data,  Send_SEQ=43 ,  receive_SEQ=7
+22/05/22 23:28:08 : --->RX-v2 : 68 04 83 00 00 00
+22/05/22 23:28:13 : <---TX-v2 :Supervisory frame :  68 04 01 00 58 00
+22/05/22 23:28:16 : --->RX-v2 :------>> IOA_T  M_ME_NC_1
+22/05/22 23:28:16 : --->RX-v2 :M_ME_NC_1_MeasuredShortFloatingPointValue
+22/05/22 23:28:17 : --->RX-v2 :New Incoming data,  Send_SEQ=44 ,  receive_SEQ=7
+22/05/22 23:28:17 : --->RX-v2 : 68 58 58 00 0e 00 0d 8f 01 00 13 20 bc 02 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+22/05/22 23:28:22 : --->RX-v2 :reset_param 
+22/05/22 23:28:22 : --->RX-v2 :reset_param 
+22/05/22 23:28:22 : <---TX-v2 :Force To Disconnect TCP
