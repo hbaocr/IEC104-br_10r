@@ -1798,8 +1798,43 @@ namespace IEC104_dotnet
 
 
         }
+        
 
+        private int last_receiveSeqNum = 0;
+        private int last_sendSeqNum = 0;
+        private int seq_change_tick_cnt = 0;
+    
 
+        private void reconnect_if_no_seqnum_change(int nochange_period=90) {
+            if ((receiveSeqNum == last_receiveSeqNum) && (sendSeqNum == last_sendSeqNum))
+            {
+                // no data incoming --> device iec104 is hang ( because by default 45sec the system will send gi to query data)
+                seq_change_tick_cnt++;
+                //if (onCommunicationLog != null) onCommunicationLog(this, false, "seq_change_tick_cnt = " + seq_change_tick_cnt.ToString());
+
+                if (seq_change_tick_cnt > nochange_period)
+                {
+                    if (onCommunicationLog != null) onCommunicationLog(this, false, "==============================================================");
+                    if (onCommunicationLog != null) onCommunicationLog(this, false, "IEC104 device didn't report data.The system try reconnecting to recover the connection. Timeup (sec) : " + seq_change_tick_cnt.ToString());
+                    seq_change_tick_cnt = 0;
+                   
+                    disconnect();
+                    Thread.Sleep(1000);
+                    connect(3);
+                }
+     
+            }
+            else {
+                seq_change_tick_cnt = 0; //if change, receive new data --> reset cnt to avoid the reconnect event
+                // update last seq num
+                last_receiveSeqNum = receiveSeqNum;
+                last_sendSeqNum = sendSeqNum;
+            }
+
+            
+
+            
+        }
 
 
         /*this will be call out side as the timer clock of iec104 protocol*/
@@ -1812,6 +1847,7 @@ namespace IEC104_dotnet
                     //onCommunicationLog(this, true, "-----------tick clock");
                     iec104_receive_hdl();
                     iec104_control_frame_hdl();
+                    reconnect_if_no_seqnum_change(90);// reconnect if no data incoming in 90 sec
                 }
             }
             catch (Exception e)
