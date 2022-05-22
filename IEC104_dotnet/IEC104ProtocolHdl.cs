@@ -10,12 +10,12 @@ using System.Net.Sockets;
 using System.Threading;
 namespace IEC104_dotnet
 {
-    public class IEC104ProtocolHelper   /*IEC104 masters play as TCP client role*/
+    public class IEC104ProtocolHdl   /*IEC104 masters play as TCP client role*/
     {
-        public delegate void OnIncommingData(IEC104ProtocolHelper sender);
-        public delegate void OnErrorConnection(IEC104ProtocolHelper sender, string message);
-        public delegate void OnCommunicationLog(IEC104ProtocolHelper sender, bool is_tx_frame, string hexframe);
-      
+        public delegate void OnIncommingData(IEC104ProtocolHdl sender);
+        public delegate void OnErrorConnection(IEC104ProtocolHdl sender, string message);
+        public delegate void OnCommunicationLog(IEC104ProtocolHdl sender, bool is_tx_frame, string hexframe);
+
         public enum RequestStage
         {
             WAIT_STAGE = 0,
@@ -40,10 +40,22 @@ namespace IEC104_dotnet
         public TcpClient client;
 
         private IEC104_Setting remoteSetting = new IEC104_Setting(2, 2, 3);
+
+
         private int remoteCommonAddress = 5;
+
+        //private Socket tcpSocket = null;
+        // private NetworkStream tcpStream = null;
+        // private BinaryReader tcpReaderStream = null;
+        //  private BinaryWriter tcpWriterStream = null;
+
+
+        //  private TimerPeriodTask iec104TimeOutHDL;
+        //  private TimerPeriodTask iec104ReceiveHDL;
 
 
         private bool isConnect = false;
+
         private bool TxOk = false; // ready to transmit state (STARTDTCON received)
         private int tout_startdtact = 0; // timeout control
         private int tout_supervisory = 0;  // countdown to send supervisory window control
@@ -98,7 +110,7 @@ namespace IEC104_dotnet
         private bool IsSequenceOfElements = false;
         private int sequenceLength = 0; //number of IOA in recv buff
         private IEC104_ASDU_Para.COT_Id causeOfTransmission;
-        
+
         //C_RP_NA_1 : reset process command
         private bool isEnableSendResetProcessCMD = false;
 
@@ -110,18 +122,18 @@ namespace IEC104_dotnet
         private int readcmdIOA = 0;
 
         //Single CMD test
-         private bool isEnableSendSingleCmdTest = false;
-         private int singleCMDTestOnOffState = 0;
-         private int singleCmdTestTimeoutSec = 2; //wait for confirm --->timeout
-         private int singleCmdTestIOA=0;
-         private bool isSingleCMDExe = false;
+        private bool isEnableSendSingleCmdTest = false;
+        private int singleCMDTestOnOffState = 0;
+        private int singleCmdTestTimeoutSec = 2; //wait for confirm --->timeout
+        private int singleCmdTestIOA = 0;
+        private bool isSingleCMDExe = false;
 
         //Double CMD test
-         private bool isEnableSendDoubleCmdTest = false;
-         private int doubleCMDTestOnOffState = 0;
-         private int doubleCmdTestTimeoutSec = 2; //wait for confirm --->timeout
-         private int doubleCmdTestIOA=0;
-         private bool isDoubleCMDExe = false;
+        private bool isEnableSendDoubleCmdTest = false;
+        private int doubleCMDTestOnOffState = 0;
+        private int doubleCmdTestTimeoutSec = 2; //wait for confirm --->timeout
+        private int doubleCmdTestIOA = 0;
+        private bool isDoubleCMDExe = false;
 
 
 
@@ -187,20 +199,7 @@ namespace IEC104_dotnet
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-        public IEC104ProtocolHelper(string remoteIP, int commonAddr)
+        public IEC104ProtocolHdl(string remoteIP, int commonAddr)
         {
             try
             {
@@ -208,20 +207,20 @@ namespace IEC104_dotnet
                 this.remotePort = 2404;
                 this.remoteCommonAddress = commonAddr;
                 //for handler
-               // int IEC104_INTERVAL_MS = 200;
+                // int IEC104_INTERVAL_MS = 200;
                 reset_para();
-              //  iec104ReceiveHDL = new TimerPeriodTask(this, IEC104_INTERVAL_MS);//IEC104_INTERVAL_MS to check 1 period
-               // iec104ReceiveHDL.onPeriodTask += iec104_receive_hdl;//iec104_periodhdl will be call each IEC104_INTERVAL_MS
+                //  iec104ReceiveHDL = new TimerPeriodTask(this, IEC104_INTERVAL_MS);//IEC104_INTERVAL_MS to check 1 period
+                // iec104ReceiveHDL.onPeriodTask += iec104_receive_hdl;//iec104_periodhdl will be call each IEC104_INTERVAL_MS
 
-               // iec104TimeOutHDL = new TimerPeriodTask(this, 1000);//1sec to check 1 period
-               // iec104TimeOutHDL.onPeriodTask += iec104_timeout_hdl;//iec104_timeout_hdl will be call each 1sec
+                // iec104TimeOutHDL = new TimerPeriodTask(this, 1000);//1sec to check 1 period
+                // iec104TimeOutHDL.onPeriodTask += iec104_timeout_hdl;//iec104_timeout_hdl will be call each 1sec
             }
             catch (Exception e)
             {
                 throw new ArgumentException(e.Message);
             }
         }
-        public IEC104ProtocolHelper(string remoteIP, int remotePort, int commonAddr)
+        public IEC104ProtocolHdl(string remoteIP, int remotePort, int commonAddr)
             : this(remoteIP, commonAddr)
         {
 
@@ -282,7 +281,7 @@ namespace IEC104_dotnet
             apciType_req = IEC104_ASDU_Para.ApciType.STARTDT_ACT;
             string s = MyUltil.byteArrayToHexString(buff, len);
             onCommunicationLog(this, true, "StartDT_Act handshake Activation : " + s);
-            tout_startdtact = remoteSetting.t1_startdtact;
+            // tout_startdtact = remoteSetting.t1_startdtact;
             return tcpSendBuff(buff, len);
         }
 
@@ -379,7 +378,7 @@ namespace IEC104_dotnet
             var apdu = new IEC104_APDU(remoteSetting, master_tx_num, master_rx_num, IEC104_APDU.ApciType.I_FORMAT, asdu);
             int len = apdu.byte_encode(buff);
             string s = MyUltil.byteArrayToHexString(buff, len);
-            onCommunicationLog(this, true, "Send C_RD_NA_1 readIOA("+ioa +") cmd : " + s);
+            onCommunicationLog(this, true, "Send C_RD_NA_1 readIOA(" + ioa + ") cmd : " + s);
             apciType_req = IEC104_ASDU_Para.ApciType.I_FORMAT;
             tout_gi = remoteSetting.gi_retry_time;
             return tcpSendBuff(buff, len);
@@ -397,8 +396,8 @@ namespace IEC104_dotnet
             IEC104_ASDU_Para.QCC_QualifierOfCounterInterrogationElement qcc = new IEC104_ASDU_Para.QCC_QualifierOfCounterInterrogationElement(frz, rqt);
 
             //hbaocr
-           // IEC104_ASDU_Para.C_IC_NA_1_InterrogationCMD IOcmd = new IEC104_ASDU_Para.C_IC_NA_1_InterrogationCMD(remoteSetting, ioa,
-           //     new IEC104_ASDU_Para.QOI_QualifierOfInterrogationElement((byte)IEC104_ASDU_Para.QOI_QualifierOfInterrogationElement.QOI_VALUE.GLOBAL_STATION_INTERROGATION));
+            // IEC104_ASDU_Para.C_IC_NA_1_InterrogationCMD IOcmd = new IEC104_ASDU_Para.C_IC_NA_1_InterrogationCMD(remoteSetting, ioa,
+            //     new IEC104_ASDU_Para.QOI_QualifierOfInterrogationElement((byte)IEC104_ASDU_Para.QOI_QualifierOfInterrogationElement.QOI_VALUE.GLOBAL_STATION_INTERROGATION));
             IEC104_ASDU_Para.C_CI_NA_1_CounterInterrogationCMD IOcmd = new IEC104_ASDU_Para.C_CI_NA_1_CounterInterrogationCMD(remoteSetting, ioa, qcc);
             var asdu = new IEC104_ASDU(remoteSetting, IEC104_ASDU_Para.IOA_TypeID.C_IC_NA_1, cot, remoteCommonAddress, (IEC104_ASDU_Para.InformationObjBase)IOcmd);
 
@@ -444,7 +443,7 @@ namespace IEC104_dotnet
             IEC104_ASDU_Para.CauseOfTransmission cot = new IEC104_ASDU_Para.CauseOfTransmission(remoteSetting, false, false, IEC104_ASDU_Para.COT_Id.ACTIVATION, 0);
             IEC104_ASDU_Para.QRP_QualifierOfResetProcessElement qrp = new IEC104_ASDU_Para.QRP_QualifierOfResetProcessElement((byte)IEC104_ASDU_Para.QRP_QualifierOfResetProcessElement.QRP_VALUE.GENERAL_RESET_OF_PROCESS);
             IEC104_ASDU_Para.C_RP_NA_1_ResetCMD IOcmd = new IEC104_ASDU_Para.C_RP_NA_1_ResetCMD(remoteSetting, ioa, qrp);
-           
+
             var asdu = new IEC104_ASDU(remoteSetting, IEC104_ASDU_Para.IOA_TypeID.C_RP_NA_1, cot, remoteCommonAddress, (IEC104_ASDU_Para.InformationObjBase)IOcmd);
 
             int master_tx_num = receiveSeqNum % (32768);
@@ -478,7 +477,7 @@ namespace IEC104_dotnet
             string s = MyUltil.byteArrayToHexString(buff, len);
             onCommunicationLog(this, true, "Send Iterrogation frame : " + s);
             apciType_req = IEC104_ASDU_Para.ApciType.I_FORMAT;
-            tout_gi = remoteSetting.gi_retry_time;
+            //tout_gi = remoteSetting.gi_retry_time;
             return tcpSendBuff(buff, len);
         }
 
@@ -526,7 +525,14 @@ namespace IEC104_dotnet
         }
 
         //46: C_DC_NA_1
-        public int sendDoubleCmd(int ioa, int select_execute_cmd, int on_off_state)
+        /* Practical Modern SCADA Protocols: DNP3, 60870.5 and Related Systems at  8.6.2 page 237
+         * QOC(Qualifier of command) ( default=0 for BR-10R: ben tre)
+            <0> = No additional definition
+            <1> = Short pulse duration
+            <2> = Long duration pulse
+            <3> = Persistent output
+         */
+        public int sendDoubleCmd(int ioa, int select_execute_cmd, int on_off_state,int qoc=0)
         {
             byte[] buff = new byte[300];
 
@@ -547,7 +553,11 @@ namespace IEC104_dotnet
             //IEC104_ASDU_Para.SCO_SingleCommandElement sco_val = new IEC104_ASDU_Para.SCO_SingleCommandElement(select_execute, IEC104_ASDU_Para.SCO_SingleCommandElement.QU_code.Persistent_output, on_off);
             //IEC104_ASDU_Para.C_SC_NA_1_SinglePointCMD IOcmd = new IEC104_ASDU_Para.C_SC_NA_1_SinglePointCMD(remoteSetting, ioa, sco_val);
 
-            IEC104_ASDU_Para.DCO_DoubleCommandElement dco_val = new IEC104_ASDU_Para.DCO_DoubleCommandElement(select_execute, IEC104_ASDU_Para.DCO_DoubleCommandElement.QU_code.Persistent_output, on_off);
+            IEC104_ASDU_Para.DCO_DoubleCommandElement.QU_code QU = (IEC104_ASDU_Para.DCO_DoubleCommandElement.QU_code)qoc;
+            IEC104_ASDU_Para.DCO_DoubleCommandElement dco_val = new IEC104_ASDU_Para.DCO_DoubleCommandElement(select_execute, QU, on_off);
+
+            //IEC104_ASDU_Para.DCO_DoubleCommandElement dco_val = new IEC104_ASDU_Para.DCO_DoubleCommandElement(select_execute, IEC104_ASDU_Para.DCO_DoubleCommandElement.QU_code.Persistent_output, on_off); // for Noja opt
+
             IEC104_ASDU_Para.C_DC_NA_1_DoublePointCMD IOcmd = new IEC104_ASDU_Para.C_DC_NA_1_DoublePointCMD(remoteSetting, ioa, dco_val);
             //hbaocr
             var asdu = new IEC104_ASDU(remoteSetting, IEC104_ASDU_Para.IOA_TypeID.C_DC_NA_1, cot, remoteCommonAddress, (IEC104_ASDU_Para.InformationObjBase)IOcmd);
@@ -566,7 +576,8 @@ namespace IEC104_dotnet
             return tcpSendBuff(buff, len);
         }
 
-        public int counterInterrogationCMD() {
+        public int counterInterrogationCMD()
+        {
             isEnableSendCICmd = true;
             return 1;
         }
@@ -577,12 +588,13 @@ namespace IEC104_dotnet
             return 1;
         }
 
-        public int readIOA(int ioa) {
+        public int readIOA(int ioa)
+        {
             isEnableSendReadIOACmd = true;
             readcmdIOA = ioa;
             return 1;
         }
-        public int singleCMDTest(int ioa,bool is_exe ,int on_off, int timeout_sec = 2)
+        public int singleCMDTest(int ioa, bool is_exe, int on_off, int timeout_sec = 2)
         {
             //doi voi NOJA : dia chi dong mo la ioa=2001
             //singleCmdTimeoutSec = timeout_sec;
@@ -591,13 +603,13 @@ namespace IEC104_dotnet
             singleCmdTestIOA = ioa;
             singleCMDTestOnOffState = on_off;
             singleCmdTestTimeoutSec = timeout_sec;
-            isEnableSendSingleCmdTest= true;//enable flag to do step1 and step 2 in period send request
+            isEnableSendSingleCmdTest = true;//enable flag to do step1 and step 2 in period send request
             isSingleCMDExe = is_exe;
             //stage_single_cmd = SELECT_CMD_T;
             return 1;
         }
 
-         public int doubleCMDTest(int ioa,bool is_exe, int on_off, int timeout_sec = 2)
+        public int doubleCMDTest(int ioa, bool is_exe, int on_off, int timeout_sec = 2)
         {
             //doi voi NOJA : dia chi dong mo la ioa=2001
             //singleCmdTimeoutSec = timeout_sec;
@@ -606,7 +618,7 @@ namespace IEC104_dotnet
             doubleCmdTestIOA = ioa;
             doubleCMDTestOnOffState = on_off;
             doubleCmdTestTimeoutSec = timeout_sec;
-            isEnableSendDoubleCmdTest= true;//enable flag to do step1 and step 2 in period send request
+            isEnableSendDoubleCmdTest = true;//enable flag to do step1 and step 2 in period send request
             isDoubleCMDExe = is_exe;
             //stage_single_cmd = SELECT_CMD_T;
             return 1;
@@ -858,11 +870,30 @@ namespace IEC104_dotnet
                   
          */
 
+
         int parseResponse()
         {
+            
             if (client == null) return -2;
+
+        
             NetworkStream stream = client.GetStream();
+           
             if (stream == null) return -3;
+
+            if ((stream.CanRead == false) || (stream.DataAvailable == false))
+            {
+                return -4;
+            }
+           
+            //client.Available: Gets the amount of data that has been received from the network and is available to be read.
+            int received_sz = client.Available;
+            if (received_sz < 4)
+            {
+                if (onCommunicationLog != null) onCommunicationLog(this, true, "Received Data is not enough size: received_sz =" + received_sz.ToString());
+                return -4;
+            }
+
 
             int tmp = stream.ReadByte();
             if (tmp < 0) return -4;
@@ -872,6 +903,7 @@ namespace IEC104_dotnet
             if (length < 4 || length > 253)
             {
                 // throw new IOException("APDU contain invalid length: " + length);
+                onErrorConnection(this, "APDU contain invalid length: " + length);
                 return -1;
             }
             recv_len = (byte)length;
@@ -880,13 +912,22 @@ namespace IEC104_dotnet
             recvBuff[1] = recv_len;
             // tcpReaderStream.ReadBytes(length).CopyTo(recvBuff, 2);
             tmp = stream.Read(recvBuff, 2, recv_len);
-            if (tmp < 4) return -6;
+            if (tmp < 4) {
+                // throw new IOException("APDU contain invalid length: " + length);
+                onErrorConnection(this, "APDU contain invalid length: " + tmp);
+                return -6; 
+            }
             //=================Parse buffer from TCP===========================================
 
             int res = parseApdu();
 
-            string s = MyUltil.byteArrayToHexString(recvBuff);
-            onCommunicationLog(this, false, s);
+           
+            if (onCommunicationLog != null)
+            {
+                string s = MyUltil.byteArrayToHexString(recvBuff);
+                onCommunicationLog(this, false, "New Incoming data,  Send_SEQ=" + sendSeqNum.ToString() + " ,  receive_SEQ=" + receiveSeqNum.ToString());
+                onCommunicationLog(this, false, s);
+            }
             //===============Process Protocol Stage=============================================
             if (res != -1) /*make sure Valid APCI,but not sure valid ASDU*/
             {
@@ -897,211 +938,6 @@ namespace IEC104_dotnet
             return -1;
 
         }
-
-
-
-
-
-
-        
-
-
-        //================need to feed hbaocr==============================
-        // these function need to be called periodly when implement this protocol
-        public void timeout_hdl()//1 sec timer
-        {
-            if ((isConnect) && (client != null))
-            {
-                try
-                {
-                    if (tout_startdtact > 0)
-                        tout_startdtact--;
-                    if (tout_startdtact == 0)  // timeout of startdtact: retry
-                        sendStartDtAct();//sendStartDTACT();
-
-                    if (tout_gi > 0)
-                    {
-                        tout_gi--;
-                        if (tout_gi == 0)
-                        {
-                            sendInterrogation();//solicitGI();
-                        }
-                    }
-
-                    if (tout_supervisory > 0)
-                        tout_supervisory--;
-                    if (tout_supervisory > 0)
-                        tout_supervisory--;
-
-                    if (tout_supervisory == 0)
-                    {
-                        tout_supervisory = -1;
-                        sendSupervisory();
-                    }
-
-
-                    // if connected and no data received, send TESTFRACT
-                    if (TxOk)
-                    {
-                        if (tout_testfr > 0)
-                        {
-                            tout_testfr--;
-                            if (tout_testfr == 0)
-                            {
-                                sendTestfrAct();
-                            }
-                        }
-                    }
-
-                }
-                catch (Exception e)
-                {
-                    if (isConnect)
-                    {
-                        onErrorConnection(this, "TCP ERR Send :" + e.Message.ToString());
-                        disconnect();
-                        connect(2);
-                    }
-
-                }
-
-            }
-
-
-
-        }
-
-        // these function need to be called periodly when implement this protocol
-        public void receive_hdl()//200 ms timer
-        {
-            int ret = -1;
-            
-            try
-            {
-                ret = parseResponse();
-
-                if (ret > 0)
-                {
-                    if (isEnableSendResetProcessCMD)
-                    {
-                        onCommunicationLog(this, true, "Send Reset Process C_RP_NA_1 cmd ");
-                        sendResetProcessCMD();
-                        isEnableSendResetProcessCMD = false;
-                    }
-
-                    if (isEnableSendCICmd)
-                    {
-                        onCommunicationLog(this, true, "Send Read C_CI_NA_1 cmd ");
-                        sendGeneralCounterInterrogation();
-                        isEnableSendCICmd = false;
-                    }
-
-                    if (isEnableSendReadIOACmd)
-                    {
-                        onCommunicationLog(this, true, "Send Read IOA cmd C_RD_NA_1 " + readcmdIOA);
-                        sendReadIOACommand(readcmdIOA);
-
-                        isEnableSendReadIOACmd = false;
-                    }
-
-                    if (isEnableSendSingleCmdTest)
-                    {
-                        if (isSingleCMDExe)
-                        {
-                            onCommunicationLog(this, true, "Send Single CMD select");
-                            sendSingleCmd(singleCmdTestIOA, EXECUTE_CMD_T, singleCMDTestOnOffState);
-                        }
-                        else
-                        {
-                            onCommunicationLog(this, true, "Send Single CMD select");
-                            sendSingleCmd(singleCmdTestIOA, SELECT_CMD_T, singleCMDTestOnOffState);
-                        }
-
-                        isEnableSendSingleCmdTest = false;
-
-                    }
-
-
-                    if (isEnableSendDoubleCmdTest)
-                    {
-                        if (isDoubleCMDExe)
-                        {
-                            onCommunicationLog(this, true, "Send Double CMD select");
-                            sendDoubleCmd(doubleCmdTestIOA, EXECUTE_CMD_T, doubleCMDTestOnOffState);
-                        }
-                        else
-                        {
-                            onCommunicationLog(this, true, "Send Double CMD select");
-                            sendDoubleCmd(doubleCmdTestIOA, SELECT_CMD_T, doubleCMDTestOnOffState);
-                        }
-
-                        isEnableSendDoubleCmdTest = false;
-
-                    }
-
-                    //do trip close single cmd
-
-                    if (isEnableSendSingleCmd)
-                    {
-                        int is_ok = tripCloseProccessHandle(singleCmdIOA, singleCMDOnOffState, singleCmdTimeoutSec);
-                        if (is_ok != 0)
-                        {
-                            isEnableSendSingleCmd = false;//finish stage
-                            stage_single_cmd = NO_CMD;
-                        }
-
-                    }
-
-
-                    //do trip close double cmd
-
-                    if (isEnableSendDoubleCmd)
-                    {
-                        //int is_ok = tripCloseProccessHandle(singleCmdIOA, singleCMDOnOffState, singleCmdTimeoutSec);
-                        int is_ok = tripCloseDoubleCMDProccessHandle(doubleCmdIOA, doubleCMDOnOffState, doubleCmdTimeoutSec);
-                        if (is_ok != 0)
-                        {
-                            isEnableSendDoubleCmd = false;//finish stage
-                            stage_double_cmd = NO_CMD;
-                        }
-
-                    }
-
-
-
-                    tout_testfr = remoteSetting.t3_testfr;
-
-
-                    // will wait t2 seconds or n messages to send supervisory window control
-                    if (tout_supervisory < 0)
-                        tout_supervisory = remoteSetting.t2_supervisory;
-
-                    if (tout_supervisory > 0)
-                        tout_supervisory--;
-
-                    if (tout_supervisory == 0)
-                    {
-                        tout_supervisory = -1;
-                        sendSupervisory();
-                    }
-
-                }
-            }
-            catch (Exception e)
-            {
-                if (isConnect)
-                {
-                    onErrorConnection(this, "TCP ERR Receive :" + e.Message.ToString());
-                    disconnect();
-                    connect(2);
-                }
-
-            }
-
-
-        }
-
-
 
         public int connect(int try_cnt)
         {
@@ -1118,6 +954,14 @@ namespace IEC104_dotnet
                         isConnect = true;
                         sendSeqNum = 0;
                         receiveSeqNum = 0;
+                        
+                        // reset command before init 
+                        sendStopDtAct();
+                        Thread.Sleep(500);
+                        sendResetProcessCMD();
+                        Thread.Sleep(1500);
+
+                        //=========First connect cmd
 
                         sendStartDtAct();//send  first handshake
                         //iec104ReceiveHDL.execute(true);
@@ -1157,19 +1001,31 @@ namespace IEC104_dotnet
                 client.Close();
                 reset_para();
 
-                if(onCommunicationLog != null) onCommunicationLog(this, true, "Force To Disconnect TCP");
+                if (onCommunicationLog != null) onCommunicationLog(this, true, "Force To Disconnect TCP");
             }
             catch (Exception e)
             {
-                if(onCommunicationLog != null) onCommunicationLog(this, true, "Force To Disconnect TCP Err: " + e.Message.ToString());
+                if (onCommunicationLog != null) onCommunicationLog(this, true, "Force To Disconnect TCP Err: " + e.Message.ToString());
             }
         }
 
+
+
+
         void reset_para()
         {
-            tout_startdtact = -1;
-            tout_supervisory = -1;
-            tout_gi = -1;
+            //tout_startdtact = -1;
+            //tout_supervisory = -1;
+            if (onCommunicationLog != null)  onCommunicationLog(this, false, "reset_param ");
+            tout_supervisory = remoteSetting.t2_supervisory;
+            tout_startdtact = remoteSetting.t1_startdtact;
+
+            /*
+             * To make sure send first GI command 5 sec after connection to query status of devices.
+             * After first periode , this will be  remoteSetting.gi_retry_time = 45sec;
+            */
+            const int first_gi_period = 5;
+            tout_gi = first_gi_period;
 
 
             TxOk = false;
@@ -1208,7 +1064,7 @@ namespace IEC104_dotnet
                     tout_startdtact = -1; // flag confirmation of STARTDT, not to timeout
                     TxOk = true;
                     tout_gi = 15; // request GI when communication starts
-                    if(onCommunicationLog != null) onCommunicationLog(this, false, " receive STARTDT_CON ");
+                    if (onCommunicationLog != null) onCommunicationLog(this, false, " receive STARTDT_CON ");
                     break;
                 case IEC104_ASDU_Para.ApciType.TESTFR_ACT:
                     sendTestfrCon();
@@ -1225,7 +1081,7 @@ namespace IEC104_dotnet
                     catch (Exception e)
                     {
                         // MyUltil.pushlog("Invalid Frame format");
-                        if(onCommunicationLog != null) onCommunicationLog(this, false, "Invalid Frame format :" + e.Message.ToString());
+                        if (onCommunicationLog != null) onCommunicationLog(this, false, "Invalid Frame format :" + e.Message.ToString());
                         res = -2;
                     }
                     break;
@@ -1344,7 +1200,7 @@ namespace IEC104_dotnet
                 recvCommonAdrr = recvBuff[idx++] + (recvBuff[idx++] << 8);
             }
             int ioa_begin = idx;
-            if(onCommunicationLog != null) onCommunicationLog(this, false, "------>> IOA_T  " + ioa_type_id.ToString());
+            if (onCommunicationLog != null) onCommunicationLog(this, false, "------>> IOA_T  " + ioa_type_id.ToString());
             switch (ioa_type_id)
             {
 
@@ -1353,13 +1209,13 @@ namespace IEC104_dotnet
                     if (causeOfTransmission == IEC104_ASDU_Para.COT_Id.ACTIVATION_CON)
                     {
                         isSingleCmdConfirmResp = true;
-                        if(onCommunicationLog != null) onCommunicationLog(this, false, "Single CMD ACT confirmation ");
+                        if (onCommunicationLog != null) onCommunicationLog(this, false, "Single CMD ACT confirmation ");
                     }
 
                     if (causeOfTransmission == IEC104_ASDU_Para.COT_Id.ACTIVATION_TERMINATION)
                     {
                         isSingleCmdConfirmResp = true; //execute task confirm active termination
-                        if(onCommunicationLog != null) onCommunicationLog(this, false, "Single CMD ACT termination ");
+                        if (onCommunicationLog != null) onCommunicationLog(this, false, "Single CMD ACT termination ");
                     }
 
 
@@ -1370,13 +1226,13 @@ namespace IEC104_dotnet
                     if (causeOfTransmission == IEC104_ASDU_Para.COT_Id.ACTIVATION_CON)
                     {
                         isDoubleCmdConfirmResp = true;
-                        if(onCommunicationLog != null) onCommunicationLog(this, false, "Double CMD ACT confirmation ");
+                        if (onCommunicationLog != null) onCommunicationLog(this, false, "Double CMD ACT confirmation ");
                     }
 
                     if (causeOfTransmission == IEC104_ASDU_Para.COT_Id.ACTIVATION_TERMINATION)
                     {
                         isDoubleCmdConfirmResp = true; //execute task confirm active termination
-                        if(onCommunicationLog != null) onCommunicationLog(this, false, "Double CMD ACT termination ");
+                        if (onCommunicationLog != null) onCommunicationLog(this, false, "Double CMD ACT termination ");
                     }
 
 
@@ -1386,14 +1242,14 @@ namespace IEC104_dotnet
                 case IEC104_ASDU_Para.IOA_TypeID.C_IC_NA_1:/*cmd interrogation res*/
                     if (causeOfTransmission == IEC104_ASDU_Para.COT_Id.ACTIVATION_TERMINATION)
                     {
-                        if(onCommunicationLog != null) onCommunicationLog(this, false, "Termination of Interrogation CMD");
+                        if (onCommunicationLog != null) onCommunicationLog(this, false, "Termination of Interrogation CMD");
                     }
 
 
                     break;
                 case IEC104_ASDU_Para.IOA_TypeID.M_EI_NA_1:/*end of inital*/
                     //   sendSupervisory();
-                    if(onCommunicationLog != null) onCommunicationLog(this, false, "End of initation : M_EI_NA_1");
+                    if (onCommunicationLog != null) onCommunicationLog(this, false, "End of initation : M_EI_NA_1");
                     //Thread.Sleep(500);
                     //  sendInterrogation();
                     break;
@@ -1410,7 +1266,7 @@ namespace IEC104_dotnet
                         int ioa_tid = (int)ioa_type_id;
                         listNewIncommingData.Add(new RespValue(ioa, val, ioa_tid, cot, ""));
                     }
-                    if(onCommunicationLog != null) onCommunicationLog(this, false, "M_SP_NA_1 SinglePoint Recv");
+                    if (onCommunicationLog != null) onCommunicationLog(this, false, "M_SP_NA_1 SinglePoint Recv");
                     onIncommingData(this);
 
                     break;
@@ -1426,7 +1282,7 @@ namespace IEC104_dotnet
                         int ioa_tid = (int)ioa_type_id;
                         listNewIncommingData.Add(new RespValue(ioa, val, ioa_tid, cot, ""));
                     }
-                    if(onCommunicationLog != null) onCommunicationLog(this, false, "M_SP_TA_1 SinglePoint With Time24");
+                    if (onCommunicationLog != null) onCommunicationLog(this, false, "M_SP_TA_1 SinglePoint With Time24");
                     onIncommingData(this);
 
                     break;
@@ -1443,7 +1299,7 @@ namespace IEC104_dotnet
                         string t = M_SP_TB_1_val.TimeTag_list[i].ToString();
                         listNewIncommingData.Add(new RespValue(ioa, val, ioa_tid, cot, t));
                     }
-                    if(onCommunicationLog != null) onCommunicationLog(this, false, "M_SP_TB_1 SinglePoint With Time56");
+                    if (onCommunicationLog != null) onCommunicationLog(this, false, "M_SP_TB_1 SinglePoint With Time56");
                     onIncommingData(this);
 
                     break;
@@ -1462,7 +1318,7 @@ namespace IEC104_dotnet
                         string t = "";
                         listNewIncommingData.Add(new RespValue(ioa, val, ioa_tid, cot, t));
                     }
-                    if(onCommunicationLog != null) onCommunicationLog(this, false, "M_DP_NA_1 DoublePoint");
+                    if (onCommunicationLog != null) onCommunicationLog(this, false, "M_DP_NA_1 DoublePoint");
                     onIncommingData(this);
                     break;
                 case IEC104_ASDU_Para.IOA_TypeID.M_DP_TA_1:/*double point info with timetag CP24Time2a*/
@@ -1478,7 +1334,7 @@ namespace IEC104_dotnet
                         string t = "";
                         listNewIncommingData.Add(new RespValue(ioa, val, ioa_tid, cot, t));
                     }
-                    if(onCommunicationLog != null) onCommunicationLog(this, false, "M_DP_TA_1 DoublePoint With Time24");
+                    if (onCommunicationLog != null) onCommunicationLog(this, false, "M_DP_TA_1 DoublePoint With Time24");
                     onIncommingData(this);
                     break;
                 case IEC104_ASDU_Para.IOA_TypeID.M_DP_TB_1:/*double point info with timetag CP56Time2a*/
@@ -1494,7 +1350,7 @@ namespace IEC104_dotnet
                         int ioa_tid = (int)ioa_type_id;
                         listNewIncommingData.Add(new RespValue(ioa, val, ioa_tid, cot, t));
                     }
-                    if(onCommunicationLog != null) onCommunicationLog(this, false, "M_DP_TB_1 DoublePoint With Time56");
+                    if (onCommunicationLog != null) onCommunicationLog(this, false, "M_DP_TB_1 DoublePoint With Time56");
                     onIncommingData(this);
                     break;
 
@@ -1512,7 +1368,7 @@ namespace IEC104_dotnet
                         int ioa_tid = (int)ioa_type_id;
                         listNewIncommingData.Add(new RespValue(ioa, val, ioa_tid, cot, t));
                     }
-                    if(onCommunicationLog != null) onCommunicationLog(this, false, "M_ST_NA_1 StepPoint");
+                    if (onCommunicationLog != null) onCommunicationLog(this, false, "M_ST_NA_1 StepPoint");
                     onIncommingData(this);
                     break;
                 case IEC104_ASDU_Para.IOA_TypeID.M_ST_TA_1:/*step pos info with timetag CP24Time2a*/
@@ -1528,7 +1384,7 @@ namespace IEC104_dotnet
                         int ioa_tid = (int)ioa_type_id;
                         listNewIncommingData.Add(new RespValue(ioa, val, ioa_tid, cot, t));
                     }
-                    if(onCommunicationLog != null) onCommunicationLog(this, false, "M_ST_TA_1 StepPoint Time24");
+                    if (onCommunicationLog != null) onCommunicationLog(this, false, "M_ST_TA_1 StepPoint Time24");
                     onIncommingData(this);
                     break;
                 case IEC104_ASDU_Para.IOA_TypeID.M_ST_TB_1:/*step pos info with timetag CP56Time2a*/
@@ -1544,7 +1400,7 @@ namespace IEC104_dotnet
                         int ioa_tid = (int)ioa_type_id;
                         listNewIncommingData.Add(new RespValue(ioa, val, ioa_tid, cot, t));
                     }
-                    if(onCommunicationLog != null) onCommunicationLog(this, false, "M_ST_TB_1 StepPoint Time56");
+                    if (onCommunicationLog != null) onCommunicationLog(this, false, "M_ST_TB_1 StepPoint Time56");
                     onIncommingData(this);
                     break;
 
@@ -1563,7 +1419,7 @@ namespace IEC104_dotnet
                         int ioa_tid = (int)ioa_type_id;
                         listNewIncommingData.Add(new RespValue(ioa, val, ioa_tid, cot, t));
                     }
-                    if(onCommunicationLog != null) onCommunicationLog(this, false, "M_ME_NA_1_MeasuredNormalizedValue");
+                    if (onCommunicationLog != null) onCommunicationLog(this, false, "M_ME_NA_1_MeasuredNormalizedValue");
                     onIncommingData(this);
                     break;
                 case IEC104_ASDU_Para.IOA_TypeID.M_ME_TA_1:/*Measured value,normalized value*/
@@ -1580,7 +1436,7 @@ namespace IEC104_dotnet
                         int ioa_tid = (int)ioa_type_id;
                         listNewIncommingData.Add(new RespValue(ioa, val, ioa_tid, cot, t));
                     }
-                    if(onCommunicationLog != null) onCommunicationLog(this, false, "M_ME_TA_1_val Time24");
+                    if (onCommunicationLog != null) onCommunicationLog(this, false, "M_ME_TA_1_val Time24");
                     onIncommingData(this);
 
                     break;
@@ -1599,7 +1455,7 @@ namespace IEC104_dotnet
                         int ioa_tid = (int)ioa_type_id;
                         listNewIncommingData.Add(new RespValue(ioa, val, ioa_tid, cot, t));
                     }
-                    if(onCommunicationLog != null) onCommunicationLog(this, false, "M_ME_TD_1_MeasuredNormalizedValueWithTime56");
+                    if (onCommunicationLog != null) onCommunicationLog(this, false, "M_ME_TD_1_MeasuredNormalizedValueWithTime56");
                     onIncommingData(this);
                     break;
 
@@ -1617,7 +1473,7 @@ namespace IEC104_dotnet
                         int ioa_tid = (int)ioa_type_id;
                         listNewIncommingData.Add(new RespValue(ioa, val, ioa_tid, cot, t));
                     }
-                    if(onCommunicationLog != null) onCommunicationLog(this, false, "M_ME_NB_1_MeasuredScaledValue");
+                    if (onCommunicationLog != null) onCommunicationLog(this, false, "M_ME_NB_1_MeasuredScaledValue");
                     onIncommingData(this);
                     break;
                 case IEC104_ASDU_Para.IOA_TypeID.M_ME_TB_1:/*Measured value,scaled value*/
@@ -1633,7 +1489,7 @@ namespace IEC104_dotnet
                         int ioa_tid = (int)ioa_type_id;
                         listNewIncommingData.Add(new RespValue(ioa, val, ioa_tid, cot, t));
                     }
-                    if(onCommunicationLog != null) onCommunicationLog(this, false, "M_ME_TB_1_MeasuredScaledValueWithTime24");
+                    if (onCommunicationLog != null) onCommunicationLog(this, false, "M_ME_TB_1_MeasuredScaledValueWithTime24");
                     onIncommingData(this);
                     break;
                 case IEC104_ASDU_Para.IOA_TypeID.M_ME_TE_1:/*Measured value,scaled value*/
@@ -1649,7 +1505,7 @@ namespace IEC104_dotnet
                         int ioa_tid = (int)ioa_type_id;
                         listNewIncommingData.Add(new RespValue(ioa, val, ioa_tid, cot, t));
                     }
-                    if(onCommunicationLog != null) onCommunicationLog(this, false, "M_ME_TE_1_MeasuredScaledValueWithTime56");
+                    if (onCommunicationLog != null) onCommunicationLog(this, false, "M_ME_TE_1_MeasuredScaledValueWithTime56");
                     onIncommingData(this);
                     break;
 
@@ -1667,7 +1523,7 @@ namespace IEC104_dotnet
                         int ioa_tid = (int)ioa_type_id;
                         listNewIncommingData.Add(new RespValue(ioa, val, ioa_tid, cot, t));
                     }
-                    if(onCommunicationLog != null) onCommunicationLog(this, false, "M_ME_NC_1_MeasuredShortFloatingPointValue");
+                    if (onCommunicationLog != null) onCommunicationLog(this, false, "M_ME_NC_1_MeasuredShortFloatingPointValue");
                     onIncommingData(this);
                     break;
                 case IEC104_ASDU_Para.IOA_TypeID.M_ME_TC_1:/*Measured value,Single float value*/
@@ -1683,7 +1539,7 @@ namespace IEC104_dotnet
                         int ioa_tid = (int)ioa_type_id;
                         listNewIncommingData.Add(new RespValue(ioa, val, ioa_tid, cot, t));
                     }
-                    if(onCommunicationLog != null) onCommunicationLog(this, false, "M_ME_TC_1_MeasuredShortFloatingPointWithTime24");
+                    if (onCommunicationLog != null) onCommunicationLog(this, false, "M_ME_TC_1_MeasuredShortFloatingPointWithTime24");
                     onIncommingData(this);
                     break;
                 case IEC104_ASDU_Para.IOA_TypeID.M_ME_TF_1:/*Measured value,Single float value*/
@@ -1699,7 +1555,7 @@ namespace IEC104_dotnet
                         int ioa_tid = (int)ioa_type_id;
                         listNewIncommingData.Add(new RespValue(ioa, val, ioa_tid, cot, t));
                     }
-                    if(onCommunicationLog != null) onCommunicationLog(this, false, "M_ME_TF_1_MeasuredShortFloatingPointWithTime56");
+                    if (onCommunicationLog != null) onCommunicationLog(this, false, "M_ME_TF_1_MeasuredShortFloatingPointWithTime56");
                     onIncommingData(this);
                     break;
 
@@ -1716,7 +1572,7 @@ namespace IEC104_dotnet
                         int ioa_tid = (int)ioa_type_id;
                         listNewIncommingData.Add(new RespValue(ioa, val, ioa_tid, cot, t));
                     }
-                    if(onCommunicationLog != null) onCommunicationLog(this, false, "M_IT_NA_1_IntegratedTotalsValue");
+                    if (onCommunicationLog != null) onCommunicationLog(this, false, "M_IT_NA_1_IntegratedTotalsValue");
                     onIncommingData(this);
                     break;
 
@@ -1733,7 +1589,7 @@ namespace IEC104_dotnet
                         int ioa_tid = (int)ioa_type_id;
                         listNewIncommingData.Add(new RespValue(ioa, val, ioa_tid, cot, t));
                     }
-                    if(onCommunicationLog != null) onCommunicationLog(this, false, "M_IT_TB_1_IntegratedTotalsValuetWithTime24");
+                    if (onCommunicationLog != null) onCommunicationLog(this, false, "M_IT_TB_1_IntegratedTotalsValuetWithTime24");
                     onIncommingData(this);
                     break;
                 case IEC104_ASDU_Para.IOA_TypeID.M_IT_TA_1:/*Integrated val*/
@@ -1749,12 +1605,12 @@ namespace IEC104_dotnet
                         int ioa_tid = (int)ioa_type_id;
                         listNewIncommingData.Add(new RespValue(ioa, val, ioa_tid, cot, t));
                     }
-                    if(onCommunicationLog != null) onCommunicationLog(this, false, "M_IT_TA_1_IntegratedTotalsValueWithTime56");
+                    if (onCommunicationLog != null) onCommunicationLog(this, false, "M_IT_TA_1_IntegratedTotalsValueWithTime56");
                     onIncommingData(this);
                     break;
 
                 default:
-                    if(onCommunicationLog != null) onCommunicationLog(this, false, "-------> TYPE ID of IOA (" + ioa_type_id.ToString() + " ) not support");
+                    if (onCommunicationLog != null) onCommunicationLog(this, false, "-------> TYPE ID of IOA (" + ioa_type_id.ToString() + " ) not support");
                     //MyUltil.pushlog("Current IOA do not support ioa_tid yet : " + ioa_type_id);
                     break;
 
@@ -1766,14 +1622,205 @@ namespace IEC104_dotnet
 
         }
 
-        /*
-         This is call outside 
-         */
-        public void iec_104_tick(int period_ms)
+
+
+        // to ping and keep connection
+        private void iec104_control_frame_hdl()
         {
+
+            /*
+             * the tout_startdtact must be sent first to start communication with device. This sendStartDtAct must send only once when new tcp connection
+             * when devices confirm for sendStartDtAct by IEC104_ASDU_Para.ApciType.STARTDT_CON==> set tout_startdtact = -1 < 0 ==> skip sending sendStartDtAct
+             */
+            if (tout_startdtact >= 0)
+            {
+                if (tout_startdtact == 0)
+                {
+                    sendStartDtAct();
+                    tout_startdtact = remoteSetting.t1_startdtact;
+                }
+
+            }
+
+            //onCommunicationLog(this, false, "tout_supervisory : " + tout_supervisory);
+            // will wait t2 seconds or n messages to send supervisory window control
+            if (--tout_supervisory <= 0)
+            {
+                sendSupervisory();
+                tout_supervisory = remoteSetting.t2_supervisory;//8s
+            }
+
+            /*if connected (device confirm with STARTDT_CON ==> TxOK = true) 
+             * and no data received( whenever new data is comming tout_testfr is set =  remoteSetting.t3_testfr >0) 
+             * if this tout_testfr  --> 0  ==> no incomming data from devices  ===> send sendTestfrAct
+             */
+
+            // the tout_testfr will be equal to remoteSetting.t3_testfr in iec104_receive_hdl whenever new data come. We do't need to send testfr when real data already come.
+            if ((--tout_testfr <= 0) && (TxOk == true))
+            {
+                sendTestfrAct();
+                tout_testfr = remoteSetting.t3_testfr;
+
+            }
+
+            /*
+             * send GI to update device status each 45 sec except first period 15ec 
+             */
+
+            if (--tout_gi <= 0)
+            {
+                sendInterrogation();//solicitGI();  
+                tout_gi = remoteSetting.gi_retry_time; //45 sec
+            }
+
 
         }
 
+        // to receive data
+
+
+        private void handle_stateless_cmd() {
+            if (isEnableSendResetProcessCMD)
+            {
+                onCommunicationLog(this, true, "Send Reset Process C_RP_NA_1 cmd ");
+                sendResetProcessCMD();
+                isEnableSendResetProcessCMD = false;
+            }
+
+            if (isEnableSendCICmd)
+            {
+                onCommunicationLog(this, true, "Send Read C_CI_NA_1 cmd ");
+                sendGeneralCounterInterrogation();
+                isEnableSendCICmd = false;
+            }
+
+            if (isEnableSendReadIOACmd)
+            {
+                onCommunicationLog(this, true, "Send Read IOA cmd C_RD_NA_1 " + readcmdIOA);
+                sendReadIOACommand(readcmdIOA);
+
+                isEnableSendReadIOACmd = false;
+            }
+
+            if (isEnableSendSingleCmdTest)
+            {
+                if (isSingleCMDExe)
+                {
+                    onCommunicationLog(this, true, "Send Single CMD Exec");
+                    sendSingleCmd(singleCmdTestIOA, EXECUTE_CMD_T, singleCMDTestOnOffState);
+                }
+                else
+                {
+                    onCommunicationLog(this, true, "Send Single CMD Select");
+                    sendSingleCmd(singleCmdTestIOA, SELECT_CMD_T, singleCMDTestOnOffState);
+                }
+
+                isEnableSendSingleCmdTest = false;
+
+            }
+
+
+            if (isEnableSendDoubleCmdTest)
+            {
+                if (isDoubleCMDExe)
+                {
+                    onCommunicationLog(this, true, "Send Double CMD Exec");
+                    sendDoubleCmd(doubleCmdTestIOA, EXECUTE_CMD_T, doubleCMDTestOnOffState);
+                }
+                else
+                {
+                    onCommunicationLog(this, true, "Send Double CMD Select");
+                    sendDoubleCmd(doubleCmdTestIOA, SELECT_CMD_T, doubleCMDTestOnOffState);
+                }
+
+                isEnableSendDoubleCmdTest = false;
+
+            }
+        
+        }
+        private void iec104_receive_hdl()
+        {
+            int ret = -1;
+
+            try
+            {
+                ret = parseResponse();
+                handle_stateless_cmd();
+                if (ret > 0)
+                {
+
+
+                    //do trip close single cmd
+
+                    if (isEnableSendSingleCmd)
+                    {
+                        int is_ok = tripCloseProccessHandle(singleCmdIOA, singleCMDOnOffState, singleCmdTimeoutSec);
+                        if (is_ok != 0)
+                        {
+                            isEnableSendSingleCmd = false;//finish stage
+                            stage_single_cmd = NO_CMD;
+                        }
+
+                    }
+
+
+                    //do trip close double cmd
+
+                    if (isEnableSendDoubleCmd)
+                    {
+                        //int is_ok = tripCloseProccessHandle(singleCmdIOA, singleCMDOnOffState, singleCmdTimeoutSec);
+                        int is_ok = tripCloseDoubleCMDProccessHandle(doubleCmdIOA, doubleCMDOnOffState, doubleCmdTimeoutSec);
+                        if (is_ok != 0)
+                        {
+                            isEnableSendDoubleCmd = false;//finish stage
+                            stage_double_cmd = NO_CMD;
+                        }
+
+                    }
+
+
+                    // reset test_frame tick to prevent sending out testframe when no data is coming
+                    tout_testfr = remoteSetting.t3_testfr;
+
+                   
+                }
+            }
+            catch (Exception e)
+            {
+                if (isConnect)
+                {
+                    onErrorConnection(this, "TCP ERR Receive :" + e.Message.ToString());
+                    disconnect();
+                    connect(2);
+                }
+
+            }
+
+
+        }
+
+
+
+
+        /*this will be call out side as the timer clock of iec104 protocol*/
+        public void iec104_1sec_tick_hdl()
+        {
+            try
+            {
+                if ((isConnect) && (client != null))
+                {
+                    //onCommunicationLog(this, true, "-----------tick clock");
+                    iec104_receive_hdl();
+                    iec104_control_frame_hdl();
+                }
+            }
+            catch (Exception e)
+            {
+                // MyUltil.pushlog("Invalid Frame format");
+                if (onCommunicationLog != null) onCommunicationLog(this, false, "iec104_1sec_tick_hdl err :" + e.Message.ToString());
+            }
+
+        }
 
     }
 

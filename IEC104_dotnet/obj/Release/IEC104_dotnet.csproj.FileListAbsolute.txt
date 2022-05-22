@@ -1,35 +1,35 @@
-E:/PROJECT ANH NHAN/IEC60870_5_104_dotnet/104VP_05_10/IEC104_Dotnet/IEC104_dotnet/bin/Release/IEC104_dotnet.exe.config
-E:/PROJECT ANH NHAN/IEC60870_5_104_dotnet/104VP_05_10/IEC104_Dotnet/IEC104_dotnet/bin/Release/IEC104_dotnet.exe
-E:/PROJECT ANH NHAN/IEC60870_5_104_dotnet/104VP_05_10/IEC104_Dotnet/IEC104_dotnet/bin/Release/IEC104_dotnet.pdb
-E:/PROJECT ANH NHAN/IEC60870_5_104_dotnet/104VP_05_10/IEC104_Dotnet/IEC104_dotnet/obj/Release/IEC104_dotnet.csprojResolveAssemblyReference.cache
-E:/PROJECT ANH NHAN/IEC60870_5_104_dotnet/104VP_05_10/IEC104_Dotnet/IEC104_dotnet/obj/Release/IEC104_dotnet.Form1.resources
-E:/PROJECT ANH NHAN/IEC60870_5_104_dotnet/104VP_05_10/IEC104_Dotnet/IEC104_dotnet/obj/Release/IEC104_dotnet.Properties.Resources.resources
-E:/PROJECT ANH NHAN/IEC60870_5_104_dotnet/104VP_05_10/IEC104_Dotnet/IEC104_dotnet/obj/Release/IEC104_dotnet.csproj.GenerateResource.Cache
-E:/PROJECT ANH NHAN/IEC60870_5_104_dotnet/104VP_05_10/IEC104_Dotnet/IEC104_dotnet/obj/Release/IEC104_dotnet.exe
-E:/PROJECT ANH NHAN/IEC60870_5_104_dotnet/104VP_05_10/IEC104_Dotnet/IEC104_dotnet/obj/Release/IEC104_dotnet.pdb
-D:/IEC104_VP_testNOJA_fixed_refuse_connection_07_10/IEC104_dotnet/bin/Release/IEC104_dotnet.exe.config
-D:/IEC104_VP_testNOJA_fixed_refuse_connection_07_10/IEC104_dotnet/obj/Release/IEC104_dotnet.exe
-D:/IEC104_VP_testNOJA_fixed_refuse_connection_07_10/IEC104_dotnet/obj/Release/IEC104_dotnet.pdb
-D:/IEC104_VP_testNOJA_fixed_refuse_connection_07_10/IEC104_dotnet/bin/Release/IEC104_dotnet.exe
-D:/IEC104_VP_testNOJA_fixed_refuse_connection_07_10/IEC104_dotnet/bin/Release/IEC104_dotnet.pdb
-D:/IEC104_VP_testNOJA_fixed_refuse_connection_07_10/IEC104_dotnet/obj/Release/IEC104_dotnet.csprojResolveAssemblyReference.cache
-D:/IEC104_VP_testNOJA_fixed_refuse_connection_07_10/IEC104_dotnet/obj/Release/IEC104_dotnet.Form1.resources
-D:/IEC104_VP_testNOJA_fixed_refuse_connection_07_10/IEC104_dotnet/obj/Release/IEC104_dotnet.Properties.Resources.resources
-D:/IEC104_VP_testNOJA_fixed_refuse_connection_07_10/IEC104_dotnet/obj/Release/IEC104_dotnet.csproj.GenerateResource.Cache
-D:/fromgit/IEC104_dotnet/bin/Release/IEC104_dotnet.exe.config
-D:/fromgit/IEC104_dotnet/obj/Release/IEC104_dotnet.exe
-D:/fromgit/IEC104_dotnet/obj/Release/IEC104_dotnet.pdb
-D:/fromgit/IEC104_dotnet/bin/Release/IEC104_dotnet.exe
-D:/fromgit/IEC104_dotnet/bin/Release/IEC104_dotnet.pdb
-D:/fromgit/IEC104_dotnet/obj/Release/IEC104_dotnet.csprojResolveAssemblyReference.cache
-D:/fromgit/IEC104_dotnet/obj/Release/IEC104_dotnet.Form1.resources
-D:/fromgit/IEC104_dotnet/obj/Release/IEC104_dotnet.Properties.Resources.resources
-D:/fromgit/IEC104_dotnet/obj/Release/IEC104_dotnet.csproj.GenerateResource.Cache
-C:/Users/Administrator/Downloads/IEC104-br_10r-main/IEC104-br_10r-main/IEC104_dotnet/bin/Release/IEC104_dotnet.exe.config
-C:/Users/Administrator/Downloads/IEC104-br_10r-main/IEC104-br_10r-main/IEC104_dotnet/obj/Release/IEC104_dotnet.exe
-C:/Users/Administrator/Downloads/IEC104-br_10r-main/IEC104-br_10r-main/IEC104_dotnet/obj/Release/IEC104_dotnet.pdb
-C:/Users/Administrator/Downloads/IEC104-br_10r-main/IEC104-br_10r-main/IEC104_dotnet/bin/Release/IEC104_dotnet.exe
-C:/Users/Administrator/Downloads/IEC104-br_10r-main/IEC104-br_10r-main/IEC104_dotnet/bin/Release/IEC104_dotnet.pdb
-C:/Users/Administrator/Downloads/IEC104-br_10r-main/IEC104-br_10r-main/IEC104_dotnet/obj/Release/IEC104_dotnet.Form1.resources
-C:/Users/Administrator/Downloads/IEC104-br_10r-main/IEC104-br_10r-main/IEC104_dotnet/obj/Release/IEC104_dotnet.Properties.Resources.resources
-C:/Users/Administrator/Downloads/IEC104-br_10r-main/IEC104-br_10r-main/IEC104_dotnet/obj/Release/IEC104_dotnet.csproj.GenerateResource.Cache
+E:\PROJECT ANH NHAN\IEC60870_5_104_dotnet\104VP_05_10\IEC104_Dotnet\IEC104_dotnet\bin\Release\IEC104_dotnet.exe.config
+E:\PROJECT ANH NHAN\IEC60870_5_104_dotnet\104VP_05_10\IEC104_Dotnet\IEC104_dotnet\bin\Release\IEC104_dotnet.exe
+E:\PROJECT ANH NHAN\IEC60870_5_104_dotnet\104VP_05_10\IEC104_Dotnet\IEC104_dotnet\bin\Release\IEC104_dotnet.pdb
+E:\PROJECT ANH NHAN\IEC60870_5_104_dotnet\104VP_05_10\IEC104_Dotnet\IEC104_dotnet\obj\Release\IEC104_dotnet.csprojResolveAssemblyReference.cache
+E:\PROJECT ANH NHAN\IEC60870_5_104_dotnet\104VP_05_10\IEC104_Dotnet\IEC104_dotnet\obj\Release\IEC104_dotnet.Form1.resources
+E:\PROJECT ANH NHAN\IEC60870_5_104_dotnet\104VP_05_10\IEC104_Dotnet\IEC104_dotnet\obj\Release\IEC104_dotnet.Properties.Resources.resources
+E:\PROJECT ANH NHAN\IEC60870_5_104_dotnet\104VP_05_10\IEC104_Dotnet\IEC104_dotnet\obj\Release\IEC104_dotnet.csproj.GenerateResource.Cache
+E:\PROJECT ANH NHAN\IEC60870_5_104_dotnet\104VP_05_10\IEC104_Dotnet\IEC104_dotnet\obj\Release\IEC104_dotnet.exe
+E:\PROJECT ANH NHAN\IEC60870_5_104_dotnet\104VP_05_10\IEC104_Dotnet\IEC104_dotnet\obj\Release\IEC104_dotnet.pdb
+D:\IEC104_VP_testNOJA_fixed_refuse_connection_07_10\IEC104_dotnet\bin\Release\IEC104_dotnet.exe.config
+D:\IEC104_VP_testNOJA_fixed_refuse_connection_07_10\IEC104_dotnet\obj\Release\IEC104_dotnet.exe
+D:\IEC104_VP_testNOJA_fixed_refuse_connection_07_10\IEC104_dotnet\obj\Release\IEC104_dotnet.pdb
+D:\IEC104_VP_testNOJA_fixed_refuse_connection_07_10\IEC104_dotnet\bin\Release\IEC104_dotnet.exe
+D:\IEC104_VP_testNOJA_fixed_refuse_connection_07_10\IEC104_dotnet\bin\Release\IEC104_dotnet.pdb
+D:\IEC104_VP_testNOJA_fixed_refuse_connection_07_10\IEC104_dotnet\obj\Release\IEC104_dotnet.csprojResolveAssemblyReference.cache
+D:\IEC104_VP_testNOJA_fixed_refuse_connection_07_10\IEC104_dotnet\obj\Release\IEC104_dotnet.Form1.resources
+D:\IEC104_VP_testNOJA_fixed_refuse_connection_07_10\IEC104_dotnet\obj\Release\IEC104_dotnet.Properties.Resources.resources
+D:\IEC104_VP_testNOJA_fixed_refuse_connection_07_10\IEC104_dotnet\obj\Release\IEC104_dotnet.csproj.GenerateResource.Cache
+D:\fromgit\IEC104_dotnet\bin\Release\IEC104_dotnet.exe.config
+D:\fromgit\IEC104_dotnet\obj\Release\IEC104_dotnet.exe
+D:\fromgit\IEC104_dotnet\obj\Release\IEC104_dotnet.pdb
+D:\fromgit\IEC104_dotnet\bin\Release\IEC104_dotnet.exe
+D:\fromgit\IEC104_dotnet\bin\Release\IEC104_dotnet.pdb
+D:\fromgit\IEC104_dotnet\obj\Release\IEC104_dotnet.csprojResolveAssemblyReference.cache
+D:\fromgit\IEC104_dotnet\obj\Release\IEC104_dotnet.Form1.resources
+D:\fromgit\IEC104_dotnet\obj\Release\IEC104_dotnet.Properties.Resources.resources
+D:\fromgit\IEC104_dotnet\obj\Release\IEC104_dotnet.csproj.GenerateResource.Cache
+C:\Users\Administrator\Downloads\IEC104-br_10r-main\IEC104-br_10r-main\IEC104_dotnet\bin\Release\IEC104_dotnet.exe.config
+C:\Users\Administrator\Downloads\IEC104-br_10r-main\IEC104-br_10r-main\IEC104_dotnet\obj\Release\IEC104_dotnet.exe
+C:\Users\Administrator\Downloads\IEC104-br_10r-main\IEC104-br_10r-main\IEC104_dotnet\obj\Release\IEC104_dotnet.pdb
+C:\Users\Administrator\Downloads\IEC104-br_10r-main\IEC104-br_10r-main\IEC104_dotnet\bin\Release\IEC104_dotnet.exe
+C:\Users\Administrator\Downloads\IEC104-br_10r-main\IEC104-br_10r-main\IEC104_dotnet\bin\Release\IEC104_dotnet.pdb
+C:\Users\Administrator\Downloads\IEC104-br_10r-main\IEC104-br_10r-main\IEC104_dotnet\obj\Release\IEC104_dotnet.Form1.resources
+C:\Users\Administrator\Downloads\IEC104-br_10r-main\IEC104-br_10r-main\IEC104_dotnet\obj\Release\IEC104_dotnet.Properties.Resources.resources
+C:\Users\Administrator\Downloads\IEC104-br_10r-main\IEC104-br_10r-main\IEC104_dotnet\obj\Release\IEC104_dotnet.csproj.GenerateResource.Cache
