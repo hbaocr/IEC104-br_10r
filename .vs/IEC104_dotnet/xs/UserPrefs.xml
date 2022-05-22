@@ -1,0 +1,32 @@
+﻿<Properties StartupConfiguration="{5254B79F-A4EE-42B4-8748-61DD16B990EF}|Default">
+  <MonoDevelop.Ide.ItemProperties.IEC104__dotnet PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="IEC104_dotnet/IEC104MasterHelper.cs">
+    <Files>
+      <File FileName="IEC104_dotnet/Form1.cs" Line="60" Column="1" />
+      <File FileName="IEC104_dotnet/IEC104DeviceBase.cs" Line="48" Column="1" />
+      <File FileName="IEC104_dotnet/IEC104Protocol.cs" />
+      <File FileName="IEC104_dotnet/IEC104_Setting.cs" Line="23" Column="40" />
+      <File FileName="IEC104_dotnet/IEC104MasterHelper.cs" Line="1290" Column="31" />
+      <File FileName="IEC104_dotnet/IEC104Device.cs" Line="54" Column="42" />
+      <File FileName="IEC104_dotnet/IEC104_ASDU_Para.cs" Line="1" Column="1" />
+      <File FileName="IEC104_dotnet/IEC104_IOValue_HashMap.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="IEC104_dotnet" expanded="True">
+            <Node name="IEC104_dotnet" expanded="True">
+              <Node name="IEC104MasterHelper.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

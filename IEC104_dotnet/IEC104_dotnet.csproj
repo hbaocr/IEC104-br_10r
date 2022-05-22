@@ -82,6 +82,10 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="IEC104DeviceBase.cs" />
+    <Compile Include="IEC104Protocol.cs" />
+    <Compile Include="IEC104Device.cs" />
+    <Compile Include="IEC104Protocol %28copy%29.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
