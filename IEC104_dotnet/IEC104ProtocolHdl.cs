@@ -1803,6 +1803,7 @@ namespace IEC104_dotnet
         private int last_receiveSeqNum = 0;
         private int last_sendSeqNum = 0;
         private int seq_change_tick_cnt = 0;
+        private int change_seq_in_sec_thr = 60;
     
 
         private void reconnect_if_no_seqnum_change(int nochange_period=90) {
@@ -1838,6 +1839,9 @@ namespace IEC104_dotnet
 
 
         /*this will be call out side as the timer clock of iec104 protocol*/
+        public void reset_protocol_if_nochange_seq_in_period(int sec){
+            change_seq_in_sec_thr = sec;
+        }
         public void iec104_1sec_tick_hdl()
         {
             try
@@ -1847,7 +1851,7 @@ namespace IEC104_dotnet
                     //onCommunicationLog(this, true, "-----------tick clock");
                     iec104_receive_hdl();
                     iec104_control_frame_hdl();
-                    reconnect_if_no_seqnum_change(90);// reconnect if no data incoming in 90 sec
+                    reconnect_if_no_seqnum_change(change_seq_in_sec_thr);// reconnect if no data incoming in 90 sec
                 }
             }
             catch (Exception e)
