@@ -1,0 +1,397 @@
+10/07/22 23:57:13   <---TX :StartDT_Act handshake Activation :  68 04 07 00 00 00
+10/07/22 23:57:13   <---TX :Force To Disconnect TCP
+10/07/22 23:58:15   <---TX :StartDT_Act handshake Activation :  68 04 07 00 00 00
+10/07/22 23:59:48   <---TX :StartDT_Act handshake Activation :  68 04 07 00 00 00
+11/07/22 00:00:03   --->RX : receive STARTDT_CON 
+11/07/22 00:00:22   <---TX :StartDT_Act handshake Activation :  68 04 07 00 00 00
+11/07/22 00:03:03   <---TX :StartDT_Act handshake Activation :  68 04 07 00 00 00
+11/07/22 00:04:10   <---TX :StartDT_Act handshake Activation :  68 04 07 00 00 00
+11/07/22 00:04:16   <---TX :Force To Disconnect TCP
+11/07/22 00:05:06   <---TX :StartDT_Act handshake Activation :  68 04 07 00 00 00
+11/07/22 00:05:19   --->RX : receive STARTDT_CON 
+11/07/22 00:05:19   --->RX : 68 04 0b 00 00 00
+11/07/22 00:08:46   <---TX :StartDT_Act handshake Activation :  68 04 07 00 00 00
+11/07/22 00:08:53   --->RX : receive STARTDT_CON 
+11/07/22 00:08:53   --->RX : 68 04 0b 00 00 00
+11/07/22 00:09:00   <---TX :Supervisory frame :  68 04 01 00 02 00
+11/07/22 00:09:19   <---TX :StartDT_Act handshake Activation :  68 04 07 00 00 00
+11/07/22 00:09:28   --->RX : receive STARTDT_CON 
+11/07/22 00:09:28   --->RX : 68 04 0b 00 00 00
+11/07/22 00:09:31   <---TX :Supervisory frame :  68 04 01 00 02 00
+11/07/22 00:09:38   <---TX :Test activation Frame :  68 04 43 00 00 00
+11/07/22 00:09:38   --->RX : 68 04 83 00 00 00
+11/07/22 00:09:42   <---TX :Supervisory frame :  68 04 01 00 02 00
+11/07/22 00:09:43   <---TX :Send Iterrogation frame :  68 0e 00 00 02 00 64 01 06 00 13 20 00 00 00 14
+11/07/22 00:09:43   --->RX :------>> IOA_T  C_IC_NA_1
+11/07/22 00:09:43   --->RX : 68 0e 00 00 02 00 64 01 07 00 13 20 00 00 00 14
+11/07/22 00:09:43   --->RX :------>> IOA_T  M_DP_NA_1
+11/07/22 00:09:43   --->RX :M_DP_NA_1 DoublePoint
+11/07/22 00:09:43   --->RX : 68 0e 02 00 02 00 03 81 14 00 13 20 c8 00 00 01
+11/07/22 00:09:43   --->RX :------>> IOA_T  C_IC_NA_1
+11/07/22 00:09:43   --->RX :Termination of Interrogation CMD
+11/07/22 00:09:43   --->RX : 68 0e 04 00 02 00 64 01 0a 00 13 20 00 00 00 14
+11/07/22 00:09:46   <---TX :Supervisory frame :  68 04 01 00 06 00
+11/07/22 00:09:53   <---TX :Test activation Frame :  68 04 43 00 00 00
+11/07/22 00:09:53   --->RX : 68 04 83 00 00 00
+11/07/22 00:09:57   <---TX :Supervisory frame :  68 04 01 00 06 00
+11/07/22 00:10:03   <---TX :Test activation Frame :  68 04 43 00 00 00
+11/07/22 00:10:03   --->RX : 68 04 83 00 00 00
+11/07/22 00:10:07   <---TX :Supervisory frame :  68 04 01 00 06 00
+11/07/22 00:10:13   <---TX :Test activation Frame :  68 04 43 00 00 00
+11/07/22 00:10:13   --->RX : 68 04 83 00 00 00
+11/07/22 00:10:17   <---TX :Supervisory frame :  68 04 01 00 06 00
+11/07/22 00:10:23   <---TX :Test activation Frame :  68 04 43 00 00 00
+11/07/22 00:10:23   --->RX : 68 04 83 00 00 00
+11/07/22 00:10:27   <---TX :Supervisory frame :  68 04 01 00 06 00
+11/07/22 00:10:28   --->RX :------>> IOA_T  M_DP_NA_1
+11/07/22 00:10:28   --->RX :M_DP_NA_1 DoublePoint
+11/07/22 00:10:28   --->RX : 68 0e 06 00 02 00 03 81 03 00 13 20 c8 00 00 02
+11/07/22 00:10:28   <---TX :Send Iterrogation frame :  68 0e 02 00 08 00 64 01 06 00 13 20 00 00 00 14
+11/07/22 00:10:28   --->RX :------>> IOA_T  C_IC_NA_1
+11/07/22 00:10:28   --->RX : 68 0e 08 00 04 00 64 01 07 00 13 20 00 00 00 14
+11/07/22 00:10:28   --->RX :------>> IOA_T  M_DP_NA_1
+11/07/22 00:10:28   --->RX :M_DP_NA_1 DoublePoint
+11/07/22 00:10:28   --->RX : 68 0e 0a 00 04 00 03 81 14 00 13 20 c8 00 00 02
+11/07/22 00:10:29   --->RX :------>> IOA_T  C_IC_NA_1
+11/07/22 00:10:29   --->RX :Termination of Interrogation CMD
+11/07/22 00:10:29   --->RX : 68 0e 0c 00 04 00 64 01 0a 00 13 20 00 00 00 14
+11/07/22 00:10:29   <---TX :Supervisory frame :  68 04 01 00 0e 00
+11/07/22 00:10:38   <---TX :Test activation Frame :  68 04 43 00 00 00
+11/07/22 00:10:38   --->RX : 68 04 83 00 00 00
+11/07/22 00:10:42   <---TX :Supervisory frame :  68 04 01 00 0e 00
+11/07/22 00:10:48   <---TX :Test activation Frame :  68 04 43 00 00 00
+11/07/22 00:10:48   --->RX : 68 04 83 00 00 00
+11/07/22 00:10:52   <---TX :Supervisory frame :  68 04 01 00 0e 00
+11/07/22 00:10:58   <---TX :Test activation Frame :  68 04 43 00 00 00
+11/07/22 00:10:58   --->RX : 68 04 83 00 00 00
+11/07/22 00:10:58   <---TX :Send Double CMD select
+11/07/22 00:10:58   <---TX :Double CMD frame :  68 0e 04 00 0e 00 2e 01 06 00 13 20 98 08 00 0d
+11/07/22 00:10:58   --->RX :------>> IOA_T  C_DC_NA_1
+11/07/22 00:10:58   --->RX :Double CMD ACT confirmation 
+11/07/22 00:10:58   --->RX : 68 0e 0e 00 06 00 2e 01 07 00 13 20 98 08 00 0d
+11/07/22 00:10:59   --->RX :------>> IOA_T  C_DC_NA_1
+11/07/22 00:10:59   --->RX :Double CMD ACT termination 
+11/07/22 00:10:59   --->RX : 68 0e 10 00 06 00 2e 01 0a 00 13 20 98 08 00 0d
+11/07/22 00:11:01   <---TX :Supervisory frame :  68 04 01 00 12 00
+11/07/22 00:11:08   <---TX :Test activation Frame :  68 04 43 00 00 00
+11/07/22 00:11:08   --->RX : 68 04 83 00 00 00
+11/07/22 00:11:12   <---TX :Supervisory frame :  68 04 01 00 12 00
+11/07/22 00:11:13   <---TX :Send Iterrogation frame :  68 0e 06 00 12 00 64 01 06 00 13 20 00 00 00 14
+11/07/22 00:11:13   --->RX :------>> IOA_T  C_IC_NA_1
+11/07/22 00:11:13   --->RX : 68 0e 12 00 08 00 64 01 07 00 13 20 00 00 00 14
+11/07/22 00:11:13   <---TX :Send Double CMD select
+11/07/22 00:11:13   <---TX :Double CMD frame :  68 0e 08 00 14 00 2e 01 06 00 13 20 98 08 00 0e
+11/07/22 00:11:14   --->RX :------>> IOA_T  M_DP_NA_1
+11/07/22 00:11:14   --->RX :M_DP_NA_1 DoublePoint
+11/07/22 00:11:14   --->RX : 68 0e 14 00 08 00 03 81 14 00 13 20 c8 00 00 02
+11/07/22 00:11:14   --->RX :------>> IOA_T  C_IC_NA_1
+11/07/22 00:11:14   --->RX :Termination of Interrogation CMD
+11/07/22 00:11:14   --->RX : 68 0e 16 00 08 00 64 01 0a 00 13 20 00 00 00 14
+11/07/22 00:11:14   --->RX :------>> IOA_T  C_DC_NA_1
+11/07/22 00:11:14   --->RX :Double CMD ACT confirmation 
+11/07/22 00:11:14   --->RX : 68 0e 18 00 0a 00 2e 01 07 00 13 20 98 08 00 0e
+11/07/22 00:11:14   --->RX :------>> IOA_T  C_DC_NA_1
+11/07/22 00:11:14   --->RX :Double CMD ACT termination 
+11/07/22 00:11:14   --->RX : 68 0e 1a 00 0a 00 2e 01 0a 00 13 20 98 08 00 0e
+11/07/22 00:11:15   <---TX :Supervisory frame :  68 04 01 00 1c 00
+11/07/22 00:11:23   <---TX :Test activation Frame :  68 04 43 00 00 00
+11/07/22 00:11:23   --->RX : 68 04 83 00 00 00
+11/07/22 00:11:27   <---TX :Supervisory frame :  68 04 01 00 1c 00
+11/07/22 00:11:33   <---TX :Test activation Frame :  68 04 43 00 00 00
+11/07/22 00:11:33   --->RX : 68 04 83 00 00 00
+11/07/22 00:11:33   <---TX :Send Double CMD select
+11/07/22 00:11:33   <---TX :Double CMD frame :  68 0e 0a 00 1c 00 2e 01 06 00 13 20 98 08 00 0d
+11/07/22 00:11:34   --->RX :------>> IOA_T  C_DC_NA_1
+11/07/22 00:11:34   --->RX :Double CMD ACT confirmation 
+11/07/22 00:11:34   --->RX : 68 0e 1c 00 0c 00 2e 01 07 00 13 20 98 08 00 0d
+11/07/22 00:11:34   <---TX :Send Double CMD select
+11/07/22 00:11:34   <---TX :Double CMD frame :  68 0e 0c 00 1e 00 2e 01 06 00 13 20 98 08 00 0d
+11/07/22 00:11:34   --->RX :------>> IOA_T  C_DC_NA_1
+11/07/22 00:11:34   --->RX :Double CMD ACT termination 
+11/07/22 00:11:34   --->RX : 68 0e 1e 00 0c 00 2e 01 0a 00 13 20 98 08 00 0d
+11/07/22 00:11:34   --->RX :------>> IOA_T  C_DC_NA_1
+11/07/22 00:11:34   --->RX :Double CMD ACT confirmation 
+11/07/22 00:11:34   --->RX : 68 0e 20 00 0e 00 2e 01 07 00 13 20 98 08 00 0d
+11/07/22 00:11:34   --->RX :------>> IOA_T  C_DC_NA_1
+11/07/22 00:11:34   --->RX :Double CMD ACT termination 
+11/07/22 00:11:34   --->RX : 68 0e 22 00 0e 00 2e 01 0a 00 13 20 98 08 00 0d
+11/07/22 00:11:35   <---TX :Supervisory frame :  68 04 01 00 24 00
+11/07/22 00:11:44   <---TX :Test activation Frame :  68 04 43 00 00 00
+11/07/22 00:11:44   --->RX : 68 04 83 00 00 00
+11/07/22 00:11:44   <---TX :Send Double CMD select
+11/07/22 00:11:44   <---TX :Double CMD frame :  68 0e 0e 00 24 00 2e 01 06 00 13 20 98 08 00 0d
+11/07/22 00:11:44   --->RX :------>> IOA_T  C_DC_NA_1
+11/07/22 00:11:44   --->RX :Double CMD ACT confirmation 
+11/07/22 00:11:44   --->RX : 68 0e 24 00 10 00 2e 01 07 00 13 20 98 08 00 0d
+11/07/22 00:11:44   --->RX :------>> IOA_T  C_DC_NA_1
+11/07/22 00:11:44   --->RX :Double CMD ACT termination 
+11/07/22 00:11:44   --->RX : 68 0e 26 00 10 00 2e 01 0a 00 13 20 98 08 00 0d
+11/07/22 00:11:47   <---TX :Supervisory frame :  68 04 01 00 28 00
+11/07/22 00:11:54   <---TX :Test activation Frame :  68 04 43 00 00 00
+11/07/22 00:11:54   --->RX : 68 04 83 00 00 00
+11/07/22 00:11:54   <---TX :Send Double CMD select
+11/07/22 00:11:54   <---TX :Double CMD frame :  68 0e 10 00 28 00 2e 01 06 00 13 20 98 08 00 0d
+11/07/22 00:11:54   --->RX :------>> IOA_T  C_DC_NA_1
+11/07/22 00:11:54   --->RX :Double CMD ACT confirmation 
+11/07/22 00:11:54   --->RX : 68 0e 28 00 12 00 2e 01 07 00 13 20 98 08 00 0d
+11/07/22 00:11:54   --->RX :------>> IOA_T  C_DC_NA_1
+11/07/22 00:11:54   --->RX :Double CMD ACT termination 
+11/07/22 00:11:54   --->RX : 68 0e 2a 00 12 00 2e 01 0a 00 13 20 98 08 00 0d
+11/07/22 00:11:57   <---TX :Supervisory frame :  68 04 01 00 2c 00
+11/07/22 00:11:59   <---TX :Send Iterrogation frame :  68 0e 12 00 2c 00 64 01 06 00 13 20 00 00 00 14
+11/07/22 00:11:59   --->RX :------>> IOA_T  C_IC_NA_1
+11/07/22 00:11:59   --->RX : 68 0e 2c 00 14 00 64 01 07 00 13 20 00 00 00 14
+11/07/22 00:11:59   <---TX :Send Double CMD select
+11/07/22 00:11:59   <---TX :Double CMD frame :  68 0e 14 00 2e 00 2e 01 06 00 13 20 98 08 00 0e
+11/07/22 00:11:59   --->RX :------>> IOA_T  M_DP_NA_1
+11/07/22 00:11:59   --->RX :M_DP_NA_1 DoublePoint
+11/07/22 00:11:59   --->RX : 68 0e 2e 00 14 00 03 81 14 00 13 20 c8 00 00 02
+11/07/22 00:11:59   --->RX :------>> IOA_T  C_IC_NA_1
+11/07/22 00:11:59   --->RX :Termination of Interrogation CMD
+11/07/22 00:11:59   --->RX : 68 0e 30 00 14 00 64 01 0a 00 13 20 00 00 00 14
+11/07/22 00:11:59   --->RX :------>> IOA_T  C_DC_NA_1
+11/07/22 00:11:59   --->RX :Double CMD ACT confirmation 
+11/07/22 00:11:59   --->RX : 68 0e 32 00 16 00 2e 01 07 00 13 20 98 08 00 0e
+11/07/22 00:12:00   --->RX :------>> IOA_T  C_DC_NA_1
+11/07/22 00:12:00   --->RX :Double CMD ACT termination 
+11/07/22 00:12:00   --->RX : 68 0e 34 00 16 00 2e 01 0a 00 13 20 98 08 00 0e
+11/07/22 00:12:01   <---TX :Supervisory frame :  68 04 01 00 36 00
+11/07/22 00:46:14   <---TX :StartDT_Act handshake Activation :  68 04 07 00 00 00
+11/07/22 00:48:21   <---TX :StartDT_Act handshake Activation :  68 04 07 00 00 00
+11/07/22 00:48:21   <---TX :Force To Disconnect TCP
+11/07/22 00:49:11   <---TX :StartDT_Act handshake Activation :  68 04 07 00 00 00
+11/07/22 00:49:11   --->RX : receive STARTDT_CON 
+11/07/22 00:49:11   --->RX : 68 04 0b 00 00 00
+11/07/22 00:49:15   <---TX :Supervisory frame :  68 04 01 00 02 00
+11/07/22 00:49:21   <---TX :Test activation Frame :  68 04 43 00 00 00
+11/07/22 00:49:21   --->RX : 68 04 83 00 00 00
+11/07/22 00:49:25   <---TX :Supervisory frame :  68 04 01 00 02 00
+11/07/22 00:49:26   <---TX :Send Iterrogation frame :  68 0e 00 00 02 00 64 01 06 00 13 20 00 00 00 14
+11/07/22 00:49:26   --->RX :------>> IOA_T  C_IC_NA_1
+11/07/22 00:49:26   --->RX : 68 0e 00 00 02 00 64 01 07 00 13 20 00 00 00 14
+11/07/22 00:49:26   --->RX :------>> IOA_T  M_DP_NA_1
+11/07/22 00:49:27   --->RX :M_DP_NA_1 DoublePoint
+11/07/22 00:49:27   --->RX : 68 0e 02 00 02 00 03 81 14 00 13 20 c8 00 00 01
+11/07/22 00:49:27   --->RX :------>> IOA_T  C_IC_NA_1
+11/07/22 00:49:27   --->RX :Termination of Interrogation CMD
+11/07/22 00:49:27   --->RX : 68 0e 04 00 02 00 64 01 0a 00 13 20 00 00 00 14
+11/07/22 00:49:29   <---TX :Supervisory frame :  68 04 01 00 06 00
+11/07/22 00:49:36   <---TX :Test activation Frame :  68 04 43 00 00 00
+11/07/22 00:49:36   --->RX : 68 04 83 00 00 00
+11/07/22 00:49:40   <---TX :Supervisory frame :  68 04 01 00 06 00
+11/07/22 00:49:47   <---TX :Test activation Frame :  68 04 43 00 00 00
+11/07/22 00:49:47   --->RX : 68 04 83 00 00 00
+11/07/22 00:49:51   <---TX :Supervisory frame :  68 04 01 00 06 00
+11/07/22 00:50:01   <---TX :StartDT_Act handshake Activation :  68 04 07 00 00 00
+11/07/22 00:50:02   --->RX : receive STARTDT_CON 
+11/07/22 00:50:02   --->RX : 68 04 0b 00 00 00
+11/07/22 00:50:05   <---TX :Supervisory frame :  68 04 01 00 02 00
+11/07/22 00:50:12   <---TX :Test activation Frame :  68 04 43 00 00 00
+11/07/22 00:50:12   --->RX : 68 04 83 00 00 00
+11/07/22 00:50:16   <---TX :Supervisory frame :  68 04 01 00 02 00
+11/07/22 00:50:17   <---TX :Send Iterrogation frame :  68 0e 00 00 02 00 64 01 06 00 13 20 00 00 00 14
+11/07/22 00:50:17   --->RX :------>> IOA_T  C_IC_NA_1
+11/07/22 00:50:17   --->RX : 68 0e 00 00 02 00 64 01 07 00 13 20 00 00 00 14
+11/07/22 00:50:17   --->RX :------>> IOA_T  M_DP_NA_1
+11/07/22 00:50:17   --->RX :M_DP_NA_1 DoublePoint
+11/07/22 00:50:17   --->RX : 68 0e 02 00 02 00 03 81 14 00 13 20 c8 00 00 01
+11/07/22 00:50:17   --->RX :------>> IOA_T  C_IC_NA_1
+11/07/22 00:50:17   --->RX :Termination of Interrogation CMD
+11/07/22 00:50:17   --->RX : 68 0e 04 00 02 00 64 01 0a 00 13 20 00 00 00 14
+11/07/22 00:50:20   <---TX :Supervisory frame :  68 04 01 00 06 00
+11/07/22 00:50:21   <---TX :Test Confirm Frame : 
+11/07/22 00:50:21   --->RX : 68 04 43 00 00 00
+11/07/22 01:20:38   <---TX :StopAct Handshake Activation:  68 04 13 00 00 00
+11/07/22 01:20:39   <---TX :Send Reset C_RP frame :  68 0e 00 00 02 00 69 01 06 00 13 20 00 00 00 01
+11/07/22 01:20:39   <---TX :StartDT_Act handshake Activation :  68 04 07 00 00 00
+11/07/22 01:20:40   --->RX : 68 04 23 00 00 00
+11/07/22 01:20:40   --->RX : receive STARTDT_CON 
+11/07/22 01:20:40   --->RX : 68 04 0b 00 00 00
+11/07/22 01:20:42   <---TX :Supervisory frame :  68 04 01 00 02 00
+11/07/22 01:20:49   <---TX :Test activation Frame :  68 04 43 00 00 00
+11/07/22 01:20:50   --->RX : 68 04 83 00 00 00
+11/07/22 01:20:54   <---TX :Supervisory frame :  68 04 01 00 02 00
+11/07/22 01:20:55   <---TX :Send Iterrogation frame :  68 0e 00 00 02 00 64 01 06 00 13 20 00 00 00 14
+11/07/22 01:20:55   --->RX :------>> IOA_T  C_IC_NA_1
+11/07/22 01:20:55   --->RX : 68 0e 00 00 02 00 64 01 07 00 13 20 00 00 00 14
+11/07/22 01:20:55   --->RX :------>> IOA_T  M_DP_NA_1
+11/07/22 01:20:55   --->RX :M_DP_NA_1 DoublePoint
+11/07/22 01:20:55   --->RX : 68 0e 02 00 02 00 03 81 14 00 13 20 c8 00 00 01
+11/07/22 01:20:55   --->RX :------>> IOA_T  C_IC_NA_1
+11/07/22 01:20:55   --->RX :Termination of Interrogation CMD
+11/07/22 01:20:55   --->RX : 68 0e 04 00 02 00 64 01 0a 00 13 20 00 00 00 14
+11/07/22 01:20:58   <---TX :Supervisory frame :  68 04 01 00 06 00
+11/07/22 01:21:00   <---TX :Force To Disconnect TCP
+11/07/22 01:21:05   <---TX :StopAct Handshake Activation:  68 04 13 00 00 00
+11/07/22 01:21:05   <---TX :Send Reset C_RP frame :  68 0e 00 00 02 00 69 01 06 00 13 20 00 00 00 01
+11/07/22 01:21:06   <---TX :StartDT_Act handshake Activation :  68 04 07 00 00 00
+11/07/22 01:21:06   --->RX : 68 04 23 00 00 00
+11/07/22 01:21:06   --->RX : receive STARTDT_CON 
+11/07/22 01:21:06   --->RX : 68 04 0b 00 00 00
+11/07/22 01:21:08   <---TX :Force To Disconnect TCP
+11/07/22 01:21:11   <---TX :StopAct Handshake Activation:  68 04 13 00 00 00
+11/07/22 01:21:11   <---TX :Send Reset C_RP frame :  68 0e 00 00 02 00 69 01 06 00 13 20 00 00 00 01
+11/07/22 01:21:12   <---TX :StartDT_Act handshake Activation :  68 04 07 00 00 00
+11/07/22 01:21:12   --->RX : 68 04 23 00 00 00
+11/07/22 01:21:12   --->RX : receive STARTDT_CON 
+11/07/22 01:21:12   --->RX : 68 04 0b 00 00 00
+11/07/22 01:21:15   <---TX :Supervisory frame :  68 04 01 00 02 00
+11/07/22 01:21:19   <---TX :Force To Disconnect TCP
+11/07/22 01:21:22   <---TX :StopAct Handshake Activation:  68 04 13 00 00 00
+11/07/22 01:21:22   <---TX :Send Reset C_RP frame :  68 0e 00 00 02 00 69 01 06 00 13 20 00 00 00 01
+11/07/22 01:21:23   <---TX :StartDT_Act handshake Activation :  68 04 07 00 00 00
+11/07/22 01:21:24   --->RX : 68 04 23 00 00 00
+11/07/22 01:21:24   --->RX : receive STARTDT_CON 
+11/07/22 01:21:24   --->RX : 68 04 0b 00 00 00
+11/07/22 01:21:26   <---TX :Supervisory frame :  68 04 01 00 02 00
+11/07/22 01:21:33   <---TX :Test activation Frame :  68 04 43 00 00 00
+11/07/22 01:21:33   --->RX : 68 04 83 00 00 00
+11/07/22 01:21:37   <---TX :Supervisory frame :  68 04 01 00 02 00
+11/07/22 01:21:38   <---TX :Send Iterrogation frame :  68 0e 00 00 02 00 64 01 06 00 13 20 00 00 00 14
+11/07/22 01:21:39   --->RX :------>> IOA_T  C_IC_NA_1
+11/07/22 01:21:39   --->RX : 68 0e 00 00 02 00 64 01 07 00 13 20 00 00 00 14
+11/07/22 01:21:39   --->RX :------>> IOA_T  M_DP_NA_1
+11/07/22 01:21:39   --->RX :M_DP_NA_1 DoublePoint
+11/07/22 01:21:39   --->RX : 68 0e 02 00 02 00 03 81 14 00 13 20 c8 00 00 01
+11/07/22 01:21:39   --->RX :------>> IOA_T  C_IC_NA_1
+11/07/22 01:21:39   --->RX :Termination of Interrogation CMD
+11/07/22 01:21:39   --->RX : 68 0e 04 00 02 00 64 01 0a 00 13 20 00 00 00 14
+11/07/22 01:21:42   <---TX :Supervisory frame :  68 04 01 00 06 00
+11/07/22 01:21:49   <---TX :Test activation Frame :  68 04 43 00 00 00
+11/07/22 01:21:49   --->RX : 68 04 83 00 00 00
+11/07/22 01:21:53   <---TX :Supervisory frame :  68 04 01 00 06 00
+11/07/22 01:21:59   <---TX :Test activation Frame :  68 04 43 00 00 00
+11/07/22 01:21:59   --->RX : 68 04 83 00 00 00
+11/07/22 01:22:03   <---TX :Supervisory frame :  68 04 01 00 06 00
+11/07/22 01:22:09   <---TX :Test activation Frame :  68 04 43 00 00 00
+11/07/22 01:22:09   --->RX : 68 04 83 00 00 00
+11/07/22 01:22:09   <---TX :Send Double CMD select
+11/07/22 01:22:09   <---TX :Double CMD frame :  68 0e 02 00 06 00 2e 01 06 00 13 20 98 08 00 0e
+11/07/22 01:22:09   --->RX :------>> IOA_T  C_DC_NA_1
+11/07/22 01:22:09   --->RX :Double CMD ACT confirmation 
+11/07/22 01:22:09   --->RX : 68 0e 06 00 04 00 2e 01 07 00 13 20 98 08 00 0e
+11/07/22 01:22:09   --->RX :------>> IOA_T  C_DC_NA_1
+11/07/22 01:22:09   --->RX :Double CMD ACT termination 
+11/07/22 01:22:09   --->RX : 68 0e 08 00 04 00 2e 01 0a 00 13 20 98 08 00 0e
+11/07/22 01:22:12   <---TX :Supervisory frame :  68 04 01 00 0a 00
+11/07/22 01:22:19   <---TX :Test activation Frame :  68 04 43 00 00 00
+11/07/22 01:22:19   --->RX : 68 04 83 00 00 00
+11/07/22 01:22:19   <---TX :Send Double CMD select
+11/07/22 01:22:19   <---TX :Double CMD frame :  68 0e 04 00 0a 00 2e 01 06 00 13 20 98 08 00 0d
+11/07/22 01:22:19   --->RX :------>> IOA_T  C_DC_NA_1
+11/07/22 01:22:19   --->RX :Double CMD ACT confirmation 
+11/07/22 01:22:19   --->RX : 68 0e 0a 00 06 00 2e 01 07 00 13 20 98 08 00 0d
+11/07/22 01:22:19   --->RX :------>> IOA_T  C_DC_NA_1
+11/07/22 01:22:19   --->RX :Double CMD ACT termination 
+11/07/22 01:22:19   --->RX : 68 0e 0c 00 06 00 2e 01 0a 00 13 20 98 08 00 0d
+11/07/22 01:22:22   <---TX :Supervisory frame :  68 04 01 00 0e 00
+11/07/22 01:22:24   <---TX :Send Iterrogation frame :  68 0e 06 00 0e 00 64 01 06 00 13 20 00 00 00 14
+11/07/22 01:22:24   --->RX :------>> IOA_T  C_IC_NA_1
+11/07/22 01:22:24   --->RX : 68 0e 0e 00 08 00 64 01 07 00 13 20 00 00 00 14
+11/07/22 01:22:24   <---TX :Send Double CMD select
+11/07/22 01:22:24   <---TX :Double CMD frame :  68 0e 08 00 10 00 2e 01 06 00 13 20 98 08 00 0e
+11/07/22 01:22:24   --->RX :------>> IOA_T  M_DP_NA_1
+11/07/22 01:22:24   --->RX :M_DP_NA_1 DoublePoint
+11/07/22 01:22:24   --->RX : 68 0e 10 00 08 00 03 81 14 00 13 20 c8 00 00 01
+11/07/22 01:22:25   --->RX :------>> IOA_T  C_IC_NA_1
+11/07/22 01:22:25   --->RX :Termination of Interrogation CMD
+11/07/22 01:22:25   --->RX : 68 0e 12 00 08 00 64 01 0a 00 13 20 00 00 00 14
+11/07/22 01:22:25   --->RX :------>> IOA_T  C_DC_NA_1
+11/07/22 01:22:25   --->RX :Double CMD ACT confirmation 
+11/07/22 01:22:25   --->RX : 68 0e 14 00 0a 00 2e 01 07 00 13 20 98 08 00 0e
+11/07/22 01:22:25   --->RX :------>> IOA_T  C_DC_NA_1
+11/07/22 01:22:25   --->RX :Double CMD ACT termination 
+11/07/22 01:22:25   --->RX : 68 0e 16 00 0a 00 2e 01 0a 00 13 20 98 08 00 0e
+11/07/22 01:22:26   <---TX :Supervisory frame :  68 04 01 00 18 00
+11/07/22 01:22:34   <---TX :Test activation Frame :  68 04 43 00 00 00
+11/07/22 01:22:34   --->RX : 68 04 83 00 00 00
+11/07/22 01:22:38   <---TX :Supervisory frame :  68 04 01 00 18 00
+11/07/22 01:28:51   <---TX :StopAct Handshake Activation:  68 04 13 00 00 00
+11/07/22 01:28:51   <---TX :Send Reset C_RP frame :  68 0e 00 00 02 00 69 01 06 00 13 20 00 00 00 01
+11/07/22 01:28:52   <---TX :StartDT_Act handshake Activation :  68 04 07 00 00 00
+11/07/22 01:28:52   --->RX : 68 04 23 00 00 00
+11/07/22 01:28:52   --->RX : receive STARTDT_CON 
+11/07/22 01:28:52   --->RX : 68 04 0b 00 00 00
+11/07/22 01:28:55   <---TX :Supervisory frame :  68 04 01 00 02 00
+11/07/22 01:28:59   <---TX :Force To Disconnect TCP
+11/07/22 01:29:07   <---TX :StopAct Handshake Activation:  68 04 13 00 00 00
+11/07/22 01:29:07   <---TX :Send Reset C_RP frame :  68 0e 00 00 02 00 69 01 06 00 13 20 00 00 00 01
+11/07/22 01:29:08   <---TX :StartDT_Act handshake Activation :  68 04 07 00 00 00
+11/07/22 01:29:08   --->RX : 68 04 23 00 00 00
+11/07/22 01:29:09   --->RX : receive STARTDT_CON 
+11/07/22 01:29:09   --->RX : 68 04 0b 00 00 00
+11/07/22 01:29:11   <---TX :Supervisory frame :  68 04 01 00 02 00
+11/07/22 01:29:13   <---TX :Force To Disconnect TCP
+11/07/22 01:29:16   <---TX :StopAct Handshake Activation:  68 04 13 00 00 00
+11/07/22 01:29:17   <---TX :Send Reset C_RP frame :  68 0e 00 00 02 00 69 01 06 00 13 20 00 00 00 01
+11/07/22 01:29:17   <---TX :StartDT_Act handshake Activation :  68 04 07 00 00 00
+11/07/22 01:29:18   --->RX : 68 04 23 00 00 00
+11/07/22 01:29:18   --->RX : receive STARTDT_CON 
+11/07/22 01:29:18   --->RX : 68 04 0b 00 00 00
+11/07/22 01:29:20   <---TX :Force To Disconnect TCP
+11/07/22 01:29:21   <---TX :StopAct Handshake Activation:  68 04 13 00 00 00
+11/07/22 01:29:21   <---TX :Send Reset C_RP frame :  68 0e 00 00 02 00 69 01 06 00 13 20 00 00 00 01
+11/07/22 01:29:22   <---TX :StartDT_Act handshake Activation :  68 04 07 00 00 00
+11/07/22 01:29:22   --->RX : 68 04 23 00 00 00
+11/07/22 01:29:22   --->RX : receive STARTDT_CON 
+11/07/22 01:29:22   --->RX : 68 04 0b 00 00 00
+11/07/22 01:29:25   <---TX :Supervisory frame :  68 04 01 00 02 00
+11/07/22 01:29:32   <---TX :Test activation Frame :  68 04 43 00 00 00
+11/07/22 01:29:32   --->RX : 68 04 83 00 00 00
+11/07/22 01:29:36   <---TX :Supervisory frame :  68 04 01 00 02 00
+11/07/22 01:29:37   <---TX :Send Iterrogation frame :  68 0e 00 00 02 00 64 01 06 00 13 20 00 00 00 14
+11/07/22 01:29:37   --->RX :------>> IOA_T  C_IC_NA_1
+11/07/22 01:29:37   --->RX : 68 0e 00 00 02 00 64 01 07 00 13 20 00 00 00 14
+11/07/22 01:29:37   --->RX :------>> IOA_T  M_DP_NA_1
+11/07/22 01:29:37   --->RX :M_DP_NA_1 DoublePoint
+11/07/22 01:29:37   --->RX : 68 0e 02 00 02 00 03 81 14 00 13 20 c8 00 00 01
+11/07/22 01:29:37   --->RX :------>> IOA_T  C_IC_NA_1
+11/07/22 01:29:37   --->RX :Termination of Interrogation CMD
+11/07/22 01:29:37   --->RX : 68 0e 04 00 02 00 64 01 0a 00 13 20 00 00 00 14
+11/07/22 01:29:40   <---TX :Supervisory frame :  68 04 01 00 06 00
+11/07/22 01:29:47   <---TX :Test activation Frame :  68 04 43 00 00 00
+11/07/22 01:29:47   --->RX : 68 04 83 00 00 00
+11/07/22 01:34:01   <---TX :StopAct Handshake Activation:  68 04 13 00 00 00
+11/07/22 01:34:01   <---TX :Send Reset C_RP frame :  68 0e 00 00 02 00 69 01 06 00 13 20 00 00 00 01
+11/07/22 01:34:02   <---TX :StartDT_Act handshake Activation :  68 04 07 00 00 00
+11/07/22 01:34:02   --->RX : 68 04 23 00 00 00
+11/07/22 01:34:03   --->RX : receive STARTDT_CON 
+11/07/22 01:34:03   --->RX : 68 04 0b 00 00 00
+11/07/22 01:34:05   <---TX :Supervisory frame :  68 04 01 00 02 00
+11/07/22 01:34:09   <---TX :---> Finish timeout Task in Delay time
+11/07/22 01:34:10   <---TX :Force To Disconnect TCP
+11/07/22 01:34:10   <---TX :---> Finish receive Task in Checking time
+11/07/22 01:34:55   <---TX :StopAct Handshake Activation:  68 04 13 00 00 00
+11/07/22 01:34:55   <---TX :Send Reset C_RP frame :  68 0e 00 00 02 00 69 01 06 00 13 20 00 00 00 01
+11/07/22 01:34:56   <---TX :StartDT_Act handshake Activation :  68 04 07 00 00 00
+11/07/22 01:34:56   --->RX : 68 04 23 00 00 00
+11/07/22 01:34:56   --->RX : receive STARTDT_CON 
+11/07/22 01:34:56   --->RX : 68 04 0b 00 00 00
+11/07/22 01:34:57   <---TX :---> Finish timeout Task in Delay time
+11/07/22 01:34:58   <---TX :Force To Disconnect TCP
+11/07/22 01:34:58   <---TX :---> Finish receive Task in Checking time
+11/07/22 01:35:12   <---TX :StopAct Handshake Activation:  68 04 13 00 00 00
+11/07/22 01:35:12   <---TX :Send Reset C_RP frame :  68 0e 00 00 02 00 69 01 06 00 13 20 00 00 00 01
+11/07/22 01:35:13   <---TX :StartDT_Act handshake Activation :  68 04 07 00 00 00
+11/07/22 01:35:13   --->RX : 68 04 23 00 00 00
+11/07/22 01:35:14   --->RX : receive STARTDT_CON 
+11/07/22 01:35:14   --->RX : 68 04 0b 00 00 00
+11/07/22 01:35:16   <---TX :Supervisory frame :  68 04 01 00 02 00
+11/07/22 01:35:18   <---TX :---> Finish timeout Task in Delay time
+11/07/22 01:35:19   <---TX :Force To Disconnect TCP
+11/07/22 01:35:19   <---TX :---> Finish receive Task in Checking time
+11/07/22 01:35:30   <---TX :StopAct Handshake Activation:  68 04 13 00 00 00
+11/07/22 01:35:31   <---TX :Send Reset C_RP frame :  68 0e 00 00 02 00 69 01 06 00 13 20 00 00 00 01
+11/07/22 01:35:31   <---TX :StartDT_Act handshake Activation :  68 04 07 00 00 00
+11/07/22 01:35:32   --->RX : 68 04 23 00 00 00
+11/07/22 01:35:32   --->RX : receive STARTDT_CON 
+11/07/22 01:35:32   --->RX : 68 04 0b 00 00 00
+11/07/22 01:35:33   <---TX :---> Finish timeout Task in Delay time
+11/07/22 01:35:33   <---TX :Force To Disconnect TCP
+11/07/22 01:35:33   <---TX :---> Finish receive Task in Checking time
+11/07/22 01:35:34   <---TX :StopAct Handshake Activation:  68 04 13 00 00 00
+11/07/22 01:35:34   <---TX :Send Reset C_RP frame :  68 0e 00 00 02 00 69 01 06 00 13 20 00 00 00 01
+11/07/22 01:35:35   <---TX :StartDT_Act handshake Activation :  68 04 07 00 00 00
+11/07/22 01:35:35   <---TX :---> Finish receive Task in Delay time
+11/07/22 01:35:35   <---TX :---> Finish timeout Task in Delay time
+11/07/22 01:35:36   <---TX :Force To Disconnect TCP

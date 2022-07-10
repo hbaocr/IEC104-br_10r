@@ -11,14 +11,6 @@ namespace IEC104_dotnet
         /*Connection parameter*/
         /*connnection setting*/
         public int ca_size = 2;
-        /*
-            https://www.fit.vut.cz/research/publication-file/11570/TR-IEC104.pdf
-            In some document 2 byte COT : include
-                1 LS byte : the COT itself 
-                1 MS byte : Originator address(ORG) (local Addr) default =0
-            The ORG is usefull when there are multi master on the line. THis will distinct these master.
-            Usually on 1 line ( or 1 IP), there are only one IEC104 master, so this ORG is not used and usually set to 0
-        */
         public int cot_size = 2;
         public int ioa_size = 3;
 

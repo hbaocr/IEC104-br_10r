@@ -62,21 +62,12 @@ C:/Users/Administrator/Downloads/IEC104-br_10r-main/IEC104-br_10r-main/IEC104_do
 /Users/duonghuynhbao/Desktop/IEC104_VP_testNOJA_fixed_refuse_connection_07_10/IEC104_dotnet/obj/Debug/IEC104_dotnet.csproj.CoreCompileInputs.cache
 /Users/duonghuynhbao/Desktop/IEC104_VP_testNOJA_fixed_refuse_connection_07_10/IEC104_dotnet/obj/Debug/IEC104_dotnet.exe
 /Users/duonghuynhbao/Desktop/IEC104_VP_testNOJA_fixed_refuse_connection_07_10/IEC104_dotnet/obj/Debug/IEC104_dotnet.pdb
-C:\Users\Administrator\Downloads\IEC104-br_10r-main (1)\IEC104-br_10r-main\IEC104_dotnet\bin\Debug\IEC104_dotnet.exe.config
-C:\Users\Administrator\Downloads\IEC104-br_10r-main (1)\IEC104-br_10r-main\IEC104_dotnet\bin\Debug\IEC104_dotnet.exe
-C:\Users\Administrator\Downloads\IEC104-br_10r-main (1)\IEC104-br_10r-main\IEC104_dotnet\bin\Debug\IEC104_dotnet.pdb
-C:\Users\Administrator\Downloads\IEC104-br_10r-main (1)\IEC104-br_10r-main\IEC104_dotnet\obj\Debug\IEC104_dotnet.Form1.resources
-C:\Users\Administrator\Downloads\IEC104-br_10r-main (1)\IEC104-br_10r-main\IEC104_dotnet\obj\Debug\IEC104_dotnet.Properties.Resources.resources
-C:\Users\Administrator\Downloads\IEC104-br_10r-main (1)\IEC104-br_10r-main\IEC104_dotnet\obj\Debug\IEC104_dotnet.csproj.GenerateResource.Cache
-C:\Users\Administrator\Downloads\IEC104-br_10r-main (1)\IEC104-br_10r-main\IEC104_dotnet\obj\Debug\IEC104_dotnet.exe
-C:\Users\Administrator\Downloads\IEC104-br_10r-main (1)\IEC104-br_10r-main\IEC104_dotnet\obj\Debug\IEC104_dotnet.pdb
-C:\Users\Administrator\Downloads\IEC104-br_10r-main (1)\IEC104-br_10r-main\IEC104_dotnet\obj\Debug\IEC104_dotnet.csprojResolveAssemblyReference.cache
-C:\Users\Administrator\Downloads\IEC104-br_10r-main-new\IEC104-br_10r-main\IEC104_dotnet\bin\Debug\IEC104_dotnet.exe.config
-C:\Users\Administrator\Downloads\IEC104-br_10r-main-new\IEC104-br_10r-main\IEC104_dotnet\bin\Debug\IEC104_dotnet.exe
-C:\Users\Administrator\Downloads\IEC104-br_10r-main-new\IEC104-br_10r-main\IEC104_dotnet\bin\Debug\IEC104_dotnet.pdb
-C:\Users\Administrator\Downloads\IEC104-br_10r-main-new\IEC104-br_10r-main\IEC104_dotnet\obj\Debug\IEC104_dotnet.csprojResolveAssemblyReference.cache
-C:\Users\Administrator\Downloads\IEC104-br_10r-main-new\IEC104-br_10r-main\IEC104_dotnet\obj\Debug\IEC104_dotnet.Form1.resources
-C:\Users\Administrator\Downloads\IEC104-br_10r-main-new\IEC104-br_10r-main\IEC104_dotnet\obj\Debug\IEC104_dotnet.Properties.Resources.resources
-C:\Users\Administrator\Downloads\IEC104-br_10r-main-new\IEC104-br_10r-main\IEC104_dotnet\obj\Debug\IEC104_dotnet.csproj.GenerateResource.Cache
-C:\Users\Administrator\Downloads\IEC104-br_10r-main-new\IEC104-br_10r-main\IEC104_dotnet\obj\Debug\IEC104_dotnet.exe
-C:\Users\Administrator\Downloads\IEC104-br_10r-main-new\IEC104-br_10r-main\IEC104_dotnet\obj\Debug\IEC104_dotnet.pdb
+C:\Users\Administrator\Downloads\IEC104-br_10r-main-072022\IEC104-br_10r-main\IEC104_dotnet\bin\Debug\IEC104_dotnet.exe.config
+C:\Users\Administrator\Downloads\IEC104-br_10r-main-072022\IEC104-br_10r-main\IEC104_dotnet\bin\Debug\IEC104_dotnet.exe
+C:\Users\Administrator\Downloads\IEC104-br_10r-main-072022\IEC104-br_10r-main\IEC104_dotnet\bin\Debug\IEC104_dotnet.pdb
+C:\Users\Administrator\Downloads\IEC104-br_10r-main-072022\IEC104-br_10r-main\IEC104_dotnet\obj\Debug\IEC104_dotnet.Form1.resources
+C:\Users\Administrator\Downloads\IEC104-br_10r-main-072022\IEC104-br_10r-main\IEC104_dotnet\obj\Debug\IEC104_dotnet.Properties.Resources.resources
+C:\Users\Administrator\Downloads\IEC104-br_10r-main-072022\IEC104-br_10r-main\IEC104_dotnet\obj\Debug\IEC104_dotnet.csproj.GenerateResource.Cache
+C:\Users\Administrator\Downloads\IEC104-br_10r-main-072022\IEC104-br_10r-main\IEC104_dotnet\obj\Debug\IEC104_dotnet.exe
+C:\Users\Administrator\Downloads\IEC104-br_10r-main-072022\IEC104-br_10r-main\IEC104_dotnet\obj\Debug\IEC104_dotnet.pdb
+C:\Users\Administrator\Downloads\IEC104-br_10r-main-072022\IEC104-br_10r-main\IEC104_dotnet\obj\Debug\IEC104_dotnet.csprojResolveAssemblyReference.cache

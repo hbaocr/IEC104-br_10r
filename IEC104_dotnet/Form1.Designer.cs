@@ -114,8 +114,7 @@
             this.txtIP.Name = "txtIP";
             this.txtIP.Size = new System.Drawing.Size(92, 20);
             this.txtIP.TabIndex = 8;
-            this.txtIP.Text = "10.175.88.211";
-            this.txtIP.TextChanged += new System.EventHandler(this.txtIP_TextChanged);
+            this.txtIP.Text = "127.0.0.1";
             // 
             // btnConnect
             // 
